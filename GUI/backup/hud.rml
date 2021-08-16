@@ -1,0 +1,9 @@
+<template name="hud" content="content">
+	<head>
+		<link type="text/rcss" href="CenterSpace.rcss"/>
+	</head>
+	<body class="hud" isbackground="true">
+		<div id="content" class="hud" isbackground="true">
+		</div>
+	</body>
+</template>

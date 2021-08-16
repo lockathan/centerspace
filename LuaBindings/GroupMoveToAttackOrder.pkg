@@ -1,0 +1,12 @@
+$#include <AI/GroupMoveToAttackOrder.h>
+
+class GroupMoveToAttackOrder : public GroupOrder
+{
+	GroupMoveToAttackOrder();
+	GroupMoveToAttackOrder(AIGroup* owner, MCUController* target);
+	~GroupMoveToAttackOrder();
+	
+	MCUController* getTarget();
+	void setTarget(MCUController* target);
+
+};

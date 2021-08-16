@@ -1,0 +1,2 @@
+Interceptor;4500;10000;1;Hauser Industrial;Interceptor;0;36;1;1;1;1;1;1;4cm Standard;Li-Ion 25;Electro Magnetic Drive D1;Ion Decay 300;Reeves-McIntosh Basic;Shield 50;Reef-McIntosh Targeter Pro;interceptor.mesh;interceptor_1;35.0;3.5;light;0.65;interceptor_thumbnail.png;profile_interceptor.png;walk1
+Warthog;6500;13000;1;Hauser Industrial;Warthog;0;42;1;1;1;1;1;1;5cm Standard;Li-Ion 25;Electro Magnetic Drive D1;Ion Decay 300;Reeves-McIntosh Basic;Shield 75;Reef-McIntosh Targeter Pro;worthog.mesh;worthog_1;30.0;3.0;light;0.75;worthog_thumbnail.png;profile_warthog.png;walk1

@@ -1,0 +1,3 @@
+Aphid v1;1;Integrant Foundation;0;Aphid v1;1;0;0;0;0;0;0;0;0
+Wraith v1;1;Integrant Foundation;0;Wraith v1;1;0;0;0;0;0;0;0;0
+Int Mixed Light Group;1;Integrant Foundation;0;Aphid v1;1;Wraith v1;1;0;0;0;0;0;0

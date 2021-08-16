@@ -1,0 +1,6 @@
+$#include <Repositories/ShieldTemplateRepositoryLoader.h>
+
+class ShieldTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, ShieldTemplateRepository* r);
+};

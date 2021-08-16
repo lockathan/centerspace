@@ -1,0 +1,20 @@
+material animated_explosion
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_write off
+			
+			ambient 1.0 1.0 1.0
+            diffuse 1.0 1.0 1.0
+			
+			texture_unit
+			{
+				texture explode_1.bmp
+			}
+		}
+	}
+}

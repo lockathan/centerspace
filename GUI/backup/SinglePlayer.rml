@@ -1,0 +1,25 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/template" href="window.rml" />
+
+	</head>
+	<body template="window" id="SinglePlayer">
+		<div>Select a Profile</div>
+		<dataprovider datasource="singleplayerprofiles" id="singleplayerprofilesdp">
+			<databoundlist>
+				<databoundtext>@PlayerName@</databoundtext>
+			</databoundlist>
+		</dataprovider>
+		<br/>
+		<div>
+			<form onsubmit="submit" id="newprofileform">
+				<div>Create a New Profile</div>
+				<br/>
+				<div><input type="text" name="newprofilename" id="newprofilename"></input></div><br/>
+				<input type="submit" id="createnewprofile" name="createnewprofile" value="createnewprofile">Create</input><br/>
+			</form>
+		</div>
+		<button id="backtomainmenubutton">Back</button><br />
+	</body>
+</rml>

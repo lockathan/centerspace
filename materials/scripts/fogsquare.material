@@ -1,0 +1,14 @@
+material fogsquare
+{
+    // first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+			ambient 1.0 1.0 1.0 1
+			diffuse 1.0 1.0 1.0 1
+        }
+    }
+		
+}

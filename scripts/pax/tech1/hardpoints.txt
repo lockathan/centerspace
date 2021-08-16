@@ -1,0 +1,9 @@
+Kindjal Laser 1;Kindjal;Light Plasma Cannon;1;1;8.897;9.666;-1.033;none
+Kindjal Laser 2;Kindjal;Light Plasma Cannon;1;1;-8.897;9.666;-1.033;none
+Kindjal Missile 1;Kindjal;Missile T2;3;1;-1.469;9.69;1.156;-1;none
+Kindjal Cannon 1;Kindjal;20mm AC;0;1;1.953;14.417;-0.814;-1;none
+Rapier Laser 1;Rapier;Light Plasma Cannon;1;2;2.268;7.136;2.691;none
+Rapier Laser 2;Rapier;Light Plasma Cannon;1;2;-2.269;7.136;2.687;none
+Rapier Cannon 1;Rapier;20mm AC;0;1;2.268;7.136;2.691;none
+Rapier Cannon 2;Rapier;20mm AC;0;1;-2.269;7.136;2.687;none
+Rapier Missile 1;Rapier;Missile T2;3;1;-1.445;12.166;0.057;none

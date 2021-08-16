@@ -1,0 +1,1 @@
+Electro Magnetic Drive D2;900;750;2;Generic Faction;Electro Magnetic Drive D2;2;60;1;1

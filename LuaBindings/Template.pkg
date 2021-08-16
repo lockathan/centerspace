@@ -1,0 +1,12 @@
+$#include <Templates/Template.h>
+
+class Template
+{
+	Template();
+	virtual ~Template();
+	int getId();
+	void setId(int id);
+	
+	std::string getName();
+	void setName(std::string name);
+};

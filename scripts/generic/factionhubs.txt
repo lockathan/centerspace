@@ -1,0 +1,3 @@
+Hauser Sol;Hauser Industrial;Integrant Foundation;0;Sol
+Pax Sol;Pax Syndicate;Integrant Foundation;0;Sol
+Integrant Sol;Integrant Foundation;Hauser Industrial;0;Sol

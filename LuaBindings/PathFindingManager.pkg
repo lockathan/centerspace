@@ -1,0 +1,10 @@
+$#include <Managers/PathFindingManager.h>
+
+class PathFindingManager
+{
+	PathFindingManager(BattlefieldGrid* grid);
+	~PathFindingManager();
+
+	PathFindingNode* findPath(BattlefieldGridCell* start, BattlefieldGridCell* end, DriveTemplate* drive);
+
+};

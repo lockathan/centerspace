@@ -1,0 +1,55 @@
+$#include <Templates/WeaponTemplate.h>
+
+enum DamageType
+{
+	DT_LASER = 0,
+	DT_PLASMA = 1,
+	DT_CANNON = 2,
+	DT_MISSILE = 3,
+	DT_PIERCING = 4
+};
+
+class WeaponTemplate : public MCUComponentTemplate
+{
+
+	WeaponTemplate();
+	~WeaponTemplate();
+
+	WeaponType getWeaponType();
+	void setWeaponType(WeaponType type);
+	void setWeaponType(int i);
+	
+	float getShieldDamage();
+	void setShieldDamage(float damage);
+	
+	float getArmorDamage();
+	void setArmorDamage(const float& damage);
+
+	float getPiercingDamage();
+	void setPiercingDamage(const float& damage);
+
+	float getRange();
+	void setRange(float range);
+	
+	int getRoundsPerTurn();
+	void setRoundsPerTurn(int rounds);
+	
+	int getMaxAmmo();
+	void setMaxAmmo(int maxAmmo);
+	
+	float getEnergyDrain();
+	void setEnergyDrain(float drain);
+
+	bool canFit(HardpointType hType);
+	
+	bool isIndirectFireCapable();
+	void setIndirectFireCapable(bool value);
+
+	ProjectileTemplate* getProjectileTemplate();
+	void setProjectileTemplate(ProjectileTemplate* t);
+
+	DamageType getDamageType();
+	void setDamageType(DamageType type);
+
+	std::hash_map<std::string, std::string> getGuiValues();
+};

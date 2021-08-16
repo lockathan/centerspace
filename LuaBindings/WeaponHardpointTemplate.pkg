@@ -1,0 +1,29 @@
+$#include <Templates/WeaponHardpointTemplate.h>
+
+class WeaponHardpointTemplate : public Template
+{
+	WeaponHardpointTemplate();
+	~WeaponHardpointTemplate();
+
+	HardpointType getHardpointType();
+	void setHardpointType(HardpointType type);
+	void setHardpointType(int i);
+
+	int getMaxWeaponSize();
+	void setMaxWeaponSize(int maxSize);
+
+	WeaponTemplate* getDefaultWeapon();
+	void setDefaultWeapon(WeaponTemplate* defaultWeapon);
+
+	int getHardpointNumber();
+	void setHardpointNumber(int hNumber);
+
+	Ogre::Vector3 getBarrelOffset();
+	void setBarrelOffset(float x, float y, float z);
+	void setBarrelOffset(Ogre::Vector3 location);
+
+	std::string getFiringBoneName();
+	void setFiringBoneName(std::string bone);
+
+	WeaponHardpoint* instantiate(bool useDefaults);
+};

@@ -1,0 +1,1118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include=".\Managers\GameManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Game\Main.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include=".\States\MainMenuState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Input\InputListener.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\MechanizedCombatUnit.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Terrain\Divider.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\FileInterfaceOgre3D.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\RocketRenderer.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\RenderInterfaceOgre3D.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\SystemInterfaceOgre3D.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Terrain\TerrainImgGenerator.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\WeaponHardpoint.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\States\GameState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\WeaponTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\WeaponHardpointTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\RepositoryManager.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\BatteryTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\DriveTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\ReactorTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\WeaponTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\MCUTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\MCUTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\BatteryTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\DriveTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\MCUTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\ReactorTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\WeaponTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\CSVFileParser.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\Template.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\BatteryTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\DriveTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\ReactorTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\WeaponHardpointTemplateDataLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Controllers\MCUAnimationController.cpp">
+      <Filter>Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Managers\PhysicsManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\States\InBattleState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include=".\States\MissionBriefingState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Terrain\TerrainManager.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\TerrainTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\TerrainTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\TerrainTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\BattlefieldTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\BattlefieldTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\BattlefieldTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\States\InventoryState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include=".\States\CampaignState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include=".\States\InBaseState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include=".\States\PlayerState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\FactionTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\FactionTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\FactionTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\States\PlayerBattleState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\BattlefieldGrid.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\BattlefieldGridCell.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Managers\SQLiteDBManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Managers\DbNames.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\PlayerProfile.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\CampaignElement.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\States\MCUBayState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\MCUComponentTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\RocketDocuments.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\RocketDocumentDefinition.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\PersistentEntity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\HubTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\HubTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\HubTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\RandomMission.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Managers\RandomMissionGenerator.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Managers\CampaignMissionManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\FactionHubTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\FactionHubTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\FactionHubTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\AIMCUTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\AIMCUTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\AIMCUTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\AIGroupTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\AIGroupTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\AIGroupTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\RequiredRankTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\GridSquare.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\DataBoundTextElement.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\DataProviderElement.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\DataBoundListElement.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\DataProvider.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\DataSet.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\DataBoundElement.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\DataBoundListItemElement.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\TextRenderer.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\BtOgre\BtOgre.cpp">
+      <Filter>BtOgre</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Controllers\MCUController.cpp">
+      <Filter>Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\PathFindingNode.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Managers\PathFindingManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Controllers\KinematicCharacterController.cpp">
+      <Filter>Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\WeaponButtonElement.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\DataSource.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\AnimationDefinitionTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\WeaponAnimationTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\AnimationDefinitionTemplateDataLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\WeaponAnimationTemplateDataLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\Projectile.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\TargetingSystemTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\TargetingSystemTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\TargetingSystemTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\Shield.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\ShieldTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\ShieldTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\ShieldTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\BeamProjectile.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\BeamProjectileTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\BeamProjectileTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\BeamProjectileTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\PhysicalProjectile.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\PhysicalProjectileTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\PhysicalProjectileTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\PhysicalProjectileTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\MCUComponent.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\MCUComponentTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\ArmorTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\ArmorTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\ArmorTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\SensorSystemTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\SensorSystemTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\SensorSystemTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\FogSquare.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\GridSquareVector.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\GridSquareTemplate.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\GridSquareTemplateVector.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\GridSquareJoinChecker.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Managers\LuaStateManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Managers\InGameCamera.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\DataBoundCssProperty.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\Mission.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\States\ProfileManagerState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include=".\AI\AIGroup.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\AI\GroupAttackOrder.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\AI\GroupMoveOrder.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\AI\GroupMoveToAttackOrder.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\AI\GroupOrder.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\AI\MCUOrderStatus.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\AI\CoverageMap.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\LuaLibRocket\LuaDocument.cpp">
+      <Filter>LuaLibRocket</Filter>
+    </ClCompile>
+    <ClCompile Include=".\LuaLibRocket\LuaElement.cpp">
+      <Filter>LuaLibRocket</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\LuaRocketEventInstancer.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\LuaScriptElement.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\LuaLibRocket\LuaElementCache.cpp">
+      <Filter>LuaLibRocket</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\ExplosionSet.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\Explosion.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\GUI\DataBoundImageElement.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\TerrainTextureTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\TerrainTextureTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\TerrainTextureTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\StateChange\BattleResult.cpp">
+      <Filter>StateChange</Filter>
+    </ClCompile>
+    <ClCompile Include=".\StateChange\MCUComponentStatus.cpp">
+      <Filter>StateChange</Filter>
+    </ClCompile>
+    <ClCompile Include=".\StateChange\MCUStatus.cpp">
+      <Filter>StateChange</Filter>
+    </ClCompile>
+    <ClCompile Include=".\StateChange\PlayerResult.cpp">
+      <Filter>StateChange</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\RandomMissionTypeTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\RandomMissionTypeTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\RandomMissionTypeTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\LuaBindings\LuaMCUDeque.cpp">
+      <Filter>LuaBindings</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\StoryMissionTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\StoryMissionTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\StoryMissionTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\StateChange\PlayerPreBattleState.cpp">
+      <Filter>StateChange</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\RankTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\RankTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\RankTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Entities\GridSquareJoinTemplate.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\SoundTemplateRepository.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Repositories\SoundTemplateRepositoryLoader.cpp">
+      <Filter>Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include=".\Templates\SoundTemplate.cpp">
+      <Filter>Templates</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\Templates\BatteryTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Managers\GameManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\MainMenuState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Input\InputListener.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\MechanizedCombatUnit.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Terrain\Divider.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\FileInterfaceOgre3D.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\RocketRenderer.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\RenderInterfaceOgre3D.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\ReactorTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\DriveTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\SystemInterfaceOgre3D.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Terrain\TerrainImgGenerator.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\WeaponHardpoint.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\WeaponHardpointTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\GameState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\WeaponTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\BatteryTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\DriveTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\ReactorTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\Repository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\RepositoryManager.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\WeaponTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\RepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\MCUTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\MCUTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\BatteryTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\DriveTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\MCUTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\ReactorTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\WeaponTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\Template.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\CSVFileParser.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\DataLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\WeaponHardpointTemplateDataLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Controllers\MCUAnimationController.h">
+      <Filter>Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Managers\PhysicsManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\MyMotionState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\InBattleState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\MissionBriefingState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Terrain\TerrainManager.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\TerrainTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\TerrainTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\TerrainTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\BattlefieldTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\BattlefieldTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\BattlefieldTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\InventoryState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\CampaignState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\InBaseState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\PlayerState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\FactionTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\FactionTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\FactionTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\PlayerBattleState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\BattlefieldGrid.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\BattlefieldGridCell.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Managers\SQLiteDBManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Managers\DbNames.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\PlayerProfile.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\CampaignElement.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\MCUBayState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\MCUComponentTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\RocketDocumentDefinition.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\RocketDocuments.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\PersistentEntity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\Enums.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\HubTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\HubTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\HubTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\RandomMission.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Managers\RandomMissionGenerator.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Managers\CampaignMissionManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\FactionHubTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\FactionHubTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\FactionHubTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\AIMCUTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\AIMCUTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\AIMCUTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\AIGroupTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\AIGroupTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\AIGroupTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\RequiredRankTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\GridSquare.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\DataBoundTextElement.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\DataProviderElement.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\DataBoundListElement.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\DataProvider.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\DataSet.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\DataBoundElement.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\DataBoundListItemElement.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\TextRenderer.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\BtOgre\BtOgreExtras.h">
+      <Filter>BtOgre</Filter>
+    </ClInclude>
+    <ClInclude Include=".\BtOgre\BtOgreGP.h">
+      <Filter>BtOgre</Filter>
+    </ClInclude>
+    <ClInclude Include=".\BtOgre\BtOgrePG.h">
+      <Filter>BtOgre</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\Enums.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Controllers\MCUController.h">
+      <Filter>Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\PathFindingNode.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Managers\PathFindingManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Controllers\KinematicCharacterController.h">
+      <Filter>Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\WeaponButtonElement.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\DataSource.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\AnimationDefinitionTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\WeaponAnimationTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\AnimationDefinitionTemplateDataLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\WeaponAnimationTemplateDataLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\ProjectileTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\Projectile.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\TargetingSystemTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\TargetingSystemTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\TargetingSystemTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\Shield.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\ShieldTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\ShieldTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\ShieldTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\BeamProjectile.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\BeamProjectileTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\BeamProjectileTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\BeamProjectileTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\PhysicalProjectile.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\PhysicalProjectileTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\PhysicalProjectileTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\PhysicalProjectileTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\MCUComponent.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\MCUComponentTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\ArmorTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\ArmorTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\ArmorTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\SensorSystemTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\SensorSystemTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\SensorSystemTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\FogSquare.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\GridSquareVector.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\GridSquareTemplate.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\GridSquareTemplateVector.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\GridSquareJoinChecker.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Managers\LuaStateManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Managers\InGameCamera.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\DataBoundCssProperty.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\LuaBindings\CenterSpace.hpp">
+      <Filter>LuaBindings</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\Mission.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\MCUPlacement.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\ProfileManagerState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\AI\AIGroup.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\AI\GroupAttackOrder.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\AI\GroupMoveOrder.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\AI\GroupMoveToAttackOrder.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\AI\GroupOrder.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\AI\MCUOrderStatus.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\AI\CoverageMap.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\LuaLibRocket\LuaDocument.h">
+      <Filter>LuaLibRocket</Filter>
+    </ClInclude>
+    <ClInclude Include=".\LuaLibRocket\LuaElement.h">
+      <Filter>LuaLibRocket</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\LuaRocketEventInstancer.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\LuaScriptElement.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\LuaLibRocket\LuaElementCache.h">
+      <Filter>LuaLibRocket</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\ExplosionSet.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\Explosion.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\GUI\DataBoundImageElement.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\TerrainTextureTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\TerrainTextureTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\TerrainTextureTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\StateChange\BattleResult.h">
+      <Filter>StateChange</Filter>
+    </ClInclude>
+    <ClInclude Include=".\StateChange\MCUComponentStatus.h">
+      <Filter>StateChange</Filter>
+    </ClInclude>
+    <ClInclude Include=".\StateChange\MCUStatus.h">
+      <Filter>StateChange</Filter>
+    </ClInclude>
+    <ClInclude Include=".\StateChange\PlayerResult.h">
+      <Filter>StateChange</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\MovableEntity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\States\BattleResultInterpreter.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\RandomMissionTypeTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\RandomMissionTypeTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\RandomMissionTypeTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\LuaBindings\LuaMCUDeque.h">
+      <Filter>LuaBindings</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\StoryMissionTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\StoryMissionTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\StoryMissionTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\StateChange\PlayerPreBattleState.h">
+      <Filter>StateChange</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\RankTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\RankTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\RankTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Entities\GridSquareJoinTemplate.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\SoundTemplateRepository.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Repositories\SoundTemplateRepositoryLoader.h">
+      <Filter>Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include=".\Templates\SoundTemplate.h">
+      <Filter>Templates</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\Assets\Stylesheets\centerspace.css" />
+    <None Include=".\Assets\RML\MainMenu.rml" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="States">
+      <UniqueIdentifier>{b70fda62-3a83-4c3e-acec-f4179cefffb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{9e3bcc2e-b16e-4f1c-bb2a-632fd2b39e8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{4a26a91e-9a74-4bf9-92ad-b2265e070795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{a1246ce0-e9f2-40be-b388-de9276350f89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Templates">
+      <UniqueIdentifier>{1e775bb7-10bb-4ee6-88f5-f808f2df768a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{5f5567cf-3e26-4c36-8fd9-416da8c7a9b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Terrain">
+      <UniqueIdentifier>{34fc940e-fa2d-4bfd-9911-18b5b1a2b111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{20c588d5-f245-4a8e-a799-375adfdcaea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Repositories">
+      <UniqueIdentifier>{2441a0e7-c605-4dd2-887f-26fb1395e8c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controllers">
+      <UniqueIdentifier>{9210322b-1abc-4c6f-8205-a36c79006e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BtOgre">
+      <UniqueIdentifier>{83f22919-9f94-4abd-99f2-bcacce254c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaBindings">
+      <UniqueIdentifier>{fd603216-a6f8-4f40-8216-349f0e34b1a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{0922d33c-5dfc-41e0-ad94-27f9a7196631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaLibRocket">
+      <UniqueIdentifier>{19e7c5be-99e4-441d-be38-7f774f3c27b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StateChange">
+      <UniqueIdentifier>{fba8a098-2d95-4aef-aa99-61dafa4bbf4e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

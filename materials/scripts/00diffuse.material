@@ -1,0 +1,149 @@
+vertex_program diffuse_vs cg
+{
+    source diffuse.cg
+    profiles vs_1_1 arbvp1
+    entry_point diffuse_vs
+
+    default_params
+    {
+        param_named_auto wMat world_matrix
+        param_named_auto wvpMat worldviewproj_matrix
+        param_named_auto tvpMat texture_viewproj_matrix 0
+        param_named_auto spotlightDir light_direction_object_space 0
+    }
+}
+
+fragment_program diffuse_ps cg
+{
+    source diffuse.cg
+    profiles ps_2_x arbfp1
+    entry_point diffuse_ps
+
+    default_params
+    {
+        param_named_auto spotlightParams spotlight_params 0
+		//param_named GridWidth float 10
+		param_named_auto lightDif0 light_diffuse_colour 0
+        param_named_auto lightSpec0 light_specular_colour 0
+        param_named_auto camPos camera_position
+        param_named_auto shininess surface_shininess
+        param_named_auto lightPos0 light_position 0
+        param_named_auto lightAtt0 light_attenuation 0
+    }
+}
+
+// A really basic ambient pass program, support for one texture coodinate set
+vertex_program Ogre/BasicVertexPrograms/AmbientOneTexture cg
+{
+    source ambientOneTexture.cg
+    entry_point ambientOneTexture_vp
+    profiles arbvp1 vs_1_1
+ 
+    default_params
+    {
+        param_named_auto worldViewProj worldviewproj_matrix
+        param_named_auto ambient ambient_light_colour
+    }
+}
+
+material diffuse_template
+{
+	technique lighting
+	{
+	    //scheme lighting
+
+	    pass
+	    {
+            ambient  1 1 1
+            diffuse  0 0 0
+            specular 0 0 0 0
+            emissive 0 0 0
+
+			// Really basic vertex program
+            vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+            {
+            } 
+	    }
+		pass
+		{
+		    max_lights 8
+			scene_blend add
+            iteration once_per_light
+
+            ambient  0 0 0
+            diffuse  1 1 1
+            specular 1 1 1 128
+
+            vertex_program_ref diffuse_vs
+            {
+            }
+
+            fragment_program_ref diffuse_ps
+            {
+            }
+			
+			texture_unit 
+            {
+                texture RttTex
+				tex_coord_set 0
+				filtering none
+            }
+			
+			texture_unit shadow_tex
+            {
+                content_type shadow
+				tex_coord_set 0
+                filtering anisotropic
+                max_anisotropy 16
+            }
+			
+			texture_unit diffuse_tex1
+			{
+				tex_coord_set 1
+			}
+			
+			texture_unit diffuse_tex2
+			{
+				tex_coord_set 1
+			}
+			
+			texture_unit diffuse_tex3
+			{
+				tex_coord_set 1
+			}
+			
+			texture_unit diffuse_tex4
+			{	
+				tex_coord_set 1
+			}
+			
+			texture_unit diffuse_tex5
+			{
+				tex_coord_set 1
+			}
+			
+			texture_unit diffuse_tex6
+			{
+				tex_coord_set 1
+			}
+			
+			texture_unit diffuse_tex7
+			{
+				tex_coord_set 1
+			}
+		}
+	}
+}
+
+material terraintest : diffuse_template
+{
+    set_texture_alias diffuse_tex1 stone_03.bmp
+    set_texture_alias diffuse_tex2 ground_03.bmp
+	set_texture_alias diffuse_tex3 ground_04.bmp
+	set_texture_alias diffuse_tex4 stone_04.bmp
+	set_texture_alias diffuse_tex5 stone_04.bmp
+	set_texture_alias diffuse_tex6 stone_04.bmp
+	set_texture_alias diffuse_tex7 stone_04.bmp
+	
+}
+

@@ -1,0 +1,97 @@
+struct VIn {
+    float4 p    : POSITION;
+    float3 n    : NORMAL;
+	float2 fogUV : TEXCOORD0;
+    float2 textureUV   : TEXCOORD1;
+	float4 texCoord1 : TEXCOORD2;
+	float4 texCoord2 : TEXCOORD3;
+};
+
+struct VOut {
+    float4 p    : POSITION;
+    float2 fogUV   : TEXCOORD0;
+	float2 textureUV: TEXCOORD1;
+	float4 texCoord1 : TEXCOORD2;
+	float4 texCoord2 : TEXCOORD3;
+	float4 wp   : TEXCOORD4;
+};
+
+struct PIn {
+    float2 fogUV   : TEXCOORD0;
+	float2 textureUV: TEXCOORD1;
+	float4 texCoord1 : TEXCOORD2;
+	float4 texCoord2 : TEXCOORD3;
+	float4 wp   : TEXCOORD4;
+};
+
+struct POut {
+    float4 c : COLOR;
+};
+
+VOut decal_vs(VIn IN,
+    uniform float4x4 wMat,
+    uniform float4x4 wvpMat
+    ) {
+    VOut OUT;
+    OUT.wp = mul(wMat, IN.p);
+    OUT.p = mul(wvpMat, IN.p);
+
+	OUT.fogUV = IN.fogUV;
+	OUT.textureUV = IN.textureUV;
+	OUT.texCoord1 = IN.texCoord1;
+	OUT.texCoord2 = IN.texCoord2;
+	
+
+    return OUT;
+}
+
+// to put it simply, this does 100% per pixel diffuse lighting
+POut decal_fs(PIn IN,
+	uniform sampler2D fogMap : TEXUNIT0,
+	uniform sampler2D dMap0 : TEXUNIT1,
+	uniform sampler2D dMap1 : TEXUNIT2,
+	uniform sampler2D dMap2 : TEXUNIT3,
+	uniform sampler2D dMap3 : TEXUNIT4,
+	uniform sampler2D dMap4 : TEXUNIT5,
+	uniform sampler2D dMap5 : TEXUNIT6,
+	uniform sampler2D dMap6 : TEXUNIT7,
+	uniform sampler2D gridTexture : TEXUNIT8,
+	uniform float GridWidth
+    ) {
+    POut OUT;
+
+    // direction
+	
+	float4 tx0Colour = tex2D(dMap0, IN.textureUV);
+	float4 tx1Colour = tex2D(dMap1, IN.textureUV);
+	float4 tx2Colour = tex2D(dMap2, IN.textureUV);
+	float4 tx3Colour = tex2D(dMap3, IN.textureUV);
+	float4 tx4Colour = tex2D(dMap4, IN.textureUV);
+	float4 tx5Colour = tex2D(dMap5, IN.textureUV);
+	float4 tx6Colour = tex2D(dMap6, IN.textureUV);
+	
+	float3 diffuseTex = (tx0Colour * IN.texCoord1.y) + (tx1Colour * IN.texCoord1.z) + (tx2Colour * IN.texCoord1.w) + (tx3Colour * IN.texCoord2.x)  + (tx4Colour * IN.texCoord2.y)  + (tx5Colour * IN.texCoord2.z) + tx6Colour * IN.texCoord2.w;
+	
+	float3 fogColour = tex2D(fogMap, IN.fogUV);
+	
+	float u = IN.wp.x / GridWidth;
+	float v = IN.wp.z / GridWidth;
+	//float c1 = step(0.032, u);
+	//float c3 = step(0.032, v);
+	
+	float4 gridColour = tex2D(gridTexture, float2(u,v));
+	float4 outColour = float4(diffuseTex, 1);
+	if(IN.texCoord1.x < 0.5)
+	{
+		outColour = (gridColour.a * gridColour) + ((1 - gridColour.a) * outColour);
+		outColour = saturate(outColour);
+	}
+	OUT.c = outColour * 0.5;
+	if(fogColour.x > 0.5)
+	{
+		OUT.c = outColour;
+	}
+	
+    return OUT;
+}
+

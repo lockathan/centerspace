@@ -1,0 +1,6 @@
+$#include <Repositories/HubTemplateRepositoryLoader.h>
+
+class HubTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, HubTemplateRepository* r);	
+};

@@ -1,0 +1,49 @@
+
+vertex_program decal_vs cg
+{
+    source decal_stage.cg
+    profiles vs_1_1 arbvp1
+    entry_point decal_vs
+
+    default_params
+    {
+        param_named_auto wMat world_matrix
+        param_named_auto wvpMat worldviewproj_matrix
+    }
+}
+
+fragment_program decal_fs cg
+{
+    source decal_stage.cg
+    profiles ps_2_x arbfp1
+    entry_point decal_fs
+
+    default_params
+    {
+		param_named GridWidth float 10
+    }
+}
+
+vertex_program decal_mcus_vs cg
+{
+    source decal_stage_mcus.cg
+    profiles vs_1_1 arbvp1
+    entry_point decal_mcus_vs
+
+    default_params
+    {
+        param_named_auto wvpMat worldviewproj_matrix
+    }
+}
+
+fragment_program decal_mcus_fs cg
+{
+    source decal_stage_mcus.cg
+    profiles ps_2_x arbfp1
+    entry_point decal_mcus_fs
+
+    default_params
+    {
+	
+    }
+}

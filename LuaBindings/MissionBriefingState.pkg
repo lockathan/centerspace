@@ -1,0 +1,18 @@
+$#include <States/MissionBriefingState.h>
+
+class MissionBriefingState : public GameState 
+{
+	~MissionBriefingState(){}
+
+	void enter();
+	void exit();
+
+	void pause();
+	void resume();
+	void createScene();
+	void destroyScene();
+
+	void update( float timeSinceLastFrame );
+
+	static MissionBriefingState* getSingletonPtr();
+};

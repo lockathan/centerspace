@@ -1,0 +1,17 @@
+material MCU_Missile_Diff
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+
+			texture_unit
+			{
+				texture Missile.png
+			}
+		}
+
+	}
+
+}

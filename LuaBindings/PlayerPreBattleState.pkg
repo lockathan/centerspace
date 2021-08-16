@@ -1,0 +1,44 @@
+$#include <StateChange/PlayerPreBattleState.h>
+
+class PlayerPreBattleState
+{
+	PlayerProfile* getPlayerProfile();
+	void setPlayer(PlayerProfile* player);
+
+	int getTeam();
+	void setTeam(int team);
+
+	int getPlayerNumber();
+	void setPlayerNumber(int n);
+
+	FactionTemplate* getFactionTemplate();
+	void setFactionTemplate(FactionTemplate* faction);
+		
+	bool isLocal();
+	void setLocal(bool value);
+	
+	bool needsRender();
+	void setNeedsRender(bool value);
+
+	bool isAI();
+	void setAI(bool value);
+
+	std::string getAIScriptName();
+	void setAIScriptName(const std::string& script);
+
+	std::string getAIScriptEntryPoint();
+	void setAIScriptEntryPoint(const std::string& entry);
+
+	std::deque<MCUPlacement*>& getMCUPlacements();
+
+	std::deque<AIGroupTemplate*>& getAIGroupTemplates();
+	void addAIGroupTemplate(AIGroupTemplate* group);
+
+	std::deque<AIGroup*>& getAIGroups();
+	void addAIGroup(AIGroup* group);
+
+	LuaMCUDeque* getLuaMCUDeque();
+	void setLuaMCUDeque(LuaMCUDeque* deque);
+
+	bool isCellOccupied(int x, int z);
+};

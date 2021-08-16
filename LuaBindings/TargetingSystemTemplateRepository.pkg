@@ -1,0 +1,9 @@
+$#include <Repositories/TargetingSystemTemplateRepository.h>
+
+class TargetingSystemTemplateRepository : public Repository<TargetingSystemTemplate>
+{
+	static TargetingSystemTemplateRepository* getSingletonPtr();
+	~TargetingSystemTemplateRepository();
+
+	std::vector<TargetingSystemTemplate*> getAvailableTemplates(int factionId, int rank, int size = 0);
+};

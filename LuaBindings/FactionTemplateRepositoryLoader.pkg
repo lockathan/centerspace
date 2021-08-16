@@ -1,0 +1,6 @@
+$#include <Repositories/FactionTemplateRepositoryLoader.h>
+
+class FactionTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, FactionTemplateRepository* r);
+};

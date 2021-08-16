@@ -1,0 +1,17 @@
+material Kindjal_MeshMCU_03_Kindjal_Tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+
+			texture_unit
+			{
+				texture MCU_03_Tex.png
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,16 @@
+$#include <Templates/TargetingSystemTemplate.h>
+
+class TargetingSystemTemplate : public MCUComponentTemplate
+{
+	TargetingSystemTemplate();
+	~TargetingSystemTemplate();
+	
+	float getBaseAccuracy();
+	void setBaseAccuracy(float value);
+	
+	float getObstructedBonus();
+	void setObstructedBonus(float value);
+	
+	float getLongRangeBonus();
+	void setLongRangeBonus(float value);
+};

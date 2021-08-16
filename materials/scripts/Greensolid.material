@@ -1,0 +1,87 @@
+vertex_program shadow_caster_vs_g cg
+{
+    // source file
+    source shadow_caster.cg
+    // will run on vertex shader 1.1+
+    profiles vs_1_1 arbvp1
+    // entry function
+    entry_point shadow_caster_vs
+
+    default_params
+    {
+        // pMat == projection matrix
+        param_named_auto pMat projection_matrix
+        // wvMat == world * view matrix
+        param_named_auto wvMat worldview_matrix
+    }
+}
+ 
+material Greensolid
+{
+	technique
+	{
+	    //scheme lighting
+
+	    pass
+	    {
+            ambient  1 1 1
+            diffuse  0 0 0
+            specular 0 0 0 0
+            emissive 0 0 0
+
+			// Really basic vertex program
+            vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+            {
+            }
+			
+			fragment_program_ref PassthroughFp
+			{
+			}
+			
+			shadow_caster_vertex_program_ref shadow_caster_vs_g
+			{
+			}
+	    }
+		pass
+		{
+			iteration once_per_light
+			ambient 0 0 0 
+			diffuse 1 1 1
+			specular 1 1 1 1
+			scene_blend add
+			vertex_program_ref diffuse_vs
+			{
+			}
+
+			fragment_program_ref diffuse_ps
+			{
+			}
+			texture_unit
+			{
+				content_type shadow
+				tex_address_mode clamp
+				filtering none
+			}
+		}
+		
+		pass
+		{
+			lighting off
+			
+			vertex_program_ref decal_mcus_vs
+            {
+            }
+
+            fragment_program_ref decal_mcus_fs
+            {
+            }
+			
+			scene_blend dest_colour zero
+			
+			texture_unit
+			{
+				texture nskingr.jpg
+			}
+		}
+	}
+}

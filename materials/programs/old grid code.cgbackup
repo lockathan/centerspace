@@ -1,0 +1,8 @@
+float f = step(1, c1 + c3);
+	float f2 = (c1 + c3) - 1;
+	f2 = f2 * sign(f2);
+	
+	float decider = (IN.texCoord1.x * 2) - 1;
+	f = max(decider * f, decider * f2 * -1);
+	float4 outColour = float4(diffuseTex, 1) * f;
+	

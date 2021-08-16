@@ -1,0 +1,16 @@
+$#include <Templates/BeamProjectileTemplate.h>
+
+class BeamProjectileTemplate : public ProjectileTemplate
+{
+	BeamProjectileTemplate();
+	~BeamProjectileTemplate();
+
+	float getDuration();
+	void setDuration(const float& duration);
+
+	std::string getMaterialName();
+	void setMaterialName(const std::string& name);
+
+	float getBeamWidth();
+	void setBeamWidth(const float& width);
+};

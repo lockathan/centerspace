@@ -1,0 +1,9 @@
+<RML>
+	<HEAD>
+		<TITLE>Center Space</TITLE>
+		<LINK type="text/rcss" href="../StyleSheets/centerspace.css"/>
+	</HEAD>
+	<BODY>
+		<div>Welcome to Center Space</div>
+	</BODY>
+</RML>

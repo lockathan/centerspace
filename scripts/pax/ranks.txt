@@ -1,0 +1,5 @@
+Hacker;1;Pax Syndicate;0
+Dissident;2;Pax Syndicate;1
+Anarchist;3;Pax Syndicate;15
+Skeptic;4;Pax Syndicate;9999
+Free Thinker;5;Pax Syndicate;99999

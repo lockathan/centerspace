@@ -1,0 +1,36 @@
+$#include <Controllers/MCUAnimationController.h>
+
+enum FiringPhase
+{
+	NOT_FIRING = 0,
+	ENTER_ANIM = 1,
+	FIRE_ANIM = 2,
+	EXIT_ANIM = 3
+};
+
+class MCUAnimationController : public GameManager::EngineUpdateListener
+{
+	MCUAnimationController(Ogre::SceneNode* node, Ogre::Entity* entity, AnimationDefinitionTemplate* anim, MCUController* controller, float walkingAnimationSpeed = 1.f);
+	~MCUAnimationController();
+
+	Ogre::SceneNode * getBodySceneNode();
+	Ogre::Vector3 getPosition() const;
+
+	void animWalkStart();
+	void animWalkEnd();
+	void animJumpStart();
+	void animJumpLoop();
+	void animJumpEnd();
+	void animDie();
+	void startFiringAnimation(int hardpoint);
+
+	void setIsMoving(bool isMoving);
+	
+	bool isEnabled();
+	void setEnabled(bool isEnabled);
+	
+	MCUController* getMCUController();
+	void setMCUController(MCUController* controller);
+
+	virtual void update( float timeSinceLastFrame );
+};

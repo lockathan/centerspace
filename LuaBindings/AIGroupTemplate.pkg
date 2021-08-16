@@ -1,0 +1,34 @@
+$#include <Templates/AIGroupTemplate.h>
+
+class AIGroupTemplate : public RequiredRankTemplate
+{
+	enum AIGroupType
+	{
+		VERY_LIGHT = 0,
+		LIGHT = 1,
+		MEDIUM = 2,
+		HEAVY = 3,
+		MIXED_LIGHT_AND_HEAVY = 4,
+		MIXED_LIGHT_MEDIUM_AND_HEAVY = 5
+	};
+
+	AIGroupTemplate();
+	~AIGroupTemplate();
+	
+	std::deque<std::pair<int,AIMCUTemplate*>>& getAIMCUs();
+	void setAIMCUs(std::deque<std::pair<int,AIMCUTemplate*>>& mcus);
+	void addAIMCU(int count, AIMCUTemplate* mcu);
+	void addAIMCU(std::pair<int, AIMCUTemplate*> mcu);
+	AIGroupType getType();
+	void setType(AIGroupType type);
+	void setType(int type);
+
+	std::deque<MechanizedCombatUnit*>& getMCUs();
+
+	FactionTemplate* getFactionTemplate();
+	void setFactionTemplate(FactionTemplate* faction);
+
+	int getSize();
+	int getStrength();
+
+};

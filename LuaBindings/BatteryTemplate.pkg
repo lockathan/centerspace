@@ -1,0 +1,13 @@
+$#include <Templates/BatteryTemplate.h>
+
+class BatteryTemplate : public MCUComponentTemplate
+{
+	BatteryTemplate();
+	~BatteryTemplate();
+	
+	float getMaxEnergy();
+	void setMaxEnergy(float maxEnergy);
+	
+	
+	
+};

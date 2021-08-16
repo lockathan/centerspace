@@ -1,0 +1,13 @@
+$#include <Templates/FactionTemplate.h>
+
+class FactionTemplate : public Template
+{
+	FactionTemplate();
+	~FactionTemplate();
+	
+	std::string getDescription();
+	void setDescription(std::string desc);
+
+	bool isGenericFaction();
+	void setIsGenericFaction(bool value);
+};

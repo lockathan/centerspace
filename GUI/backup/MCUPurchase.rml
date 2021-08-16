@@ -1,0 +1,24 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/template" href="window.rml" />
+	</head>
+	<body template="window" id="MCUPurchase">
+		<dataprovider datasource="mcutemplates" id="mcuselectdp">
+			<databoundlist>
+				<databoundtext>@MCUTemplateName@</databoundtext>
+				<databoundtext>@Cost@</databoundtext>
+			</databoundlist>
+		</dataprovider>
+		<dataprovider datasource="mcutemplates" id="mcuinfodp">
+				<databoundtext>@MCUTemplateName@</databoundtext>
+				<databoundtext>@Description@</databoundtext>
+				<databoundtext>@Cost@</databoundtext>
+		</dataprovider>
+		<dataprovider datasource="singleplayerprofiles" id="campaigninfodp">
+				Remaining Cash: <databoundtext>@Cash@</databoundtext>
+		</dataprovider>
+		<button id="purchasemcu">Purchase</button>
+		<button id="backtomcubayscreen">Back</button>
+	</body>
+</rml>

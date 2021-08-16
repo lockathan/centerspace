@@ -1,0 +1,17 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/template" href="window.rml" />
+	</head>
+	<body template="window" id="MCUSelectEdit">
+		<dataprovider datasource="mcus" id="mcuselectdp">
+			<databoundlist>
+				<databoundtext>@MCUName@</databoundtext>
+			</databoundlist>
+		</dataprovider>
+		<dataprovider datasource="singleplayerprofiles" id="campaigninfodp">
+				Remaining Cash: <databoundtext>@Cash@</databoundtext>
+		</dataprovider>
+		<button id="backtomcubayscreen">Back</button>
+	</body>
+</rml>

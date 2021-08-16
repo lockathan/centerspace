@@ -1,0 +1,4 @@
+Tiny Battlefield;28;2
+Small Battlefield;32;3
+Medium Battlefield;48;5
+Large Battlefield;64;7

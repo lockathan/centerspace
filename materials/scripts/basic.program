@@ -1,0 +1,21 @@
+
+// A really basic ambient pass program, support for one texture coodinate set
+vertex_program Ogre/BasicVertexPrograms/AmbientOneTexture cg
+{
+    source ambientOneTexture.cg
+    entry_point ambientOneTexture_vp
+    profiles arbvp1 vs_1_1
+ 
+    default_params
+    {
+        param_named_auto worldViewProj worldviewproj_matrix
+        param_named_auto ambient ambient_light_colour
+    }
+}
+
+fragment_program PassthroughFp cg
+{
+    entry_point mainCg
+    source PassthroughFP.cg
+    profiles ps_4_0 ps_2_0 arbfp1
+}

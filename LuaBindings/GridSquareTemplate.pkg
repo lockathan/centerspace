@@ -1,0 +1,19 @@
+$#include <Entities/GridSquareTemplate.h>
+
+class GridSquareTemplate
+{
+	int getX();
+	int getY();
+	int getZ();
+
+	void setY(int y);
+
+	bool wasRaised();
+	void setRaised(bool value);
+
+	SquareType getSquareType();
+	void setSquareType(SquareType type);
+
+	TerrainChange getTerrainChange();
+	void setTerrainChange(TerrainChange change);
+};

@@ -1,0 +1,9 @@
+$#include <Repositories/BattlefieldTemplateRepository.h>
+
+class BattlefieldTemplateRepository : public Repository<BattlefieldTemplate>
+{
+	std::deque<BattlefieldTemplate*> getAvailableTemplates();
+
+	static BattlefieldTemplateRepository* getSingletonPtr();
+	~BattlefieldTemplateRepository();
+};

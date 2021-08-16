@@ -1,0 +1,140 @@
+
+void lighting_vs2(
+			float4 position : POSITION,
+			float3 normal   : NORMAL,
+			uniform float4x4 worldviewproj,
+			uniform float4x4 world_matrix,
+			uniform float4x4 tvpMat,
+			out float4 oPos : POSITION,
+			
+			out float3 oNorm: TEXCOORD0,
+			out float4 oWorldPos: TEXCOORD1,
+			out float4 oLP : TEXCOORD2
+         ) 
+{
+	oPos = mul(worldviewproj, position);
+	oWorldPos = mul(world_matrix, position);
+	oNorm     = normal;
+	oLP = mul(tvpMat, oWorldPos);
+}
+ 
+float4 btex2D(sampler2D map, float2 uv, float radius, float steps) {
+    half stepSize = 2.0 * radius / steps;
+    uv.xy -= radius.xx;
+
+    float4 total = float4(0, 0, 0, 0);
+    for (int x = 0; x < steps; ++x)
+        for (int y = 0; y < steps; ++y)
+            total +=
+                tex2D(map, float2(uv.xy + float2(x * stepSize, y * stepSize)));
+
+    return total / (steps * steps);
+}
+
+float computeShadow(
+    sampler2D shadowMap, float4 shadowMapPos, float ourDepth) {
+    float2 suv = shadowMapPos.xy / shadowMapPos.w;
+
+    float2 moments = btex2D(shadowMap, suv, 0.004, 4).rg;
+    float litFactor = (ourDepth <= moments.x ? 1 : 0);
+
+    // standard variance shadow mapping code
+    float E_x2 = moments.y;
+    float Ex_2 = moments.x * moments.x;
+    float vsmEpsilon = 0.0001;
+    float variance = min(max(E_x2 - Ex_2, 0.0) + vsmEpsilon, 1.0);
+    float m_d = moments.x - ourDepth;
+    float p = variance / (variance + m_d * m_d);
+
+    return smoothstep(0.4, 1, max(litFactor, p));
+    //return litFactor;
+}
+ 
+ void lighting_fs2(
+				float3 normal: TEXCOORD0,
+				float4 worldPos: TEXCOORD1,
+				float4 lp : TEXCOORD2,
+				uniform float4 lightPosition0,
+				uniform float4 lightPosition1,
+				uniform float4 lightPosition2,
+				
+				uniform float4 lightAttenuation0,
+				uniform float4 lightAttenuation1,
+				uniform float4 lightAttenuation2,
+			
+				uniform float4 lightDiffuse0,
+				uniform float4 lightDiffuse1,
+				uniform float4 lightDiffuse2, 
+
+				uniform float4 lightSpecular0,
+				uniform float4 lightSpecular1,
+				uniform float4 lightSpecular2,
+
+				uniform float exponent0,
+				uniform float4 camPos,
+				uniform float4 ambient,
+				out float4 oColor : COLOR
+            )
+{ 
+	float3 N = normalize(normal);
+    float3 camDir = normalize(camPos - worldPos.xyz);
+	
+	float3 lightDir = normalize(lightPosition0.xyz - (lightPosition0.w * worldPos.xyz));
+    half lightDist = length(lightPosition0.xyz - worldPos.xyz);
+	
+    float3 halfAngle = normalize(lightDir + camDir);
+	float attenuation = ( 1.0 / (( lightAttenuation0.y ) + ( lightAttenuation0.z * lightDist ) + ( lightAttenuation0.w * lightDist * lightDist ))*60 );
+	if(lightPosition0.w < 0.5)
+	{
+		attenuation = 1;
+	}
+			
+	float NdotL = dot(normalize(lightDir), N);
+	float NdotH = dot(normalize(halfAngle), N);
+
+	float4 Lit = lit(NdotL,NdotH,exponent0);
+	float4 outColour = (lightDiffuse0 * Lit.y + lightSpecular0 * Lit.z) * 0.25 * attenuation;
+	
+	lightDir = normalize(lightPosition1.xyz - (lightPosition1.w * worldPos.xyz));
+    lightDist = length(lightPosition1.xyz - worldPos.xyz);
+	
+    halfAngle = normalize(lightDir + camDir);
+	
+	if(lightPosition1.w < 0.5)
+	{
+		attenuation = 1;
+	}
+	else
+	{
+		attenuation = ( 1.0 / (( lightAttenuation1.y ) + ( lightAttenuation1.z * lightDist ) + ( lightAttenuation1.w * lightDist * lightDist ))*60 );
+	}
+			
+	NdotL = dot(normalize(lightDir), N);
+	NdotH = dot(normalize(halfAngle), N);
+
+	Lit = lit(NdotL,NdotH,exponent0);
+	outColour += (lightDiffuse1 * Lit.y + lightSpecular1 * Lit.z) * 0.25 * attenuation;
+	
+	lightDir = normalize(lightPosition2.xyz - (lightPosition2.w * worldPos.xyz));
+    lightDist = length(lightPosition2.xyz - worldPos.xyz);
+	
+    halfAngle = normalize(lightDir + camDir);
+	if(lightPosition2.w < 0.5)
+	{
+		attenuation = 1;
+	}
+	else
+	{
+		attenuation = ( 1.0 / (( lightAttenuation2.y ) + ( lightAttenuation2.z * lightDist ) + ( lightAttenuation2.w * lightDist * lightDist ))*60 );
+	}
+	
+	NdotL = dot(normalize(lightDir), N);
+	NdotH = dot(normalize(halfAngle), N);
+
+	Lit = lit(NdotL,NdotH,exponent0);
+	outColour += (lightDiffuse2 * Lit.y + lightSpecular2 * Lit.z + ambient) * 0.25 * attenuation;
+
+	oColor = outColour;
+	
+	
+}

@@ -1,0 +1,6 @@
+$#include <Repositories/ReactorTemplateRepositoryLoader.h>
+
+class ReactorTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, ReactorTemplateRepository* r);
+};

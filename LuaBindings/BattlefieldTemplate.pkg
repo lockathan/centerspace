@@ -1,0 +1,14 @@
+$#include <Templates/BattlefieldTemplate.h>
+
+class BattlefieldTemplate : public Template
+{
+	BattlefieldTemplate();
+	~BattlefieldTemplate();
+
+	int getInitialSize();
+	void setInitialSize(int value);
+	
+	int getMinMCUs();
+	void setMinMCUs(int value);
+
+};

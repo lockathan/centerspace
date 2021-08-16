@@ -1,0 +1,80 @@
+vertex_program PerPixel_Lim3_Vert_NoTex cg
+{
+     source PerPixel_no_texture.cg
+ 
+     default_params
+     {
+		param_named_auto lightPosition0 light_position_object_space 0
+		param_named_auto eyePosition camera_position_object_space
+		param_named_auto worldviewproj worldviewproj_matrix
+		param_named_auto world_matrix world_matrix
+		param_named_auto tvpMat texture_viewproj_matrix 0
+     } 
+ 
+     entry_point PerPixel_Lim3_Vert_NoTex
+     profiles vs_1_1 arbvp1
+}
+ 
+ fragment_program PerPixel_Lim3_Frag_NoTex cg
+{
+     source PerPixel_no_texture.cg 
+ 
+     default_params
+     {
+		param_named_auto lightDiffuse0 light_diffuse_colour 0
+		param_named_auto lightSpecular0 light_specular_colour 0
+		param_named exponent0 float 127
+		param_named ambient float4 0.0 0.0 0.0 1.0
+		param_named_auto lightPos0 light_position 0
+		param_named_auto lightAtt0 light_attenuation 0
+     } 
+ 
+     entry_point PerPixel_Lim3_Frag_NoTex
+     profiles ps_2_x arbfp1
+}
+
+vertex_program PerPixel_Lim3_Vert_NoTex2 cg
+{
+     source PerPixel_no_texture.cg
+ 
+     default_params
+     {
+		param_named_auto worldviewproj worldviewproj_matrix
+		param_named_auto world_matrix world_matrix
+		param_named_auto tvpMat texture_viewproj_matrix 0
+     } 
+ 
+     entry_point PerPixel_Lim3_Vert_NoTex2
+     profiles vs_1_1 arbvp1
+}
+ 
+ fragment_program PerPixel_Lim3_Frag_NoTex2 cg
+{
+     source PerPixel_no_texture.cg 
+ 
+     default_params
+     {
+	 
+		param_named_auto lightPosition0 light_position 0
+		param_named_auto lightPosition1 light_position 1
+		param_named_auto lightPosition2 light_position 2
+		
+        param_named_auto lightAttenuation0 light_attenuation 0
+        param_named_auto lightAttenuation1 light_attenuation 1
+        param_named_auto lightAttenuation2 light_attenuation 2
+		
+		param_named_auto lightDiffuse0 light_diffuse_colour 0
+		param_named_auto lightDiffuse1 light_diffuse_colour 1
+		param_named_auto lightDiffuse2 light_diffuse_colour 2
+
+		param_named_auto lightSpecular0 light_specular_colour 0
+		param_named_auto lightSpecular1 light_specular_colour 1
+		param_named_auto lightSpecular2 light_specular_colour 2
+        param_named_auto camPos camera_position
+		param_named exponent0 float 127
+		param_named ambient float4 0.0 0.0 0.0 1.0
+     } 
+ 
+     entry_point PerPixel_Lim3_Frag_NoTex2
+     profiles ps_2_x arbfp1
+}

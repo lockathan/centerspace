@@ -1,0 +1,16 @@
+Interceptor Animation List
+
+Frames 1 - 70 - idle
+       71 - 116 - walk cycle
+       
+       117 - 240 - attack (ground cannons)
+       241 - 470 - attack (SAM turrets)
+       471 - 537 - being hit
+       
+       538 - 582 - take off
+       582 - 622 - hover/fly cycle
+       623 - 673 - land
+       
+       674 - 758 - death
+       
+       

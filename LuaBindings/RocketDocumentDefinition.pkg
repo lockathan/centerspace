@@ -1,0 +1,11 @@
+$#include <GUI/RocketDocumentDefinition.h>
+
+class RocketDocumentDefinition
+{
+	RocketDocumentDefinition(){}
+	RocketDocumentDefinition(Rocket::Core::String id, Rocket::Core::String name, bool modal = false);
+	bool Modal;
+	Rocket::Core::String ID;
+	Rocket::Core::String Filename;
+};
+

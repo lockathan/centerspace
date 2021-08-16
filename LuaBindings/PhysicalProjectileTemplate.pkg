@@ -1,0 +1,26 @@
+$#include <Templates/PhysicalProjectileTemplate.h>
+
+class PhysicalProjectileTemplate : public ProjectileTemplate
+{
+	PhysicalProjectileTemplate();
+	~PhysicalProjectileTemplate();
+
+	std::string getMeshName();
+	void setMeshName(const std::string& name);
+
+	std::string getMaterialName();
+	void setMaterialName(const std::string& name);
+
+	float getMovementSpeed();
+	void setMovementSpeed(const float& speed);
+
+	float getWeight();
+	void setWeight(const float& weight);
+
+	bool isSelfPropelled();
+	void setSelfPropelled(bool value);
+
+	bool isArching();
+	void setArching(bool value);
+
+};

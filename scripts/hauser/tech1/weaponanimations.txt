@@ -1,0 +1,10 @@
+Interceptor laser anim 1;Interceptor;0;arm cannon stance IN;1.0;arm cannon fire left;1.0;arm cannon stance OUT;1.0
+Interceptor laser anim 2;Interceptor;1;arm cannon stance IN;1.0;arm cannon fire right;1.0;arm cannon stance OUT;1.0
+Interceptor cannon anim 1;Interceptor;2;SAM turret stance IN;4.0;SAM turret fire left;1.0;SAM turret stance OUT;4.0
+Interceptor cannon anim 1;Interceptor;3;SAM turret stance IN;4.0;SAM turret fire right;1.0;SAM turret stance OUT;4.0
+Warthog laser anim 1;Warthog;0;none;1.0;arm cannon fire left;1.0;none;1.0
+Warthog laser anim 2;Warthog;1;none;1.0;arm cannon fire right;1.0;none;1.0
+Warthog cannon anim 1;Warthog;2;torso cannon stance IN;2.0;torso cannon fire left;1.0;torso cannon stance OUT;2.0
+Warthog cannon anim 1;Warthog;3;torso cannon stance IN;2.0;torso cannon fire right;1.0;torso cannon stance OUT;2.0
+Warthog missile anim 1;Warthog;4;none;1.0;shoulder missiles fire;1.0;none;1.0
+Warthog missile anim 1;Warthog;5;none;1.0;shoulder missiles fire;1.0;none;1.0

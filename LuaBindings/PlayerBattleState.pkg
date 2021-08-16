@@ -1,0 +1,76 @@
+$#include <States/PlayerBattleState.h>
+
+class PlayerBattleState
+{
+	PlayerBattleState();
+	PlayerBattleState(PlayerProfile* player,FactionTemplate* faction, int team, int playerNumber);
+	~PlayerBattleState();
+
+	void startTurn();
+	void endTurn();
+	void endMyTurn();
+
+	PlayerProfile* getPlayerProfile();
+	void setPlayer(PlayerProfile* player);
+
+	int getTeam();
+	void setTeam(int team);
+
+	bool isMyTurn();
+	void setMyTurn(bool turn);
+
+	int getPlayerNumber();
+	void setPlayerNumber(int n);
+
+	std::deque<MCUController*> getMCUs();
+	void addMCU(MCUController* mcu);
+	void setMCUs(std::deque<MCUController*> mcus);
+	
+	FactionTemplate* getFactionTemplate();
+	void setFactionTemplate(FactionTemplate* faction);
+		
+	bool isLocal();
+	void setLocal(bool value);
+
+	bool needsRender();
+	void setNeedsRender(bool value);
+
+	bool isAI();
+	void setAI(bool value);
+
+	std::deque<Projectile*> getProjectiles();
+	void addProjectile(Projectile* proj);
+	void removeProjectile(Projectile* proj);
+
+	void loadScript(const std::string& scriptName, const std::string& scriptEntryPoint);
+	
+	std::string getAIScriptEntryPoint();
+	std::string getAIScriptName();
+
+	int getAverageMCUXPos();
+	int getAverageMCUZPos();
+
+	void updateVisibilityState();
+	std::hash_map<std::string,std::string> getGuiValues();
+
+	void setAIGroups(std::deque<AIGroup*> formations);
+	void addAIGroup(AIGroup* formation);
+	
+	bool hasMoreAIGroups();
+	AIGroup* getNextAIGroup();
+
+	bool hasMoreVisibleMCUs();
+	MCUController* getNextVisibleMCU();
+	std::deque<MCUController*> getAllVisibleMCUs();
+	
+	void notifyOfMovementChange(MCUController* controller);
+	void notifyOfEnemyVisibilityChange(MCUController* controller, MCUController* enemy);
+	void notifyOfNewOrders(AIGroup* group, GroupOrder* order);
+	void notifyOfOrderCompletion(AIGroup* group, GroupOrder* order);
+	void notifyOfFinishedTurn(AIGroup* group);
+
+	void loopFinished();
+	
+	CoverageMap* getCoverageMap();
+	void updateCoverageMap(bool reset = true);
+};

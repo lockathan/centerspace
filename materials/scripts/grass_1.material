@@ -1,0 +1,67 @@
+material grass_1
+{
+	// first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+			vertex_program_ref TerrainPerPixel_Lim3_Vert
+			{ 
+			}   
+
+			fragment_program_ref TerrainPerPixel_Lim3_Frag
+			{
+			} 
+			
+            texture_unit 
+            {
+                texture RttTex
+				tex_coord_set 0
+				filtering none
+            }
+			
+			texture_unit
+            {
+				texture stone_03.bmp
+                filtering anisotropic
+            }
+			
+			texture_unit
+			{
+				texture ground_03.bmp
+                filtering anisotropic
+			}
+			
+			texture_unit
+			{
+				texture ground_04.bmp
+                filtering anisotropic
+			}
+			
+			texture_unit
+            {
+				texture stone_04.bmp
+                filtering anisotropic
+            }
+			
+			texture_unit
+			{
+				texture stone_04.bmp
+                filtering anisotropic
+			}
+			
+			texture_unit
+			{
+				texture stone_04.bmp
+                filtering anisotropic
+			}
+			
+			texture_unit
+			{
+				texture stone_04.bmp
+                filtering anisotropic
+			}
+        }
+    }		
+}

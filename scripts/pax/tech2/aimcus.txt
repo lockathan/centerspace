@@ -1,0 +1,3 @@
+Kindjal v2;2;Pax Syndicate;4cm Ti-Alloy;Li-Ion 25;Electro Magnetic Drive D1;Fission 250;Reeves-McIntosh Basic;Shield 50;Reef-McIntosh Targeter Pro;Kindjal;Laser LE-100;Laser LE-100;Tomahawk Missile;20mm AC;0;0;0;0
+Rapier v2;2;Pax Syndicate;4cm Ti-Alloy;Li-Ion 25;Electro Magnetic Drive D1;Fission 250;Reeves-McIntosh Basic;Shield 50;Reef-McIntosh Targeter Pro;Rapier;Laser LE-100;Laser LE-100;20mm AC;20mm AC;Tomahawk Missile;0;0;0
+Broadsword v2;2;Pax Syndicate;10cm Ti-Alloy;Li-Ion 35;Electro Magnetic Drive D2;Fission 350;Reeves-McIntosh Basic;Shield 75;Reef-McIntosh Targeter Pro;Broadsword;Laser LE-100;Laser LE-100;20mm AC;20mm AC;Tomahawk Missile;Tomahawk Missile;0;0

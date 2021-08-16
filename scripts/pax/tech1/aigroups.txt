@@ -1,0 +1,3 @@
+Kindjal v1;1;Pax Syndicate;0;Kindjal v1;1;0;0;0;0;0;0;0;0
+Rapier v1;1;Pax Syndicate;0;Rapier v1;1;0;0;0;0;0;0;0;0
+Mixed Light Pax Group;1;Pax Syndicate;0;Kindjal v1;1;Rapier v1;1;0;0;0;0;0;0

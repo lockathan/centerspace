@@ -1,0 +1,14 @@
+$#include <Templates/TerrainTextureTemplate.h>
+
+class TerrainTextureTemplate : public Template
+{
+	TerrainTextureTemplate();
+	~TerrainTextureTemplate();
+
+	float getRoughness();
+	void setRoughness(float value);
+
+	std::string getTextureName();
+	void setTextureName(const std::string& textureName);
+
+};

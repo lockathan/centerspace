@@ -1,0 +1,6 @@
+Red Laser;0.25;Laser_Red;0.5;animated_explosion;small_laser;none
+Blue Laser;0.25;Laser_Blue;0.5;animated_explosion;small_laser;none
+Yellow Laser;0.25;Laser_Yellow;0.5;animated_explosion;small_laser;none
+Purple Laser;0.25;Laser_Purple;0.5;animated_explosion;big_laser;none
+Green Laser;0.25;Laser_Green;0.5;animated_explosion;small_laser;none
+Straight Cannon Shot;0.01;none;0.1;animated_explosion;cannon;none

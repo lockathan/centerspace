@@ -1,0 +1,69 @@
+material broadsword_1
+{
+// first, preferred technique
+    technique
+    {
+       pass
+	    {
+            ambient  1 1 1
+            diffuse  0 0 0
+            specular 0 0 0 0
+            emissive 0 0 0
+
+			// Really basic vertex program
+            vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+            {
+            }
+			
+			fragment_program_ref PassthroughFp
+			{
+			}
+			
+			shadow_caster_vertex_program_ref shadow_caster_vs2
+			{
+			}
+	    }
+		pass
+		{
+			iteration once_per_light
+			ambient 0 0 0 
+			diffuse 1 1 1
+			specular 1 1 1 1
+			scene_blend add
+			vertex_program_ref diffuse_vs
+			{
+			}
+
+			fragment_program_ref diffuse_ps
+			{
+			}
+			texture_unit
+			{
+				content_type shadow
+				tex_address_mode clamp
+				filtering none
+			}
+		}
+		
+		pass
+		{
+			lighting off
+			
+			vertex_program_ref decal_mcus_vs
+            {
+            }
+
+            fragment_program_ref decal_mcus_fs
+            {
+            }
+			
+			scene_blend dest_colour zero
+			
+			texture_unit 
+            {
+                texture MCU_08_Tex_512.png
+            }
+		}
+    }
+		
+}

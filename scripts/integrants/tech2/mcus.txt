@@ -1,0 +1,1 @@
+Raptor;6500;16000;2;Integrant Foundation;Test;0;60;1;1;1;1;1;1;10cm Standard;Li-Ion 35;Electro Magnetic Drive D2;Ion Decay 400;Reeves-McIntosh Basic;Shield 125;Reef-McIntosh Targeter Pro;raptor.mesh;raptor_1;20.0;2.0;light;0.75;raptor_thumbnail.png;profile_raptor.png;walk1

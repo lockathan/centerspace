@@ -1,0 +1,9 @@
+$#include <Repositories/TerrainTemplateRepository.h>
+
+class TerrainTemplateRepository : public Repository<TerrainTemplate>
+{
+	std::deque<TerrainTemplate*> getAvailableTemplates(int hubId);
+
+	static TerrainTemplateRepository* getSingletonPtr();
+	~TerrainTemplateRepository();
+};

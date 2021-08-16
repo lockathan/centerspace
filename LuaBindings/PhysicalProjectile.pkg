@@ -1,0 +1,26 @@
+$#include <Entities/PhysicalProjectile.h>
+
+class PhysicalProjectile : public Projectile, public btMotionState
+{
+	~PhysicalProjectile();
+
+	PhysicalProjectileTemplate* getPhysicalProjectileTemplate();
+
+	void projectileAdded();
+
+	bool isVisible();
+	void setVisible(bool value);
+
+	bool isCloserThan(const Ogre::Vector3& point, Ogre::Real squaredDistance);
+
+	void getWorldTransform(btTransform &ret) const;
+	void setWorldTransform(const btTransform &in);
+
+	Ogre::SceneNode* getNode();
+	void setNode(Ogre::SceneNode *node);
+
+	Ogre::Entity* getEntity();
+	void setEntity(Ogre::Entity* entity);
+
+	static const float MaxProjectileLifetime;
+};

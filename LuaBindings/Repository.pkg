@@ -1,0 +1,13 @@
+$#include <Repositories/Repository.h>
+
+class Repository
+{
+	TOLUA_TEMPLATE_BIND(T, AIGroupTemplate, AIMCUTemplate, ArmorTemplate, BatteryTemplate, BattlefieldTemplate, BeamProjectileTemplate, DriveTemplate, FactionHubTemplate, FactionTemplate, HubTemplate, MCUTemplate, PhysicalProjectileTemplate, RandomMissionTypeTemplate, ReactorTemplate, SensorSystemTemplate, ShieldTemplate, StoryMissionTemplate, TargetingSystemTemplate,  TerrainTemplate, WeaponTemplate)
+	T* at ( int n );
+	T* findByName(const std::string& name);
+	T* findByNameOrID(const std::string& name);
+	
+	int size();
+	int getNextId();
+	int add(T*);
+};

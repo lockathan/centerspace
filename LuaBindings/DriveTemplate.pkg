@@ -1,0 +1,13 @@
+$#include <Templates/DriveTemplate.h>
+
+class DriveTemplate : public MCUComponentTemplate
+{
+	DriveTemplate();
+	~DriveTemplate();
+
+	float getEfficiency();
+	void setEfficiency(float e);
+	
+	
+
+};

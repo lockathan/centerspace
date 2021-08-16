@@ -1,0 +1,18 @@
+$#include <Templates/HubTemplate.h>
+
+class HubTemplate : public RequiredRankTemplate
+{
+	HubTemplate();
+	~HubTemplate();
+	
+	std::string getSystemName();
+	void setSystemName(std::string name);
+
+	float getBaseMissionPay();
+	void setBaseMissionPay(float value);
+
+	float getBounty();
+	void setBounty(float value);
+
+	
+};

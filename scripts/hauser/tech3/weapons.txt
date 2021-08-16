@@ -1,0 +1,2 @@
+Light Plasma Cannon;650;600;2;Hauser Industrial;Light Plasma Cannon;1;16;1;40;15;0;9;1;0;25;0;2;1;Plasma Shot
+Plasma Cannon;850;800;2;Hauser Industrial;Plasma Cannon;2;20;1;60;25;0;9;1;0;45;0;2;1;Plasma Shot

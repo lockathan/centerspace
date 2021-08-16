@@ -1,0 +1,13 @@
+$#include <Entities/PersistentEntity.h>
+
+class PersistentEntity
+{
+	PersistentEntity();
+	virtual ~PersistentEntity();
+	
+	long getId();
+	void setId(long id);
+	
+	std::string getName();
+	void setName(std::string name);
+};

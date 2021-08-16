@@ -1,0 +1,1 @@
+Broadsword;6500;14000;2;Pax Syndicate;Broadsword;0;55;1;1;1;1;1;1;10cm Ti-Alloy;Li-Ion 35;Electro Magnetic Drive D2;Ion Decay 400;Reeves-McIntosh Basic;Shield 125;Reef-McIntosh Targeter Pro;broadsword.mesh;broadsword_1;28.0;2.8;light;0.75;broadsword_thumbnail.png;profile_broadsword.png;walk1

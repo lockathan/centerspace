@@ -1,0 +1,15 @@
+$#include <States/GameState.h>
+
+class GameState : 
+	public GameManager::EngineUpdateListener, 
+	public InputListener::Listener, 
+	public Rocket::Core::EventListener
+{
+	virtual ~GameState();
+
+	void changeState( GameState *state );
+	void pushState( GameState *state );
+	void popState();
+	void requestShutdown();
+
+};

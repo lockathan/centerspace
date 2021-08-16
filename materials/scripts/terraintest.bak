@@ -1,0 +1,11 @@
+material terraintest : diffuse_template
+{
+    set_texture_alias diffuse_tex1 stone_03.bmp
+    set_texture_alias diffuse_tex2 ground_03.bmp
+	set_texture_alias diffuse_tex3 ground_04.bmp
+	set_texture_alias diffuse_tex4 stone_04.bmp
+	set_texture_alias diffuse_tex5 stone_04.bmp
+	set_texture_alias diffuse_tex6 stone_04.bmp
+	set_texture_alias diffuse_tex7 stone_04.bmp
+	
+}

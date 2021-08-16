@@ -1,0 +1,69 @@
+$#include <States/InBattleState.h>
+
+class InBattleState : public GameState 
+{
+
+	~InBattleState(){}
+
+	void enter();
+	void exit();
+	void endBattle();
+	void restart();
+	void cleanUp();
+
+	void startTurn();
+	void endTurn();
+
+	Ogre::Real getTurnLimit();
+	void setTurnLimit(Ogre::Real limit);
+	
+	std::string getAIScriptName();
+	void setAIScriptName(const std::string& name);
+
+	BattlefieldGrid* getBattlefieldGrid();
+	void setBattlefieldGrid(BattlefieldGrid* grid);
+	
+	PathFindingManager* getPathFindingManager();
+
+	void addPlayer(PlayerPreBattleState* state);
+	void placeMCUs();
+	void removePlayer(PlayerBattleState* player);
+	std::deque<PlayerBattleState*> getAllPlayers();
+
+	void mouseMoved(const OIS::MouseEvent& arg);
+	void mousePressed(const OIS::MouseEvent& arg, OIS::MouseButtonID id);
+	void mouseReleased(const OIS::MouseEvent& arg, OIS::MouseButtonID id);
+
+	PlayerBattleState* getPlayerToRender();
+	void setPlayerToRender(PlayerBattleState* player);
+	
+	void onSelectedElementChanged(DataSourceType source, int id);
+
+	void fireWeapon(MCUController* source, WeaponHardpoint* weapon, bool returningFire);
+	MCUController* getMCUByBattlefieldID(int id);
+
+	void addProjectile(Projectile* proj);
+	
+	void addShield(Shield* shield);
+
+	void updateAccuracy(MCUController* mcu, WeaponHardpoint* weapon);
+	float calculateAccuracy(MCUController* mcu, WeaponHardpoint* weapon);
+	float calculateCoverage(const Ogre::Vector3& origin,  MCUController* source, MCUController* target);
+	bool canSee(const Ogre::Vector3& origin, const Ogre::Vector3& dest, MCUController* source, MCUController* target);
+	bool canSee(const Ogre::Vector3& origin, const Ogre::Vector3& dest, MCUController* target);
+
+	MCUController* getTarget(const Ogre::Vector3& origin, const Ogre::Vector3& dest, MCUController* source);
+	
+	void ProcessEvent(Rocket::Core::Event& e);
+	void renderPath(MCUController* controller, std::deque<BattlefieldGridCell*> path);
+	void hidePath();
+	
+	void selectMCU(int id);
+	void selectTarget(MCUController* mcu);
+
+	void nextMCU();
+	void prevMCU();
+	
+	bool isLocalPlayersTurn();
+	static InBattleState* getSingletonPtr();
+};

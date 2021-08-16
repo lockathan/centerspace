@@ -1,0 +1,9 @@
+$#include <LuaLibRocket/LuaDocument.h>
+
+class LuaDocument : public LuaElement
+{
+	LuaDocument(Rocket::Core::ElementDocument* document);
+	~LuaDocument();
+
+	Rocket::Core::ElementDocument* getDocument();
+};

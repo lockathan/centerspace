@@ -1,0 +1,17 @@
+$#include <TerrainImgGenerator.h>
+
+class TerrainImgGenerator
+{
+	
+	TerrainImgGenerator();
+	~TerrainImgGenerator();
+
+	int* GenerateTerrainIntArray(int size, int minHeight, int maxHeight, int maxHills, int maxRidges);
+	float* GenerateTerrainData(int* source,long sourceSideLength, long sourceArraySize, int expansion);
+	int* GenerateSimpleTerrainData(int* source,long sourceSideLength, long sourceArraySize, int expansion);
+
+	int* GenerateHeightData(BattlefieldTemplate* battlefield, TerrainTemplate* terrain);
+
+	static TerrainImgGenerator* getSingletonPtr();
+
+};

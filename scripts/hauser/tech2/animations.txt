@@ -1,0 +1,1 @@
+Medusa animations;walk cycle;being hit;take off;land;hover/fly cycle;idle;death;Medusa

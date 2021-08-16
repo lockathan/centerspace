@@ -1,0 +1,11 @@
+$#include <Entities/MCUPlacement.h>
+
+struct MCUPlacement
+{
+	MCUPlacement(int x, int z, MechanizedCombatUnit* mcu) : X(x), Z(z), OwnerAIGroup(0), MCU(mcu) {}
+
+	int X;
+	int Z;
+	AIGroup* OwnerAIGroup;
+	MechanizedCombatUnit* MCU;
+};

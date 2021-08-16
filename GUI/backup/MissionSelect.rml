@@ -1,0 +1,20 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/template" href="window.rml" />
+	</head>
+	<body template="window" id="MissionSelect" class="ProfileMain">
+	<div class="mainMenuBg"><img src="img/main_menu_bg.png" width="1920" height="1200"></div>
+		<div class="mainMenuPosition">
+			<div class="selectUser">
+				<div class="selectHeading">Select a Mission</div>
+		<dataprovider datasource="randommissions" id="randommissionsdp">
+			<databoundlist>
+				<databoundtext class="selectBtn">@MissionName@</databoundtext>
+			</databoundlist>
+		</dataprovider>
+		<button id="startmission" class="mainBtn">Start</button>
+		<button id="backtomainbasescreen" class="mainBtn">Back</button>
+		
+	</body>
+</rml>

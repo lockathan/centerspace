@@ -1,0 +1,8 @@
+$#include <Repositories/PhysicalProjectileTemplateRepository.h>
+
+class PhysicalProjectileTemplateRepository : public Repository<PhysicalProjectileTemplate>
+{
+	static PhysicalProjectileTemplateRepository* getSingletonPtr();
+	~PhysicalProjectileTemplateRepository();
+
+};

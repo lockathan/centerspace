@@ -1,0 +1,7 @@
+$#include <Repositories/FactionTemplateRepository.h>
+
+class FactionTemplateRepository : public Repository<FactionTemplate>
+{
+	static FactionTemplateRepository* getSingletonPtr();
+	~FactionTemplateRepository();
+};

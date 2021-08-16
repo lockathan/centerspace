@@ -1,0 +1,2 @@
+Kindjal animations;walk;being hit;take off;land;hover/fly;idle;death;Kindjal
+Rapier animations;walk cycle;being hit;take off;land;hover/fly cycle;idle;death  ;Rapier

@@ -1,0 +1,9 @@
+$#include <States/PlayerState.h>
+
+class PlayerState
+{
+	~PlayerState() { }
+
+	void enter();
+	void exit();
+};

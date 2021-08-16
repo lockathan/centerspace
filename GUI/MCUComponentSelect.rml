@@ -1,0 +1,10 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/template" href="window.rml" />
+	</head>
+	<body template="window" id="MCUComponentSelect">
+		<mcucomponentselect>
+		</mcucomponentselect>
+	</body>
+</rml>

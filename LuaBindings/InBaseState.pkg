@@ -1,0 +1,35 @@
+$#include <States/InBaseState.h>
+
+class InBaseState : public GameState 
+{
+	~InBaseState() { }
+
+	void enter();
+	void exit();
+
+	void pause();
+	void resume();
+	void update( float timeSinceLastFrame );
+	void createScene();
+	void destroyScene();
+
+	FactionTemplate* getFactionTemplate();
+	PlayerProfile* getPlayerProfile();
+	CampaignState* getCampaignState();
+
+	void setFactionTemplate(FactionTemplate* faction);
+	void setPlayerProfile(PlayerProfile* player);
+	void setCampaignState(CampaignState* campaign);
+
+	void loadCampaignState(long playerProfileId, int factionId);
+	
+	void loadMainBaseScreen();
+	
+	void startMission();
+
+	void ProcessEvent(Rocket::Core::Event& event);
+
+	void onSelectedElementChanged(DataSourceType source, int id);
+
+	static InBaseState* getSingletonPtr();
+};

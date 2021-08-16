@@ -1,0 +1,52 @@
+$#include <States/MCUBayState.h>
+
+class MCUBayState : public GameState 
+{
+	enum ComponentType
+	{
+		CT_ARMOR = 0,
+		CT_BATTERY,
+		CT_DRIVE,
+		CT_REACTOR,
+		CT_SENSOR,
+		CT_SHIELD,
+		CT_TARGET,
+		CT_WEAPON,
+		CT_NONE
+	};
+
+	~MCUBayState() { }
+
+	void enter();
+	void exit();
+
+	void pause();
+	void resume();
+	void update( float timeSinceLastFrame );
+	void createScene();
+	void destroyScene();
+
+	PlayerProfile* getPlayerProfile();
+	void setPlayerProfile(PlayerProfile* player);
+
+	InventoryState* getInventoryState();
+	void setInventoryState(InventoryState* inventory);
+
+	
+	void loadMCUPurchaseSelectScreen();
+	void loadMCUEditSelectScreen();
+	void loadMCUEditScreen(long mcuID);
+
+	void changeSelectedComponent(int componentId);
+
+	ComponentType RequestedComponentType;
+	int RequestedComponentSize;
+	WeaponHardpoint* RequestedWeaponHardpoint;
+	long CurrentMCUID;
+
+	void ProcessEvent(Rocket::Core::Event& event);
+	
+	void onSelectedElementChanged(DataSourceType source, int id);
+
+	static MCUBayState* getSingletonPtr();
+};

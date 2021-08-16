@@ -1,0 +1,6 @@
+Aphids v3;3;Integrant Foundation;0;Aphid v3;2;0;0;0;0;0;0;0;0
+Wraiths v3;3;Integrant Foundation;0;Wraith v3;2;0;0;0;0;0;0;0;0
+Raptors v2;3;Integrant Foundation;0;Raptor v2;2;0;0;0;0;0;0;0;0
+Int Mixed V Light Group;3;Integrant Foundation;0;Aphid v3;1;Wraith v3;1;0;0;0;0;0;0
+Int Mixed Light Group;3;Integrant Foundation;0;Aphid v3;1;Wraith v3;1;Raptor v2;1;0;0;0;0
+Mixed Group;3;Integrant Foundation;0;Aphid v3;2;Raptor v2;2;0;0;0;0;0;0

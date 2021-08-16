@@ -1,0 +1,2 @@
+Kindjal;4500;8000;1;Pax Syndicate;Test;0;28;1;1;1;1;1;1;4cm Standard;Li-Ion 25;Electro Magnetic Drive D1;Ion Decay 300;Reeves-McIntosh Basic;Shield 50;Reef-McIntosh Targeter Pro;kindjal.mesh;kindjal_1;36.0;3.6;light;0.6;kindjal_thumbnail.png;profile_kindjal.png;walk1
+Rapier;6500;12000;1;Pax Syndicate;Test;0;36;1;1;1;1;1;1;4cm Standard;Li-Ion 25;Electro Magnetic Drive D1;Ion Decay 300;Reeves-McIntosh Basic;Shield 75;Reef-McIntosh Targeter Pro;rapier.mesh;rapier_1;32.0;3.2;light;0.7;rapier_thumbnail.png;profile_rapier.png;walk1

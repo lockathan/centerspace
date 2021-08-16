@@ -1,0 +1,6 @@
+$#include <Repositories/TargetingSystemTemplateRepositoryLoader.h>
+
+class TargetingSystemTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, TargetingSystemTemplateRepository* r);
+};

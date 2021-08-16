@@ -1,0 +1,107 @@
+
+material terrain_template
+{
+	technique
+	{
+
+	    pass
+	    {
+            ambient  1 1 1
+            diffuse  0 0 0
+            specular 0 0 0 0
+            emissive 0 0 0
+
+			// Really basic vertex program
+            vertex_program_ref Ogre/BasicVertexPrograms/AmbientOneTexture
+            {
+            }
+			
+			fragment_program_ref PassthroughFp
+			{
+			}
+	    }
+		pass
+		{
+			iteration once_per_light
+			ambient 0 0 0 
+			diffuse 1 1 1
+			specular 1 1 1 1
+			scene_blend add
+			vertex_program_ref diffuse_vs
+			{
+			}
+
+			fragment_program_ref diffuse_ps
+			{
+			}
+			texture_unit
+			{
+				content_type shadow
+				tex_address_mode clamp
+				filtering none
+			}
+
+		}
+		
+		pass
+		{
+			lighting off
+			
+			vertex_program_ref decal_vs
+            {
+            }
+
+            fragment_program_ref decal_fs
+            {
+            }
+			
+			scene_blend dest_colour zero
+			
+			texture_unit 
+            {
+                texture RttTex
+				tex_coord_set 0
+				filtering none
+            }
+			
+			texture_unit diffuse_tex1
+			{
+				tex_coord_set 1
+			}
+			
+			texture_unit diffuse_tex2
+			{
+				tex_coord_set 1
+			}
+			
+			texture_unit diffuse_tex3
+			{
+				tex_coord_set 1
+			}
+			
+			texture_unit diffuse_tex4
+			{	
+				tex_coord_set 1
+			}
+			
+			texture_unit diffuse_tex5
+			{
+				tex_coord_set 1
+			}
+			
+			texture_unit diffuse_tex6
+			{
+				tex_coord_set 1
+			}
+			
+			texture_unit diffuse_tex7
+			{
+				tex_coord_set 1
+			}
+			texture_unit grid_texture
+			{
+				tex_coord_set 1
+			}
+		}
+	}
+}

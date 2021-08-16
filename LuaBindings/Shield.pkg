@@ -1,0 +1,52 @@
+$#include <Entities/Shield.h>
+
+class Shield : MovableEntity
+{
+	Shield(ShieldTemplate* shield, MCUController* mcu, Ogre::SceneNode* node, const btTransform& transform);
+	~Shield();
+	
+	void applyWarhead(Warhead& warhead);
+	void move(const btTransform& transform);
+	void endTurn();
+
+	float getMaxHealth();
+	void setMaxHealth(const float& maxHealth);
+
+	float getCurrentHealth();
+	void setCurrentHealth(const float& currentHealth);
+
+	float getRadius();
+	void setRadius(const float& radius);
+
+	bool isActive();
+	void setIsActive(bool active);
+
+	MCUController* getMCUController();
+	void setMCUController(MCUController* mcu);
+
+	ShieldTemplate* getShieldTemplate();
+	void setShieldTemplate(ShieldTemplate* shield);
+
+	Ogre::Entity* getEntity();
+	void setEntity(Ogre::Entity* entity);
+
+	Ogre::SceneNode* getMCUNode();
+	void setMCUNode(Ogre::SceneNode* node);
+
+	Ogre::SceneNode* getShieldNode();
+	void setShieldNode(Ogre::SceneNode* node);
+
+	btPairCachingGhostObject* getGhostObject();
+	void setGhostObject(btPairCachingGhostObject* ghost);
+
+	btConvexShape* getCollisionShape();
+	void setCollisionShape(btConvexShape* shape);
+
+	Ogre::Vector3 getCurrentPosition();
+	void setCurrentPosition(Ogre::Vector3 pos);
+	
+	bool isVisible();
+	void setVisible(bool value);
+
+	bool isCloserThan(const Ogre::Vector3& point, Ogre::Real squaredDistance);
+};

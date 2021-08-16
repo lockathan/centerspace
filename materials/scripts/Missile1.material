@@ -1,0 +1,20 @@
+material Missile1
+{
+    // first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+            ambient 1.0 1.0 1.0
+            diffuse 1.0 1.0 1.0
+			
+            // Texture unit 0
+            texture_unit 
+            {
+                texture Missile.png
+            }
+        }
+    }
+		
+}

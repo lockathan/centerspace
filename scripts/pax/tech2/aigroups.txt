@@ -1,0 +1,4 @@
+Kindjals v2;2;Pax Syndicate;0;Kindjal v2;2;0;0;0;0;0;0;0;0
+Rapiers v2;2;Pax Syndicate;0;Rapier v2;2;0;0;0;0;0;0;0;0
+Mixed V Light Pax Group;2;Pax Syndicate;0;Kindjal v2;2;Rapier v2;2;0;0;0;0;0;0
+Mixed Light Pax Group;2;Pax Syndicate;0;Kindjal v2;1;Rapier v2;1;Broadsword v1;1;0;0;0;0

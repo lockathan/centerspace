@@ -1,0 +1,6 @@
+Broadsword laser anim 1;Broadsword;0;none;1.0;arm cannon fire left;1.0;none;1.0
+Broadsword laser anim 2;Broadsword;1;none;1.0;arm cannon fire right;1.0;none;1.0
+Broadsword cannon anim 3;Broadsword;2;lower cannons stance IN;1.0;torso cannon fire left;1.0;lower cannons stance OUT;1.0
+Broadsword cannon anim 4;Broadsword;3;lower cannons stance IN;1.0;torso cannon fire right;1.0;lower cannons stance OUT;1.0
+Broadsword missile anim 1;Broadsword;4;head cannon stance IN;1.0;head cannon fire loop;1.0;head cannon stance OUT;1.0
+Broadsword missile anim 2;Broadsword;5;head cannon stance IN;1.0;head cannon fire loop;1.0;head cannon stance OUT;1.0

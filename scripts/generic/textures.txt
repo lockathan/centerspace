@@ -1,0 +1,14 @@
+Stone1;stone_02.bmp;1
+Stone2;stone_03.bmp;1
+Stone3;stone_04.bmp;1
+Stone5;stone_05.bmp;1
+Stone6;stone_07.bmp;1
+Stone7;stone_08.bmp;1
+Ground1;ground_01.bmp;1
+Ground2;ground_04.bmp;1
+Sand1;sand_01.bmp;1
+Sand2;sand_02.bmp;1
+Sand3;sand_03.bmp;1
+Grass1;gras_02.bmp;1
+Grass2;gras_03.bmp;1
+Grid;gridsquare.png;1

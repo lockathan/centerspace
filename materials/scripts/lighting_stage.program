@@ -1,0 +1,64 @@
+vertex_program lighting_vs cg
+{
+    source lighting_stage.cg
+    profiles vs_1_1 arbvp1
+    entry_point lighting_vs
+
+    default_params
+    {
+        param_named_auto wMat world_matrix
+        param_named_auto wvpMat worldviewproj_matrix
+        param_named_auto tvpMat texture_viewproj_matrix 0
+        param_named_auto spotlightDir light_direction_object_space 0
+    }
+}
+
+fragment_program lighting_fs cg
+{
+    source lighting_stage.cg
+    profiles ps_2_x arbfp1
+    entry_point lighting_fs
+
+    default_params
+    {
+        param_named_auto spotlightParams spotlight_params 0
+		param_named_auto lightDif0 light_diffuse_colour 0
+        param_named_auto lightSpec0 light_specular_colour 0
+        param_named_auto lightPos0 light_position 0
+        param_named_auto lightAtt0 light_attenuation 0
+        param_named_auto camPos camera_position
+        param_named_auto shininess surface_shininess
+    }
+}
+
+vertex_program lighting_no_shadow_vs cg
+{
+    source lighting_stage_no_shadow.cg
+    profiles vs_1_1 arbvp1
+    entry_point lighting_no_shadow_vs
+
+    default_params
+    {
+        param_named_auto wMat world_matrix
+        param_named_auto wvpMat worldviewproj_matrix
+        param_named_auto spotlightDir light_direction_object_space 0
+    }
+}
+
+fragment_program lighting_no_shadow_fs cg
+{
+    source lighting_stage_no_shadow.cg
+    profiles ps_2_x arbfp1
+    entry_point lighting_no_shadow_fs
+
+    default_params
+    {
+        param_named_auto spotlightParams spotlight_params 0
+		param_named_auto lightDif0 light_diffuse_colour 0
+        param_named_auto lightSpec0 light_specular_colour 0
+        param_named_auto camPos camera_position
+        param_named_auto shininess surface_shininess
+        param_named_auto lightPos0 light_position 0
+        param_named_auto lightAtt0 light_attenuation 0
+    }
+}

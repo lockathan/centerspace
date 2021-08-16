@@ -1,0 +1,7 @@
+$#include <Repositories/DriveTemplateRepositoryLoader.h>
+
+class DriveTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, DriveTemplateRepository* r);
+	
+};

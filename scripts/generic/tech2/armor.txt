@@ -1,0 +1,4 @@
+4cm Ti-Alloy;1000;800;2;Generic Faction;4cm Ti-Alloy;1;32;0.9;1;0.9;1;1
+5cm Ti-Alloy;1200;950;2;Generic Faction;5cm Ti-Alloy;1;40;0.9;1;0.9;1;1
+10cm Standard;2000;1800;2;Generic Faction;10cm Standard;2;60;1;1;1;1;1
+10cm Ti-Alloy;2300;1900;2;Generic Faction;10cm Ti-Alloy;2;65;0.9;1;0.9;1;1

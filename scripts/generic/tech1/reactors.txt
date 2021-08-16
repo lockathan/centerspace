@@ -1,0 +1,2 @@
+Fission 250;400;1000;1;Generic Faction;Fission 250;1;20;250
+Fission 350;550;1100;1;Generic Faction;Fission 350;1;22;350

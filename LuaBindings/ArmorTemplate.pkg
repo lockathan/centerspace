@@ -1,0 +1,24 @@
+$#include <Templates/ArmorTemplate.h>
+
+class ArmorTemplate : public MCUComponentTemplate
+{
+	ArmorTemplate();
+	~ArmorTemplate();
+	
+	float getLaserDamageTaken();
+	void setLaserDamageTaken(const float& damage);
+	
+	float getPlasmaDamageTaken();
+	void setPlasmaDamageTaken(const float& damage);
+	
+	float getCannonDamageTaken();
+	void setCannonDamageTaken(const float& damage);
+	
+	float getMissileDamageTaken();
+	void setMissileDamageTaken(const float& damage);
+	
+	float getPiercingDamageTaken();
+	void setPiercingDamageTaken(const float& damage);
+
+	float getFinalDamageValue(const float& damageIn, DamageType damageType);
+};

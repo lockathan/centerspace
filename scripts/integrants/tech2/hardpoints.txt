@@ -1,0 +1,6 @@
+Raptor Laser 1;Raptor;Laser HP-275;1;2;2.268;7.136;2.687;none
+Raptor Laser 2;Raptor;Laser HP-275;1;2;-2.268;7.136;2.687;none
+Raptor Cannon 1;Raptor;20mm AC;0;1;2.268;7.136;2.687;none
+Raptor Cannon 2;Raptor;20mm AC;0;1;-2.268;7.136;2.687;none
+Raptor Missile 1;Raptor;Missile T2;3;1;-1.005;12.166;0.057;none
+Raptor Missile 2;Raptor;Missile T2;3;1;-1.445;12.166;0.057;none

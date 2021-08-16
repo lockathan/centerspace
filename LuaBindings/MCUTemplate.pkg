@@ -1,0 +1,72 @@
+$#include <Templates/MCUTemplate.h>
+
+class MCUTemplate : public MCUComponentTemplate
+{
+	MCUTemplate();
+	~MCUTemplate();
+
+	ArmorTemplate* getDefaultArmor();
+	void setDefaultArmor(ArmorTemplate* armor);
+
+	BatteryTemplate* getDefaultBattery();
+	void setDefaultBattery(BatteryTemplate* battery);
+	
+	DriveTemplate* getDefaultDrive();
+	void setDefaultDrive(DriveTemplate* drive);
+
+	ReactorTemplate* getDefaultReactor();
+	void setDefaultReactor(ReactorTemplate* reactor);
+
+	SensorSystemTemplate* getDefaultSensorSystem();
+	void setDefaultSensorSystem(SensorSystemTemplate* sensor);
+
+	ShieldTemplate* getDefaultShield();
+	void setDefaultShield(ShieldTemplate* shield);
+
+	TargetingSystemTemplate* getDefaultTargetingSystemTemplate();
+	void setDefaultTargetingSystemTemplate(TargetingSystemTemplate* target);
+
+	WeaponHardpointTemplate* getHardpoint(int hardpoint);
+	void addWeaponHardpointTemplate(WeaponHardpointTemplate* weapon);
+	
+	int getMaxArmorSize();
+	void setMaxArmorSize(int max);
+
+	int getMaxBatterySize();
+	void setMaxBatterySize(int maxBatterySize);
+	
+	int getMaxDriveSize();
+	void setMaxDriveSize(int maxDriveSize);
+	
+	int getMaxReactorSize();
+	void setMaxReactorSize(int maxReactorSize);
+	
+	int getMaxShieldSize();
+	void setMaxShieldSize(int maxShieldSize);
+
+	int getMaxComponentSlots();
+	void setMaxComponentSlots(int maxComponentSlots);
+
+	std::string getMaterialName();
+	void setMaterialName(std::string name);
+	
+	std::string getMeshName();
+	void setMeshName(std::string name);
+
+	AnimationDefinitionTemplate* getAnimationDefinitionTemplate();
+	void setAnimationDefinitionTemplate(AnimationDefinitionTemplate* anim);
+
+	float getMovementSpeed();
+	void setMovementSpeed(float speed);
+
+	float getWalkingAnimationSpeed();
+	void setWalkingAnimationSpeed(float speed);
+
+	std::string getWeaponsDescription();
+
+	float getTotalCost();
+
+	std::hash_map<std::string, std::string> getGuiValues();
+
+	MechanizedCombatUnit* instantiate(bool useDefaults);
+};

@@ -1,0 +1,22 @@
+$#include <Templates/WeaponAnimationTemplate.h>
+
+class WeaponAnimationTemplate : public Template
+{
+	WeaponAnimationTemplate();
+	~WeaponAnimationTemplate();
+	
+	int getHardpointNumber();
+	void setHardpointNumber(int num);
+	
+	bool hasEnterAnimation();
+	std::string getEnterAnimationName();
+	void setEnterAnimationName(std::string name);
+	
+	std::string getFireAnimationName();
+	void setFireAnimationName(std::string name);
+	
+	bool hasExitAnimation();
+	std::string getExitAnimationName();
+	void setExitAnimationName(std::string name);
+
+};

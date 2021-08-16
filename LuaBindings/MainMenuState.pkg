@@ -1,0 +1,23 @@
+$#include <States/MainMenuState.h>
+
+class MainMenuState : 
+  public GameState,
+  public Ogre::FrameListener
+{
+	~MainMenuState(){}
+
+	void enter();
+	void exit();
+
+	void pause();
+	void resume();
+
+	void loadSinglePlayer();
+
+	static MainMenuState* getSingletonPtr();
+	
+	void loadCampaignByName(const std::string& faction);
+	
+	void onSelectedElementChanged(DataSourceType source, int id);
+
+};

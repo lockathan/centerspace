@@ -1,0 +1,7 @@
+$#include <Repositories/AIMCUTemplateRepositoryLoader.h>
+
+class AIMCUTemplateRepositoryLoader : public RepositoryLoader
+{
+
+	void load(const std::string& fileName, AIMCUTemplateRepository* r);	
+};

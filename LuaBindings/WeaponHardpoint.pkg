@@ -1,0 +1,28 @@
+$#include <Entities/WeaponHardpoint.h>
+
+class WeaponHardpoint : public PersistentEntity
+{
+	WeaponHardpoint();
+	~WeaponHardpoint();
+
+	MechanizedCombatUnit* getMCU();
+	void setMCU(MechanizedCombatUnit* mcu);
+	void setWeapon(WeaponTemplate* weapon);
+	WeaponTemplate* getWeapon();
+	void setHardpointNumber(int);
+
+	bool canFire();
+	bool decrementAmmo();
+	void resetAmmoRemaining();
+	void endTurn();
+
+	int getHardpointNumber();
+
+	void fire(MCUController* mcu, const FireInstruction& instruction);
+
+	WeaponHardpointTemplate* getWeaponHardpointTemplate();
+	void setWeaponHardpointTemplate(WeaponHardpointTemplate* t);
+
+	float getCurrentChanceToHit();
+	void setCurrentChanceToHit(const float& chance);
+};

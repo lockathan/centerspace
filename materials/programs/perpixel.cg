@@ -1,0 +1,88 @@
+void PerPixel_Lim3_Vert(
+			float2 texCoord0: TEXCOORD0,
+			float4 position : POSITION,
+			float3 normal   : NORMAL,  
+			uniform float4 lightPosition0,
+			uniform float4 lightPosition1,
+			uniform float4 lightPosition2,
+			uniform float3 eyePosition,
+			uniform float4x4 worldviewproj,
+
+			out float4 oPos : POSITION,
+			
+			out float2 oTexCoord0: TEXCOORD0,
+			out float3 oNorm: TEXCOORD1,
+			out float3 oLightDir0: TEXCOORD2,
+			out float3 oLightDir1: TEXCOORD3,
+			out float3 oLightDir2: TEXCOORD4,
+			out float3 oHalfAngle0: TEXCOORD5,
+			out float3 oHalfAngle1: TEXCOORD6,
+			out float3 oHalfAngle2: TEXCOORD7
+         ) 
+{
+	oTexCoord0 = texCoord0;
+	oPos = mul(worldviewproj, position);
+
+	oLightDir0 = normalize(lightPosition0.xyz -  (position * lightPosition0.w));
+	oLightDir1 = normalize(lightPosition1.xyz -  (position * lightPosition1.w));
+	oLightDir2 = normalize(lightPosition2.xyz -  (position * lightPosition2.w));
+
+	float3 EyeDir = normalize(eyePosition - position.xyz);
+
+	oHalfAngle0   = normalize(oLightDir0 + EyeDir);
+	oHalfAngle1   = normalize(oLightDir1 + EyeDir);
+	oHalfAngle2   = normalize(oLightDir2 + EyeDir);
+
+	oNorm     = normal;
+
+	//what if I leave normalization of normal and oHalfAngle to Fragshader?
+}
+ 
+ 
+ void PerPixel_Lim3_Frag(
+				float2 texCoord0: TEXCOORD0,
+				float3 normal: TEXCOORD1,
+				float3 LightDir0  : TEXCOORD2,
+				float3 LightDir1  : TEXCOORD3,
+				float3 LightDir2  : TEXCOORD4,
+				float3 HalfAngle0: TEXCOORD5,
+				float3 HalfAngle1: TEXCOORD6,
+				float3 HalfAngle2: TEXCOORD7, 
+				uniform sampler2D Texture : register(s0),
+				uniform float4 lightDiffuse0,
+				uniform float4 lightDiffuse1,
+				uniform float4 lightDiffuse2, 
+
+				uniform float4 lightSpecular0,
+				uniform float4 lightSpecular1,
+				uniform float4 lightSpecular2,
+
+				uniform float exponent0,
+
+				uniform float4 ambient, 
+
+				out float4 oColor : COLOR
+            )
+{ 
+	float3 N = normalize(normal);
+
+	float NdotL = dot(normalize(LightDir0), N);
+	float NdotH = dot(normalize(HalfAngle0), N);
+
+	float4 Lit = lit(NdotL,NdotH,exponent0);
+	oColor = tex2D(Texture, texCoord0) * 0.75;
+	oColor += (lightDiffuse0 * Lit.y + lightSpecular0 * Lit.z) * 0.25;
+
+	NdotL = dot(normalize(LightDir1), N);
+	NdotH = dot(normalize(HalfAngle1), N);
+
+	Lit = lit(NdotL,NdotH,exponent0);
+	oColor += (lightDiffuse1 * Lit.y + lightSpecular1 * Lit.z) * 0.25; 
+
+	NdotL = dot(normalize(LightDir2), N);
+	NdotH = dot(normalize(HalfAngle2), N);
+
+	Lit = lit(NdotL,NdotH,exponent0);
+	oColor += (lightDiffuse2 * Lit.y + lightSpecular2 * Lit.z + ambient) * 0.25;
+
+}

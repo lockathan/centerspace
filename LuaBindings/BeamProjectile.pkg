@@ -1,0 +1,16 @@
+$#include <Entities/BeamProjectile.h>
+
+class BeamProjectile : public Projectile
+{
+	~BeamProjectile();
+
+	BeamProjectileTemplate* getBeamProjectileTemplate();
+	float getTimeElapsed();
+
+	void projectileAdded();
+	void update(float timeSinceLastFrame);
+	bool isVisible();
+	void setVisible(bool value);
+
+	bool isCloserThan(const Ogre::Vector3& point, Ogre::Real squaredDistance);
+};

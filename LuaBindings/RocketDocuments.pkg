@@ -1,0 +1,41 @@
+$#include <GUI/RocketDocuments.h>
+
+class RocketDocuments
+{
+	class ProfileMenu
+	{
+		static const RocketDocumentDefinition ProfileMain;
+	};
+	class MainMenu
+	{
+		static const RocketDocumentDefinition Main;
+		static const RocketDocumentDefinition SinglePlayer;
+		static const RocketDocumentDefinition Campaign;
+		static const RocketDocumentDefinition Multiplayer;
+		static const RocketDocumentDefinition Options;
+
+	};
+
+	class InBase
+	{
+		static const RocketDocumentDefinition Main;
+		static const RocketDocumentDefinition MissionSelect;
+	};
+
+	class MCUBay
+	{
+		static const RocketDocumentDefinition Main;
+		static const RocketDocumentDefinition MCUPurchase;
+		static const RocketDocumentDefinition MCUSelectEdit;
+		static const RocketDocumentDefinition MCUEdit;
+		static const RocketDocumentDefinition MCUComponentSelect;
+
+	};
+
+	class InBattle
+	{
+		static const RocketDocumentDefinition InBattleHUD;
+		static const RocketDocumentDefinition InBattleMenu;
+		static const RocketDocumentDefinition BetweenTurnsHUD;
+	};
+};

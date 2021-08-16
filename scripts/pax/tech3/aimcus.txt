@@ -1,0 +1,4 @@
+Kindjal v3;3;Pax Syndicate;4cm Plasteel;Cad-Poly 35;Electro Magnetic Drive D1;Ion Decay 300;Reeves-McIntosh Basic;Shield 50;Reef-McIntosh Targeter Pro;Kindjal;Laser LP-125;Laser LP-125;Tomahawk Missile;20mm AC;0;0;0;0
+Rapier v3;3;Pax Syndicate;4cm Plasteel;Cad-Poly 50;Electro Magnetic Drive D1;Ion Decay 300;Reeves-McIntosh Basic;Shield 75;Reef-McIntosh Targeter Pro;Rapier;Laser LP-125;Laser LP-125;20mm AC;20mm AC;Tomahawk Missile;0;0;0
+Broadsword v3a;3;Pax Syndicate;9cm Plasteel;Cad-Poly 75;Electro Magnetic Drive D2;Ion Decay 400;Reeves-McIntosh Basic;Shield 100;Reef-McIntosh Targeter Pro;Broadsword;Laser LE-200;Laser LE-200;20mm AC;20mm AC;Tomahawk Missile;Tomahawk Missile;0;0
+Broadsword v3b;3;Pax Syndicate;9cm Plasteel;Cad-Poly 100;Electro Magnetic Drive D2;Ion Decay 400;Reeves-McIntosh Basic;Shield 100;Reef-McIntosh Targeter Pro;Broadsword;Plasma Cannon;Plasma Cannon;20mm AC;20mm AC;Tomahawk Missile;Tomahawk Missile;0;0

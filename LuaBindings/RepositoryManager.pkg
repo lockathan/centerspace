@@ -1,0 +1,34 @@
+$#include <Repositories/RepositoryManager.h>
+
+class RepositoryManager
+{
+	void loadAIMCUs(const std::string& fileName);
+	void loadAIGroups(const std::string& fileName);
+	void loadAnimations(const std::string& fileName);
+	void loadArmors(const std::string& fileName);
+	void loadBatteries(const std::string& fileName);
+	void loadBattlefields(const std::string& fileName);
+	void loadBeamProjectiles(const std::string& fileName);
+	void loadDrives(const std::string& fileName);
+	void loadFactions(const std::string& fileName);
+	void loadFactionHubs(const std::string& fileName);
+	void loadHubs(const std::string& fileName);
+	void loadMCUs(const std::string& fileName);
+	void loadPhysicalProjectiles(const std::string& fileName);
+	void loadRandomMissionTypes(const std::string& fileName);
+	void loadRanks(const std::string& fileName);
+	void loadReactors(const std::string& fileName);
+	void loadSensors(const std::string& fileName);
+	void loadShields(const std::string& fileName);
+	void loadSounds(const std::string& fileName);
+	void loadTargetingSystems(const std::string& fileName);
+	void loadTerrains(const std::string& fileName);
+	void loadTerrainTextures(const std::string& fileName);
+	void loadWeaponAnimations(const std::string& fileName);
+	void loadWeapons(const std::string& fileName);
+	void loadWeaponHardpoints(const std::string& fileName);
+	
+	static RepositoryManager* getSingletonPtr();
+	
+};
+#endif

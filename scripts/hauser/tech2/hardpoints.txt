@@ -1,0 +1,6 @@
+Medusa Laser 1;Medusa;Laser ER-260;1;2;3.437;6.484;3.279;none
+Medusa Laser 2;Medusa;Laser LP-125;1;1;-3.437;6.484;3.279;none
+Medusa Laser 3;Medusa;Laser ER-260;1;2;3.437;6.484;3.279;none
+Medusa Laser 4;Medusa;Laser LP-125;1;1;-3.437;6.484;3.279;none
+Medusa Cannon 1;Medusa;25mm LR Cannon;0;1;1.852;8.239;3.938;none
+Medusa Cannon 2;Medusa;25mm LR Cannon;0;1;-1.852;8.239;3.938;none

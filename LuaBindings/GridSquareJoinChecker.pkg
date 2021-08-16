@@ -1,0 +1,28 @@
+$#include <Entities/GridSquareJoinChecker.h>
+
+enum HeightDifference
+{
+	SAME_LEVEL = 0,
+	LOWER_LEVEL = 1,
+	HIGHER_LEVEL = 2
+};
+
+struct ValidJoin
+{
+	ValidJoin(SquareType negType, SquareType posType, HeightDifference diff) : NegType(negType), PosType(posType), HeightDiff(diff), Reciprocal(true) {}
+	ValidJoin(SquareType negType, SquareType posType, HeightDifference diff, bool reciprocal) : NegType(negType), PosType(posType), HeightDiff(diff), Reciprocal(reciprocal) {}
+	SquareType NegType;
+	SquareType PosType;
+	HeightDifference HeightDiff;
+	bool Reciprocal;
+};
+
+class GridSquareJoinChecker
+{
+	~GridSquareJoinChecker();
+
+	bool checkValidity(GridSquareTemplate* neg, GridSquareTemplate* pos);
+	std::deque<SquareType> getAllowedTypes(GridSquareTemplate* neg, GridSquareTemplate* pos, bool recommendForPositive = true);
+	
+	static GridSquareJoinChecker* getSingletonPtr();
+};

@@ -1,0 +1,7 @@
+$#include <Repositories/SensorSystemTemplateRepositoryLoader.h>
+
+class SensorSystemTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, SensorSystemTemplateRepository* r);
+	
+};

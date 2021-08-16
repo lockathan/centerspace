@@ -1,0 +1,17 @@
+<rml>
+	<head>
+		<link type="text/template" href="popup.rml" />
+	</head>
+	<body template="window" id="inbattlemenu">
+		<div class="mainMenuBg"><img src="img/menu_bg.png" width="1920" height="1200"></img></div>
+		<div class="menuPosition">
+			<div class="menu_main">
+				<button class="mainBtn" id="return" onclick="returnToBattle"><span class="txtWhite">B</span>ack</button>
+				<button class="mainBtn" id="restartmission" onclick="restart"><span class="txtWhite">R</span>estart</button>
+				<button class="mainBtn" id="exitmission" onclick="endBattle"><span class="txtWhite">Q</span>uit Battle</button>
+				<button class="mainSpacer"></button>
+				<button class="mainBtn"  onclick="exitToWindows">E<span class="txtWhite">x</span>it to Windows</button>
+			</div>
+		</div>	
+	</body>
+</rml>

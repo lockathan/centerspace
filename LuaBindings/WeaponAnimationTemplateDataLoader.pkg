@@ -1,0 +1,6 @@
+$#include <Repositories/WeaponAnimationTemplateDataLoader.h>
+
+class WeaponAnimationTemplateDataLoader : public DataLoader
+{
+	void load(const std::string& fileName );
+};

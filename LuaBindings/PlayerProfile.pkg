@@ -1,0 +1,12 @@
+$#include <Entities/PlayerProfile.h>
+
+class PlayerProfile : public PersistentEntity
+{
+	PlayerProfile() ;
+	~PlayerProfile();
+
+	std::hash_map<std::string, std::string> getGuiValues();
+	
+	bool isAI();
+	void setIsAI(bool value);
+};

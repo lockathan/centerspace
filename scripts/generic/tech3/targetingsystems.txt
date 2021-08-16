@@ -1,0 +1,1 @@
+Galaxian QuickFire 200;700;90;2;Generic Faction;Galaxian QuickFire 200;0;25;0.77;0.14;0.09

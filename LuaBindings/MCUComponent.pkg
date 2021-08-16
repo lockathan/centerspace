@@ -1,0 +1,45 @@
+$#include <Entities/MCUComponent.h>
+
+enum ComponentType
+{
+	CT_CHASSIS = 0,
+	CT_ARMOR = 1,
+	CT_BATTERY = 2,
+	CT_DRIVE = 3,
+	CT_REACTOR = 4,
+	CT_SHIELD = 5,
+	CT_SENSOR_SYSTEM = 6,
+	CT_TARGETING_SYSTEM = 7,
+	CT_WEAPON = 8
+};
+
+class MCUComponent
+{
+	MCUComponent();
+	MCUComponent(MCUController* controller, ComponentType type, float maxHealth);
+	MCUComponent(MCUComponentTemplate* component, MCUController* controller, ComponentType type);
+	MCUComponent(MCUComponentTemplate* component, MCUController* controller, WeaponHardpoint* weapon);
+	~MCUComponent();
+	
+	MCUComponentTemplate* getMCUComponentTemplate();
+	void setMCUComponentTemplate(MCUComponentTemplate* component);
+
+	MCUController* getMCUController();
+	void setMCUController(MCUController* mcu);
+
+	float getHealthRemaining();
+	void setHealthRemaining(const float& health);
+
+	float getMaxHealth();
+	void setMaxHealth(const float& health);
+
+	ComponentType getComponentType();
+	void setComponentType(ComponentType type);
+
+	WeaponHardpoint* getWeaponHardpoint();
+	void setWeaponHardpointNumber(WeaponHardpoint* weapon);
+
+	void applyDamage(const float& damage);
+
+	bool isBroken();
+};

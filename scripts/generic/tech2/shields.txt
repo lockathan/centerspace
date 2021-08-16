@@ -1,0 +1,2 @@
+Shield 100;1700;600;2;Generic Faction;Shield 100;2;45;100;20;20;Shield1
+Shield 125;2200;800;2;Generic Faction;Shield 125;2;50;125;25;25;Shield1

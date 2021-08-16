@@ -1,0 +1,9 @@
+$#include <Repositories/BatteryTemplateRepository.h>
+
+class BatteryTemplateRepository : public Repository<BatteryTemplate>
+{
+	static BatteryTemplateRepository* getSingletonPtr();
+	~BatteryTemplateRepository();
+
+	std::vector<BatteryTemplate*> getAvailableTemplates(int factionId, int rank, int size = 0);
+};

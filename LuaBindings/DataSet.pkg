@@ -1,0 +1,9 @@
+$#include <Entities/DataSet.h>
+
+class DataSet
+{
+	DataSourceType getDataSource();
+	void updateData(int id, std::string key, std::string value);
+	unsigned int numItems();
+	std::string getValue(int id, std::string key);
+};

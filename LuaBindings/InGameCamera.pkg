@@ -1,0 +1,39 @@
+$#include <Managers/InGameCamera.h>
+
+class InGameCamera : public GameManager::EngineUpdateListener, public InputListener::Listener
+{
+	~InGameCamera();
+
+	void initialize(std::string camName, Ogre::Quaternion q, Ogre::Vector3 pos);
+	
+	void mouseMoved(const OIS::MouseEvent& arg);
+	void mouseReleased(const OIS::MouseEvent& arg, OIS::MouseButtonID id);
+	
+	void keyPressed(const OIS::KeyEvent& arg);
+	void keyReleased(const OIS::KeyEvent& arg);
+
+	void update(float timeSinceLastFrame);
+	
+	void addZoomX(float value);
+	void addZoomY(float value);
+	void addZoomZ(float value);
+
+	void setZoomX(float value);
+	void setZoomY(float value);
+	void setZoomZ(float value);
+	
+	void setScrollUp(bool value);
+	void setScrollDown(bool value);
+	void setScrollLeft(bool value);
+	void setScrollRight(bool value);
+
+	void setMaxMovementPerFrameX(float value);
+	void setMaxMovementPerFrameY(float value);
+	
+	Ogre::Camera* getCamera();
+	Ogre::SceneNode* getCamNode();
+
+	void stopAllMovement();
+
+	static InGameCamera* getSingletonPtr();
+};

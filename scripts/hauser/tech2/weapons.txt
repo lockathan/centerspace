@@ -1,0 +1,2 @@
+Laser ER-260;1100;900;2;Hauser Industrial;Laser ER-260;2;24;1;55;12;0;18;1;0;32;0;0;0;Red Laser
+25mm LR Cannon;600;450;2;Hauser Industrial;25mm LR Cannon;1;20;0;0;22;0;14;1;8;0;0;0;2;Straight Cannon Shot

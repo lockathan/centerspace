@@ -1,0 +1,2 @@
+Ion Decay 300;500;1000;2;Generic Faction;Ion Decay 300;1;20;300
+Ion Decay 400;650;1100;2;Generic Faction;Ion Decay 400;2;25;400

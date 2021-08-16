@@ -1,0 +1,10 @@
+$#include <Repositories/SensorSystemTemplateRepository.h>
+
+class SensorSystemTemplateRepository : public Repository<SensorSystemTemplate>
+{
+	static SensorSystemTemplateRepository* getSingletonPtr();
+	~SensorSystemTemplateRepository();
+
+	
+	std::vector<SensorSystemTemplate*> getAvailableTemplates(int factionId, int rank, int size = 0);
+};

@@ -1,0 +1,9 @@
+$#include <Repositories/AnimationDefinitionTemplateDataLoader.h>
+
+class AnimationDefinitionTemplateDataLoader : public DataLoader
+{
+
+	AnimationDefinitionTemplateDataLoader();
+	~AnimationDefinitionTemplateDataLoader();
+	void load(const std::string& fileName );	
+};

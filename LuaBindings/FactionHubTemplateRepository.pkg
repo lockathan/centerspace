@@ -1,0 +1,8 @@
+$#include <Repositories/FactionHubTemplateRepository.h>
+
+class FactionHubTemplateRepository : public Repository<FactionHubTemplate>
+{
+	FactionHubTemplate* getFactionHubTemplate(int factionId, int hubId);
+	static FactionHubTemplateRepository* getSingletonPtr();
+	~FactionHubTemplateRepository();
+};

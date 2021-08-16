@@ -1,0 +1,9 @@
+$#include <Repositories/RandomMissionTypeTemplateRepository.h>
+
+class RandomMissionTypeTemplateRepository : public Repository<RandomMissionTypeTemplate>
+{
+	static RandomMissionTypeTemplateRepository* getSingletonPtr();
+	~RandomMissionTypeTemplateRepository();
+	
+	std::deque<RandomMissionTypeTemplate*> getAvailableTemplates();
+};

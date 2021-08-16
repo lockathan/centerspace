@@ -1,0 +1,6 @@
+$#include <Repositories/TerrainTextureTemplateRepositoryLoader.h>
+
+class TerrainTextureTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, TerrainTextureTemplateRepository* r);	
+};

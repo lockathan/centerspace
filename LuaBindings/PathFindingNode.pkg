@@ -1,0 +1,36 @@
+$#include <Entities/PathFindingNode.h>
+
+class PathFindingNode
+{
+	PathFindingNode();
+	PathFindingNode(BattlefieldGridCell* actual, bool isStart = false);
+	PathFindingNode(PathFindingNode* parent, float totalMovementCost, BattlefieldGridCell* actual, bool isStart = false);
+	~PathFindingNode();
+	
+	PathFindingNode* getParent();
+	void setParent(PathFindingNode* parent);
+
+	float getMovementCost();
+	void setMovementCost(float movement);
+
+	float getTotalMovementCost();
+	void setTotalMovementCost(float total);
+
+	float getEstimatedCostToGoal();
+	void setEstimatedCostToGoal(float value);
+
+	float getWholePathCost();
+
+	int getX();
+	void setX(int x);
+
+	int getZ();
+	void setZ(int z);
+
+	BattlefieldGridCell* getActual();
+	void setActual(BattlefieldGridCell* actual);
+
+	bool isDiagonal(PathFindingNode* neighbour);
+	bool isSloped(PathFindingNode* neighbour);
+	bool isCliff(PathFindingNode* neighbour);
+};

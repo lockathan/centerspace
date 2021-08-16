@@ -1,0 +1,29 @@
+//**************************************************************************************//
+//                                            //
+//                PERPIXEL LIGHTING                    //
+//                    A + D + S                        //
+//                (NO TEXTURING ADDED)                    //
+//**************************************************************************************//
+
+
+
+ 
+//The limitation worth us ~20..100 FPS.It worth it.
+material Perpixel_Limited_3
+{ 
+	technique 
+	{ 
+		pass 
+		{
+			vertex_program_ref PerPixel_Lim3_Vert
+			{ 
+			}   
+
+			fragment_program_ref PerPixel_Lim3_Frag
+			{
+			} 
+		}  
+
+	}  
+
+}

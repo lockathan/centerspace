@@ -1,0 +1,6 @@
+$#include <Repositories/BattlefieldTemplateRepositoryLoader.h>
+
+class BattlefieldTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, BattlefieldTemplateRepository* r);	
+};

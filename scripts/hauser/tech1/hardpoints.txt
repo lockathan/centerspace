@@ -1,0 +1,10 @@
+Interceptor Laser 1;Interceptor;Light Plasma Cannon;1;1;2.316;7.916;2.501;none
+Interceptor Laser 2;Interceptor;Light Plasma Cannon;1;1;-2.316;7.916;2.501;none
+Interceptor Cannon 1;Interceptor;25mm LR Cannon;0;1;1.157;11.565;1.414;none
+Interceptor Cannon 2;Interceptor;25mm LR Cannon;0;1;-1.157;11.565;1.414;none
+Warthog Laser 1;Warthog;Laser LP-125;1;1;2.475;6.025;0.93;none
+Warthog Laser 2;Warthog;Laser LP-125;1;1;-2.475;6.025;0.93;none
+Warthog Cannon 1;Warthog;25mm LR Cannon;0;1;1.251;5.947;2.802;none
+Warthog Cannon 2;Warthog;25mm LR Cannon;0;1;-1.251;5.947;2.802;none
+Warthog Missile 1;Warthog;Missile T2;3;1;1.609;8.741;-2.29;none
+Warthog Missile 2;Warthog;Missile T2;3;1;-1.609;8.741;-2.29;none

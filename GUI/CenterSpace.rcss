@@ -1,0 +1,574 @@
+databoundtext{
+ margin:0px;
+ padding:0px;
+}
+div
+{
+	display: block;
+}
+
+p
+{
+	display: block;
+}
+
+h1
+{
+	display: block;
+}
+
+body
+{
+	font-family: Roboto;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 15;
+	width:100%;
+	height:100%;
+}
+
+body.window
+{
+	width: 100%;
+	height:100%;
+	text-align: center;
+	background-color:transparent;
+}
+
+
+div#window
+{
+	width: auto;
+	padding-top: 60px;
+	border-width: 2px;
+	border-color: green;
+}
+
+div#content
+{
+	z-index: 2;
+	width: auto;
+	text-align: center;
+}
+button{
+	display:inline-block;
+}
+.hidden
+{
+	display: none;
+	visibility:hidden;
+}
+
+.contentwindow
+{
+	z-index: 2;
+	width: auto;
+	height: 100%;
+	border-color: green;
+	border-width: 1px;
+	text-align: center;
+}
+
+
+databoundcssproperty
+{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+
+dataprovider
+{
+	display:block;
+}
+
+databoundlist
+{
+	display:block;
+	width: auto;
+	height: auto;
+}
+
+databoundlistitem
+{
+	display: block;
+	width: auto;
+}
+
+.topRight{
+	background-decorator: image;
+    background-image-src: img/weapons_bg.png;
+	position:absolute;
+	top:10px;
+	right:0px;
+	z-index:2;
+	width:153px;
+	height:450px;
+}
+weaponbutton{
+	position:relative;
+	z-index:2;
+	width:132px;
+	height:30px;
+	display:block;
+	margin-left:8px;
+	color:#94a6bf;
+	padding-top:9px;
+	font-size:12px;
+	padding-left:5px;
+}
+
+.weaponbuttonenabled{
+	background-decorator: image;
+    background-image-src: img/weaponsBtn.png;
+}
+.weaponbuttonenabled:hover{
+	background-decorator: image;
+    background-image-src: img/weaponsBtn_o.png;
+}
+.weaponbuttondisabled{
+	background-decorator: image;
+    background-image-src: img/weaponsBtn_inactive.png;
+}
+.weaponbuttondisabled:hover{
+	background-decorator: image;
+    background-image-src: img/weaponsBtn_inactive_o.png;
+}
+.weaponinfo{
+	font-size:12px;
+	color:#94a6bf;
+	padding-left:5px;
+}
+.weaponHead{
+	margin-top:25px;
+	margin-left:10px;
+	padding-bottom:10px;
+
+}
+.bottomhudL{
+	background-decorator: image;
+    background-image-src: img/bg_left_menu.png;
+	position:absolute;
+	bottom:0px;
+	z-index:4;
+	width:657px;
+	height:340px;
+	padding-left:0px;
+	padding-top:0px;
+}
+.bottomhudL1{
+	background-decorator: image;
+    background-image-src: img/bg_left_menu1.png;
+	position:absolute;
+	bottom:0px;
+	z-index:4;
+	width:212px;
+	height:340px;
+	padding-left:0px;
+	padding-top:0px;
+}
+.bottomhudL2{
+	background-decorator: image;
+    background-image-src: img/bg_left_menu2.png;
+	position:absolute;
+	left: 212px;
+	bottom:0px;
+	z-index:4;
+	width:444px;
+	height:43px;
+	padding-left:0px;
+	padding-top:0px;
+}
+.bottomLeft{
+	position:absolute;
+	bottom:0px;
+	z-index:3;
+	width:186px;
+	height:340px;
+	padding-left:0px;
+	padding-top:10px;
+}
+
+.bottomhudR1{
+	background-decorator: image;
+    background-image-src: img/bg_right_menu1.png;
+	position:absolute;
+	bottom:0px;
+	right: 212px;
+	z-index:4;
+	width:444px;
+	height:43px;
+	padding-left:0px;
+	padding-top:0px;
+}
+.bottomhudR2{
+	background-decorator: image;
+    background-image-src: img/bg_right_menu2.png;
+	position:absolute;
+	bottom:0px;
+	right: 0px;
+	z-index:4;
+	width:212px;
+	height:340px;
+	padding-left:0px;
+	padding-top:0px;
+}
+.statusPos{
+	padding-left:18px;
+	width: 173px;
+	padding-top:20px;
+}
+.statusBtn{
+	padding-top:9px;	
+}
+.readOut{
+	width:141px;
+	height:26px;
+	text-align:center;
+	color:#94a6bf;
+	font-size:13px;
+}
+
+.statusMechThumb{
+	width:135px;
+	height:117px;
+	padding-top:36px;
+	padding-left:27px;
+}
+.statusMechThumbTest{
+	position: static;
+	width:135px;
+	height:117px;
+	padding-top:72px;
+	padding-left:50px;
+}
+
+.topMiddleHUD{
+	position: absolute;
+	top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index:2;
+	width:150px;
+	height:37px;
+}
+.bottomhudBg{
+	background-decorator: tiled-horizontal;
+	background-left-image: img/bg_bottom.png 147px 0px 229px 85px;
+	background-center-image: img/bg_bottom.png repeat-stretch 0px 0px 24px 28px;
+	background-right-image: img/bg_bottom.png 231px 0px 246px 85px;
+	position:absolute;
+	bottom:0px;
+	z-index:1;
+	height:28px;
+	width:100%;
+}
+.mechName{
+	z-index:4;
+	position:absolute;
+	bottom:8px;
+	right:215px;
+	color:#94a6bf;
+	font-size:16px;
+	text-align:center;
+	width:220px;
+	height:26px;
+}
+.enemyName{
+	z-index:4;
+	position:absolute ;
+	bottom:8px;
+	right: 0px;
+	color:#94a6bf;
+	font-size:16px;
+	text-align:center;
+	width:220px;
+	height:26px;
+}
+.battleMenu{
+	z-index:4;
+	position:relative;
+	width:145px;
+	height:28px;
+}
+.endTurn{
+	z-index:4;
+	position:absolute;
+	bottom:2px;
+	left:18px;
+	width:145px;
+	height:28px;
+}
+.thumbs{
+	background-decorator: image;
+    background-image-src: img/thumbs_bg.png;
+	position:absolute;
+	top:3px;
+	left:0px;
+	z-index:2;
+	height:413px;
+	width:34px;
+}
+.thumbsHolder{
+	position:absolute;
+	z-index:3;
+	height:413px;
+	width:62px;
+}
+.thumbHolder{
+	width:46px;
+	height:54px;
+	z-index:4;
+	postition:absolute;
+	margin-top:15px;
+}
+.thumbImage{margin-left:-4px;}
+.thumbLayover{
+	width:43px;
+	height:33px;
+	background-decorator: image;
+    background-image-src: img/thumb_unselected.png;
+	z-index:6;
+	postition:absolute;
+	margin-top:-49px;
+	color:#ffbf21;
+	text-align:right;
+	padding-top:21px;
+	font-size:10px;
+	padding-right:3px;
+}
+.thumbLayover:hover{
+    background-image-src: img/thumb_selected.png;
+	color:#0b0e12;
+}
+.thumbNav{
+	position:absolute;
+	top:0px;
+	width:42px;
+	z-index:1;
+	margin-left:55px;
+	margin-top:10px;
+}
+.upArrow{
+	width:42px;
+	height:30px;
+	background-decorator: image;
+    background-image-src: img/thumb_arrowUp.png;
+	display:block;
+}
+.upArrow:hover{
+	background-decorator: image;
+    background-image-src: img/thumb_arrowUp_o.png;
+}
+.downArrow{
+	width:42px;
+	height:34px;
+	background-decorator: image;
+    background-image-src: img/thumb_arrowDown.png;
+	display:block;
+}
+.downArrow:hover{
+	background-decorator: image;
+    background-image-src: img/thumb_arrowDown_o.png;
+}
+
+.btnGen{
+	background-decorator: image;
+    background-image-src: img/menuGen.png;
+	z-index:3;
+	width:149px;
+	height:30px;
+	color:#94a6bf;
+	padding-top:9px;
+	font-size:12px;
+}
+.btnGen:hover{
+	background-decorator: image;
+    background-image-src: img/menuGen_o.png;
+	color:#ffffff;
+}
+
+.mainMenuBg{
+	position:absolute;
+	z-index:4;
+	display: block;
+	top:0;
+	left:-1px;
+	background-color:transparent;
+	
+}
+.mainMenuBg img{
+}
+.mainMenuBg img{
+ 	width: 1920px;
+	height: 1200px;
+   	display: block;
+    margin: auto;
+	background-color:transparent;
+}
+.mainMenuPosition{
+	z-index:5;
+	position:absolute;
+	top:0;
+	margin:auto;
+	width:810px;
+	height:800px;
+}
+.mainMenu_main{
+	z-index:6;
+	top:0;
+	margin:auto;
+	width:242px;
+	height:350px;
+	padding-top:150px;
+}
+.mainBtn{
+	width:242px;
+	height:48px;
+	z-index:3;
+	background-decorator: image;
+    background-image-src: img/main_menu_btn.png;
+	border:0px;
+	color:#a8bcd9;
+	font-size:18px;
+	padding-top:16px;
+	font-weight:normal;
+	margin-top:-4px;
+	margin-bottom:5px;
+}
+.mainSpacer{
+	height:50px;
+}
+.mainBtn:hover{
+	background-decorator: image;
+    background-image-src: img/main_menu_btn_o.png;
+	color:#FFFFFF;
+	font-weight:normal;
+}
+
+.menuPosition{
+	z-index:5;
+	position:absolute;
+	top:0;
+	margin:auto;
+	width:810px;
+	height:500px;
+	background-color:transparent;
+}
+.menu_main{
+	z-index:5;
+	top:0;
+	margin:auto;
+	width:242px;
+	height:350px;
+	padding-top:150px;
+}
+.selectHeading{
+	color:#e5c373;
+	font-size:16px;
+	text-align:center;
+	display:block;
+	background-decorator: image;
+    background-image-src: img/select_user_bg.png;
+	width:406px;
+	height:38px;
+	margin:0px auto;
+	margin-top:10px;
+}
+.createHeading{
+	color:#e5c373;
+	font-size:16px;
+	text-align:center;
+	padding-bottom:5px;
+	display:block;
+	background-decorator: image;
+    background-image-src: img/create_user_bg.png;
+	width:406px;
+	height:38px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.selectUser{
+	z-index:6;
+	position:relative;
+	padding-top:0px;
+	margin:auto;
+	width:800px;
+	height:390px;
+	padding-top:110px;
+}
+.selectBtn{
+	width:208px;
+	height:32px;
+	background-decorator: image;
+    background-image-src: img/select_btn.png;
+	color:#a8bcd9;
+	font-size:15px;
+	padding-top:8px;
+	font-weight:normal;
+	display:block;
+	margin:0 auto;
+	margin-bottom:5px;
+}
+.selectBtn:hover{
+	background-decorator: image;
+    background-image-src: img/select_btn_o.png;
+	color:#ffffff;
+}
+.inputMenu{
+	text-align:center;
+	background-decorator: image;
+    background-image-src: img/input_bg.png;
+	width:194px;
+	height:29px;
+	padding-top:6px;
+	color:#a8bcd9;
+	font-size:15px;
+	padding-left:10px;
+	padding-right:10px;
+	display:inline-block;
+	margin-bottom:15px;
+}
+.selectHauser{
+	width:216px;
+	height:42px;
+	background-decorator: image;
+    background-image-src: img/select_hauser.png;
+	display:inline-block;
+	padding-top:130px;
+}
+.selectPax{
+	width:216px;
+	height:42px;
+	margin-left:40px;
+	margin-right:40px;
+	background-decorator: image;
+    background-image-src: img/select_pax.png;
+	display:inline-block;
+	padding-top:130px;
+}
+.selectIntegrant{
+	width:216px;
+	height:42px;
+	background-decorator: image;
+    background-image-src: img/select_integrant.png;
+	display:inline-block;
+	padding-top:130px;
+}
+.selectDesc{
+	width:216px;
+	display:inline-block;
+	color:#a8bcd9;
+	font-size:12px;
+}
+.selectDescMiddle{
+	width:216px;
+	display:inline-block;
+	color:#ffffff;
+	font-size:12px;
+	margin-left:40px;
+	margin-right:40px;
+}
+.txtWhite{
+	color:#FFFFFF;
+}

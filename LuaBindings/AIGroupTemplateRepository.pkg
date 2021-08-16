@@ -1,0 +1,11 @@
+$#include <Repositories/AIGroupTemplateRepository.h>
+
+class AIGroupTemplateRepository : public Repository<AIGroupTemplate>
+{
+	static AIGroupTemplateRepository* getSingletonPtr();
+	~AIGroupTemplateRepository();
+	
+	std::deque<AIGroupTemplate*>& getAvailableAIGroupTemplates(int factionId, int rank);
+	std::deque<AIGroupTemplate*>& getAvailableAIGroupTemplates(int factionId, int rank, AIGroupTemplate::AIGroupType type);
+	AIGroupTemplate* getRandomAIGroupTemplate(int factionId, int rank);
+};

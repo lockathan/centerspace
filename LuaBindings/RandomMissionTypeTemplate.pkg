@@ -1,0 +1,17 @@
+$#include <Templates/RandomMissionTypeTemplate.h>
+
+class RandomMissionTypeTemplate : public Template
+{
+	RandomMissionTypeTemplate();
+	~RandomMissionTypeTemplate();
+
+	std::string getPlacementScriptFilename();
+	void setPlacementScriptFilename(const std::string& file);
+
+	std::string getPlayerPlacementEntryPoint();
+	void setPlayerPlacementEntryPoint(const std::string& entry);
+
+	std::string getEnemyPlacementEntryPoint();
+	void setEnemyPlacementEntryPoint(const std::string& entry);
+
+};

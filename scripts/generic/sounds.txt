@@ -1,0 +1,17 @@
+ambient;Centerspace.ogg;true
+cannon;CS_25mm_LR_Cannon.ogg;false
+jump;CS_character jump.ogg;false
+land;CS_character land.ogg;false
+turn;CS_Character turn.ogg;false
+grid_select;CS_grid select.ogg;false
+big_laser;CS_Laser_ER260.ogg;false
+small_laser;CS_Laser_LP125.ogg;false
+menu_ambience;CS_Menu Ambience.ogg;false
+lock_and_load;CS_mouse click lock and load.ogg;false
+click;CS_mouse click.ogg;false
+plasma;CS_Plasma_Cannon.ogg;false
+missile_full;CS_Tomahawk Missile_full.ogg;false
+missile_impact;CS_Tomahawk Missile_Impact.ogg;false
+missile_launch;CS_Tomahawk Missile_launch.ogg;false
+walk1;CS_walk cycle_1.ogg;false
+walk2;CS_walk cycle_2.ogg;false

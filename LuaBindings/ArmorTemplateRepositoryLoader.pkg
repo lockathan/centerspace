@@ -1,0 +1,6 @@
+$#include <Repositories/ArmorTemplateRepositoryLoader.h>
+
+class ArmorTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, ArmorTemplateRepository* r);
+};

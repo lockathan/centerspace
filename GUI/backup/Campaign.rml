@@ -1,0 +1,33 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/template" href="window.rml" />
+
+	</head>
+	<body template="window" id="Campaign" class="ProfileMain">
+		<luascript>campaign.lua</luascript>
+		<div class="mainMenuBg"><img src="img/main_menu_bg.png" width="1920" height="1200"></img></div>
+		<div class="mainMenuPosition">
+		<div class="selectUser">
+				<div class="selectHeading">Select a Campaign</div>
+		<div id="campaignBtn">
+			
+			<div onclick="startHauserCampaign" class="selectHauser"><button onclick="startHauserCampaign" class="selectBtn">Hauser Industrial</button></div>
+			<div onclick="startPaxCampaign" class="selectPax"><button onclick="startPaxCampaign" class="selectBtn">Pax Syndicate</button></div>
+			<div onclick="startIntegrantCampaign" class="selectIntegrant"><button onclick="startIntegrantCampaign" class="selectBtn">Integrant Foundation</button></div>
+		</div>
+		<div class="selectDesc">
+		
+		</div>
+		<div class="selectDescMiddle">
+		
+		</div>
+		<div class="selectDesc">
+		
+		</div>
+		
+		</div>
+		<button id="backtomainbasescreen" class="mainBtn">Back</button>
+		</div>
+	</body>
+</rml>

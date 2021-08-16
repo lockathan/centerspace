@@ -1,0 +1,11 @@
+$#include <Managers/RandomMissionGenerator.h>
+
+class RandomMissionGenerator
+{
+	~RandomMissionGenerator();
+
+	RandomMission* generateMission(CampaignState* state, int missionId);
+	void finalizeMission(RandomMission* mission, CampaignState* state);
+
+	static RandomMissionGenerator* getSingletonPtr();
+};

@@ -1,0 +1,2 @@
+Reeves-McIntosh Basic;200;100;1;Generic Faction;Reef-McIntosh Basic;0;10;7;8;2
+Reeves-McIntosh Advanced;500;300;1;Generic Faction;Reef-McIntosh Advanced;0;12;8;10;5

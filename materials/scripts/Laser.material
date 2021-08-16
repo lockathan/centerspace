@@ -1,0 +1,100 @@
+material Laser_Red
+{
+    // first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+			cull_hardware clockwise
+
+			depth_write off
+			scene_blend alpha_blend
+
+			ambient 0.778735 0.178735 0.178735 .75
+			diffuse 0.885976 0.285976 0.285976 .75
+			specular 0.500000 0.500000 0.500000 .8 12.500000
+        }
+    }
+		
+}
+material Laser_Blue
+{
+    // first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+			cull_hardware clockwise
+
+			depth_write off
+			scene_blend alpha_blend
+
+			ambient 0.178735 0.178735 0.778735 .75
+			diffuse 0.285976 0.285976 0.885976 .75
+			specular 0.500000 0.500000 0.500000 .8 12.500000
+        }
+    }
+		
+}
+material Laser_Yellow
+{
+    // first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+			cull_hardware clockwise
+
+			depth_write off
+			scene_blend alpha_blend
+
+			ambient 0.778735 0.778735 0.178735 .75
+			diffuse 0.885976 0.885976 0.285976 .75
+			specular 0.500000 0.500000 0.500000 .8 12.500000
+        }
+    }
+		
+}
+material Laser_Purple
+{
+    // first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+			cull_hardware clockwise
+
+			depth_write off
+			scene_blend alpha_blend
+
+			ambient 0.678735 0.178735 0.778735 .75
+			diffuse 0.785976 0.285976 0.885976 .75
+			specular 0.500000 0.500000 0.500000 .8 12.500000
+        }
+    }
+		
+}
+material Laser_Green
+{
+    // first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+			cull_hardware clockwise
+
+			depth_write off
+			scene_blend alpha_blend
+
+			ambient 0.178735 0.778735 0.178735 .75
+			diffuse 0.285976 0.885976 0.285976 .75
+			specular 0.500000 0.500000 0.500000 .8 12.500000
+        }
+    }
+		
+}

@@ -1,0 +1,16 @@
+$#include <Templates/RankTemplate.h>
+
+class RankTemplate : public Template
+{
+	RankTemplate();
+	~RankTemplate();
+	
+	FactionTemplate* getFactionTemplate();
+	void setFactionTemplate(FactionTemplate* faction);
+
+	int getRequiredExperience();
+	void setRequiredExperience(int exp);
+
+	int getRank();
+	void setRank(int rank);
+};

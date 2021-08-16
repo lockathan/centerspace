@@ -1,0 +1,9 @@
+Kindjal laser anim 1;Kindjal;0;arm cannon stance IN;1.0;arm cannon fire left;1.0;arm cannon fire OUT;1.0
+Kindjal laser anim 2;Kindjal;1;arm cannon stance IN;1.0;arm cannon fire right;1.0;arm cannon fire OUT;1.0
+Kindjal cannon anim 1;Kindjal;2;shoulder cannon stance IN;1.0;shoulder cannon fire;1.0;shoulder cannon stance OUT;1.0
+Kindjal missile anim 1;Kindjal;3;none;1.0;torso cannon fire;1.0;none;1.0
+Rapier laser anim 1;Rapier;0;arm cannon stance IN;1.0;arm cannon fire left;1.0;arm cannon stance OUT;1.0
+Rapier laser anim 2;Rapier;1;arm cannon stance IN;1.0;arm cannon fire right;1.0;arm cannon stance OUT;1.0
+Rapier cannon anim 1;Rapier;2;arm cannon stance IN;1.0;arm cannon fire left;1.0;arm cannon stance OUT;1.0
+Rapier cannon anim 2;Rapier;3;arm cannon stance IN;1.0;arm cannon fire right;1.0;arm cannon stance OUT;1.0
+Rapier missile anim 1;Rapier;4;none;1.0;shoulder missiles fire;1.0;none;1.0

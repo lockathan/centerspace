@@ -1,0 +1,13 @@
+$#include <Templates/SensorSystemTemplate.h>
+
+class SensorSystemTemplate : public MCUComponentTemplate
+{
+	SensorSystemTemplate();
+	~SensorSystemTemplate();
+	
+	float getSightRange();
+	void setSightRange(const float& range);
+
+	float getRadarRange();
+	void setRadarRange(const float& range);
+};

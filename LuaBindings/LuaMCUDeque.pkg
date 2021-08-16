@@ -1,0 +1,21 @@
+$#include <LuaBindings/LuaMCUDeque.h>
+
+class LuaMCUDeque
+{
+	void addMechanizedCombatUnit(MechanizedCombatUnit* mcu);
+	void setMCUs(std::deque<MechanizedCombatUnit*>& mcus);
+	std::deque<MCUPlacement*>& getMCUPlacements();
+
+	MCUPlacement* getNext();
+	bool hasMoreItems();
+	void reset();
+	unsigned int numItems();
+
+	int getSeedX();
+	void setSeedX(int seed);
+
+	int getSeedZ();
+	void setSeedZ(int seed);
+
+	bool isCellOccupied(int x, int z);
+};

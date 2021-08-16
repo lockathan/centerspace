@@ -1,0 +1,5 @@
+Lifeform Node;1;Integrant Foundation;0
+Computational Unit;2;Integrant Foundation;1
+Unit Vector;3;Integrant Foundation;15
+Normalized Vector;4;Integrant Foundation;9999
+Matrix Leader;5;Integrant Foundation;99999

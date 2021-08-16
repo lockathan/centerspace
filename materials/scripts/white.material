@@ -1,0 +1,19 @@
+material white
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			cull_hardware clockwise
+
+			depth_write off
+			scene_blend alpha_blend
+
+			ambient 0.75 0.75 0.75 .5
+			diffuse 0.92 0.92 0.92 .5
+			specular 0.500000 0.500000 0.500000 .8 12.500000
+		}
+	}	
+		
+}

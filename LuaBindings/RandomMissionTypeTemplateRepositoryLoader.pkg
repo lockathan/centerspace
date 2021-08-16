@@ -1,0 +1,8 @@
+$#include <Repositories/RandomMissionTypeTemplateRepositoryLoader.h>
+
+class RandomMissionTypeTemplateRepositoryLoader : public RepositoryLoader
+{
+	RandomMissionTypeTemplateRepositoryLoader();
+	~RandomMissionTypeTemplateRepositoryLoader();
+	void load(const std::string& fileName, RandomMissionTypeTemplateRepository* r);	
+};

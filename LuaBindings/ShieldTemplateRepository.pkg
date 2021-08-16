@@ -1,0 +1,9 @@
+$#include <Repositories/ShieldTemplateRepository.h>
+
+class ShieldTemplateRepository : public Repository<ShieldTemplate>
+{
+	static ShieldTemplateRepository* getSingletonPtr();
+	~ShieldTemplateRepository();
+	
+	std::vector<ShieldTemplate*> getAvailableTemplates(int factionId, int rank, int size = 0);
+};

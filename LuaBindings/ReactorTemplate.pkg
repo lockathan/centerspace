@@ -1,0 +1,10 @@
+$#include <Templates/ReactorTemplate.h>
+
+class ReactorTemplate : public MCUComponentTemplate
+{
+	ReactorTemplate();
+	~ReactorTemplate();
+
+	float getMaxEnergy();
+	void setMaxEnergy(float maxEnergy);
+};

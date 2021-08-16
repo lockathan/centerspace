@@ -1,0 +1,9 @@
+$#include <Repositories/AIMCUTemplateRepository.h>
+
+class AIMCUTemplateRepository : public Repository<AIMCUTemplate>
+{
+	static AIMCUTemplateRepository* getSingletonPtr();
+	~AIMCUTemplateRepository();
+
+	std::vector<AIMCUTemplate*> getAvailableAIMCUTemplates(int factionId, int rank);
+};

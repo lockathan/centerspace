@@ -1,0 +1,48 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/template" href="hud.rml" />
+	</head>
+	<body template="hud" id="InBattleHUD">
+		<luascript ondatabind="OnDataBind">inbattlehud.lua</luascript>
+		<div class="topRight"><div class="weaponHead readOut">Weapons</div>
+		<dataprovider datasource="mcus" id="mcudp">
+				<dataprovider datasource="weapons">
+					<databoundlist useselectbehaviour="false">
+						<weaponbutton>@WeaponName@</weaponbutton>
+					</databoundlist>
+				</dataprovider>
+			</dataprovider>
+		</div>
+		<div class="bottomhudL1">
+			<div class="statusPos">
+			<dataprovider datasource="mcus" id="mcustatus">
+				<div class="statusBtn readOut">Shield: Null</div>
+				<div class="statusBtn readOut">Battery: <databoundtext>@RemainingBatteryPower@</databoundtext></div>
+				<div class="statusBtn readOut">Reactor: <databoundtext>@RemainingReactorPower@</databoundtext></div>
+			</dataprovider>
+			</div>
+			<div class="statusMechThumb"><img src="img/thumb_warthog.png" width="135" height="117"/></div>
+			
+			<div class="btnGen endTurn" id="endturn"><span class="txtWhite">E</span>nd Turn</div>
+		</div>
+		<div class="bottomhudL2">
+			<div class="mechName">Your MechName</div>
+		</div>
+		<div class="bottomhudR"><div class="btnGen battleMenu" id="loadinbattlemenu">Menu <span class="txtWhite">[F10]</span></div></div>
+		<div class="bottomhudBg"></div>
+		<div class="thumbsHolder">
+			<div class="thumbs">
+				<dataprovider datasource="mcus" id="mcuThumbs">
+					<databoundlist>
+						<div class="thumbHolder" onclick="selectMCU">
+							<databoundimg class="thumbImage" folder="img/" onclick="selectMCU">@ThumbnailImage@</databoundimg>
+							<div class="thumbLayover" onclick="selectMCU"><databoundtext onclick="selectMCU">@MCUName@</databoundtext></div>
+						</div>
+					</databoundlist>
+				</dataprovider>
+			</div>
+		</div>
+		<div class="thumbNav"><div class="upArrow" onclick="nextMCU"></div><div class="downArrow" onclick="prevMCU"></div></div>
+	</body>
+</rml>

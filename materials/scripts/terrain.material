@@ -1,0 +1,34 @@
+material terrain1
+{
+    // first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+			vertex_program_ref PerPixel_Lim3_Vert
+			{ 
+			}   
+
+			fragment_program_ref PerPixel_Lim3_Frag
+			{
+			} 
+			
+            texture_unit 
+            {
+				texture_alias Fog
+                texture RttTex
+				tex_coord_set 0
+            }
+			
+			texture_unit 
+            {
+				texture_alias Detail1
+				tex_coord_set 1
+                filtering anisotropic
+            }
+			
+        }
+    }
+		
+}

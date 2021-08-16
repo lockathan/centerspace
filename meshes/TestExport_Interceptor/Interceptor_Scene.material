@@ -1,0 +1,31 @@
+material NoMaterial
+{
+	technique
+	{
+		pass
+		{
+		}
+
+	}
+
+}
+
+
+
+material lambert2
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+
+			texture_unit
+			{
+				texture MCU_01_Tex.png
+			}
+		}
+
+	}
+
+}

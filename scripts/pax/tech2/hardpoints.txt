@@ -1,0 +1,6 @@
+Broadsword Laser 1;Broadsword;Laser LP-250;1;2;3.73;9.958;2.172;none
+Broadsword Laser 2;Broadsword;Laser LP-250;1;2;-3.73;9.958;2.172;none
+Broadsword Cannon 1;Broadsword;20mm AC;0;1;2.533;8.926;1.179;none
+Broadsword Cannon 2;Broadsword;20mm AC;0;1;-2.533;8.926;1.179;none
+Broadsword Missile 1;Broadsword;Missile T2;3;1;-0.797;11.501;-1.771;none
+Broadsword Missile 2;Broadsword;Missile T2;3;1;-1.214;11.501;-1.771;none

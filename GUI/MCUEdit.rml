@@ -1,0 +1,50 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/template" href="window.rml" />
+	</head>
+	<body template="window" id="MCUEdit">
+		<dataprovider datasource="mcus" id="mcueditdp">
+			<databoundtext>@MCUName@</databoundtext>
+			<button><databoundtext id="editarmor">@ArmorName@</databoundtext></button>
+			<button><databoundtext id="editbattery">@BatteryName@</databoundtext></button>
+			<button><databoundtext id="editdrive">@DriveName@</databoundtext></button>
+			<button><databoundtext id="editreactor">@ReactorName@</databoundtext></button>
+			<button><databoundtext id="editsensor">@SensorSystemName@</databoundtext></button>
+			<button><databoundtext id="editshield">@ShieldName@</databoundtext></button>
+			<button><databoundtext id="edittarget">@TargetingSystemName@</databoundtext></button>
+			<dataprovider datasource="weapons" id="weaponselectdp">
+				<databoundlist>
+					<databoundtext>@WeaponName@</databoundtext>
+				</databoundlist>
+			</dataprovider>
+		</dataprovider>
+		<dataprovider datasource="componenttemplates" id="componenteditdp">
+			<databoundlist>
+				<databoundtext>@ComponentName@</databoundtext>
+				<databoundtext>@ComponentCost@</databoundtext>
+			</databoundlist>
+			<databoundtext>@ComponentName@</databoundtext><br/>
+			<databoundtext>@ComponentCost@</databoundtext><br/>
+			<databoundtext>@ComponentDescription@</databoundtext><br/>
+			<button id="purchasecomponent">Purchase</button><br/>
+			<button id="cancelpurchasecomponent">Cancel</button><br/>
+		</dataprovider>
+		<dataprovider datasource="weapontemplates" id="weaponeditdp">
+			<databoundlist>
+				<databoundtext>@WeaponName@</databoundtext>
+				<databoundtext>@WeaponCost@</databoundtext>
+			</databoundlist>
+			<databoundtext>@WeaponName@</databoundtext><br/>
+			<databoundtext>@WeaponCost@</databoundtext><br/>
+			<databoundtext>@WeaponDescription@</databoundtext><br/>
+			<button id="purchasecomponent">Purchase</button><br/>
+			<button id="cancelpurchasecomponent">Cancel</button><br/>
+		</dataprovider>
+		<dataprovider datasource="singleplayerprofiles" id="campaigninfodp">
+				Remaining Cash: <databoundtext>@Cash@</databoundtext>
+		</dataprovider>
+		<button id="backtomcubayscreen">Back</button>
+		
+	</body>
+</rml>

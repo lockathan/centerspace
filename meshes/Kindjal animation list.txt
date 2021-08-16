@@ -1,0 +1,23 @@
+kindjal animation list
+
+Frames 1 - 70 - idle
+       71 - 116 - walk
+
+       117 - 171 - arm cannon stance IN
+       171 - 198 - arm cannon fire right
+       198 - 222 - arm cannon fire left
+       222 - 252 - arm cannon fire OUT
+
+       253 - 324 - shoulder cannon stance IN
+       324 - 340 - shoulder cannon fire
+       340 - 358 - shoulder cannon stance OUT
+
+       359 - 418 - being hit
+
+       419 - 457 - take off
+       457 - 486 - hover/fly
+       486 - 508 - land
+
+       509 - 587 - death
+
+       

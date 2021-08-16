@@ -1,0 +1,24 @@
+
+vertex_program Transparent_Texture_VP cg
+{
+    source transparent_texture.cg
+    profiles vs_1_1 arbvp1
+    entry_point transparent_texture_vs
+
+    default_params
+    {
+        param_named_auto wvpMat worldviewproj_matrix
+    }
+}
+
+fragment_program Transparent_Texture_FP cg
+{
+    source transparent_texture.cg
+    profiles ps_2_x arbfp1
+    entry_point transparent_texture_fs
+
+    default_params
+    {
+	
+    }
+}

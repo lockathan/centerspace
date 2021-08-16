@@ -1,0 +1,3 @@
+Aphid v3;3;Integrant Foundation;4cm Plasteel;Cad-Poly 50;Electro Magnetic Drive D1;Ion Decay 300;Reeves-McIntosh Basic;Shield 50;Reef-McIntosh Targeter Pro;Aphid;Laser HP-150;Laser HP-150;Tomahawk Missile;Tomahawk Missile;0;0;0;0
+Wraith v3;3;Integrant Foundation;5cm Ti-Alloy;Cad-Poly 50;Electro Magnetic Drive D1;Ion Decay 300;Reeves-McIntosh Basic;Shield 75;Reef-McIntosh Targeter Pro;Wraith;Laser HP-150;Laser HP-150;20mm AC;20mm AC;0;0;0;0
+Raptor v2;3;Integrant Foundation;9cm Plasteel;Cad-Poly 100;Electro Magnetic Drive D2;Ion Decay 400;Reeves-McIntosh Basic;Shield 125;Reef-McIntosh Targeter Pro;Raptor;Laser HP-275;Laser HP-275;20mm AC;20mm AC;Missile T2;Missile T2;0;0

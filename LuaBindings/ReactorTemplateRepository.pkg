@@ -1,0 +1,9 @@
+$#include <Repositories/ReactorTemplateRepository.h>
+
+class ReactorTemplateRepository : public Repository<ReactorTemplate>
+{
+	static ReactorTemplateRepository* getSingletonPtr();
+	~ReactorTemplateRepository();
+	
+	std::vector<ReactorTemplate*> getAvailableTemplates(int factionId, int rank, int size = 0);
+};

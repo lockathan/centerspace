@@ -1,0 +1,2 @@
+Aphid;4500;9000;1;Integrant Foundation;Test;0;32;1;1;1;1;1;1;4cm Standard;Li-Ion 25;Electro Magnetic Drive D1;Ion Decay 300;Reeves-McIntosh Basic;Shield 50;Reef-McIntosh Targeter Pro;aphid.mesh;aphid_1;32.0;3.2;light;0.6;aphid_thumbnail.png;profile_aphid.png;walk1
+Wraith;6500;12000;1;Integrant Foundation;Test;0;40;1;1;1;1;1;1;4cm Standard;Li-Ion 25;Electro Magnetic Drive D1;Ion Decay 300;Reeves-McIntosh Basic;Shield 75;Reef-McIntosh Targeter Pro;wraith.mesh;wraith_1;28.0;2.8;light;0.7;wraith_thumbnail.png;profile_wraith.png;walk1

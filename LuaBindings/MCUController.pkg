@@ -1,0 +1,131 @@
+$#include <Controllers/MCUController.h>
+
+class MCUController : MovableEntity
+{
+	MCUController();
+	MCUController(Ogre::SceneNode* node,Ogre::Entity* entity,MechanizedCombatUnit* mcu, PlayerBattleState* player,BattlefieldGridCell* location, BattlefieldGrid* grid, int battlefieldId);
+	MCUController(Ogre::SceneNode* node,Ogre::Entity* entity, MCUAnimationController* anim,KinematicCharacterController* physics,MechanizedCombatUnit* mcu, PlayerBattleState* player,BattlefieldGridCell* location, BattlefieldGrid* grid, float height);
+	~MCUController();
+
+	void MCUController::startTurn();
+	void MCUController::endTurn();
+
+	Ogre::Entity* getEntity();
+	void setEntity(Ogre::Entity* entity);
+
+	MCUAnimationController* getMCUAnimationController();
+	void setMCUAnimationController(MCUAnimationController* anim);
+
+	KinematicCharacterController* getKinematicCharacterController();
+	void setKinematicCharacterController(KinematicCharacterController* physics);
+
+	MechanizedCombatUnit* getMechanizedCombatUnit();
+	void setMechanizedCombatUnit(MechanizedCombatUnit* mcu);
+
+	PlayerBattleState* getPlayerBattleState();
+	void setPlayerBattleState(PlayerBattleState* player);
+
+	BattlefieldGridCell* getCurrentLocation();
+	void setCurrentLocation(BattlefieldGridCell* location);
+
+	Shield* getShield();
+	void setShield(Shield* shield);
+
+	std::deque<BattlefieldGridCell*> getCurrentPath();
+	void setCurrentPath(PathFindingNode* goal);
+
+	BattlefieldGridCell* getCurrentGoal();
+	void moveAlongPath();
+	bool isMoving();
+	void stopMoving();
+	void giveStopOrder();
+	bool lowMovementEnergy();
+	bool hasPath();
+	
+	bool hasPath();
+
+	BattlefieldGrid* getGrid();
+	void setBattlefieldGrid(BattlefieldGrid* grid);
+
+	bool hasTarget();
+	float rangeToTarget();
+	
+	MCUController* getCurrentTarget();
+	void setCurrentTarget(MCUController* target);
+
+	void targetedBy(MCUController* source);
+	void noLongerTargetedBy(MCUController* source);
+	void targetDestroyed();
+
+	AIGroup* getAIGroup();
+	void setAIGroup(AIGroup* group);
+	
+	int getBattlefieldID();
+	void setBattlefieldID(int id);
+
+	bool isActive();
+	void setActive(bool value);
+	
+	bool isVisible();
+	void setVisible(bool value);
+
+	bool isCloserThan(const Ogre::Vector3& point, Ogre::Real squaredDistance);
+	
+	bool isRadarVisible();
+	void setRadarVisible(bool value);
+
+	Ogre::Bone* getFiringBone(WeaponHardpoint* weapon);
+
+	bool canFire(int hardpoint);
+	bool canFire(WeaponHardpoint* weapon);
+	bool canFireAtLeastOneWeapon();
+	bool canFireUpon(MCUController* target);
+	
+	bool shieldsUp();
+
+	bool reachedDestination();
+	
+	void beginFiringWeapon(WeaponHardpoint* weapon, const Ogre::Vector3& source, const Ogre::Vector3& dest, bool returningFire);
+	void fireWeapon(int weaponHardpoint);
+	
+	WeaponHardpoint* getBestAntiShieldWeapon();
+	WeaponHardpoint* getBestAntiArmorWeapon();
+	bool isFiring();
+	void applyWarhead(int projId, const FireInstruction& instruction);
+	void weaponFiringComplete();
+
+	void enableAnimations();
+	float Sequence;
+
+	Ogre::Vector3 getPosition();
+	Ogre::Vector3 getMiddle();
+	Ogre::SceneNode* getNode();
+
+	float getRemainingReactorPower();
+	float getRemainingBatteryPower();
+
+	float getTotalRemainingPower();
+
+	void drainEnergyFromBattery(float amount);
+	void drainEnergyFromReactor(float amount);
+	void drainWeaponEnergy(float amount);
+
+	void componentDestroyed(MCUComponent* component);
+	void startDestructionSequence();
+	void destroy();
+	std::deque<MCUComponent*> getAllComponents();
+	
+	void updateFogOfWar();
+	void renderFogOfWar();
+	bool canSee(MCUController* target);
+
+	std::hash_map<std::string,std::string> getGuiValues();
+	void updateGuiData(const std::string& source);
+	
+	float getShortestWeaponRange();
+	float getLongestWeaponRange();
+	
+	float calculateAccuracy(WeaponHardpoint* weapon);
+	
+
+};

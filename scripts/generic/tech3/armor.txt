@@ -1,0 +1,2 @@
+4cm Plasteel;1500;750;2;Generic Faction;4cm Plasteel;1;40;1.1;1.1;1;1;1
+9cm Plasteel;2600;1600;2;Generic Faction;9cm Plasteel;2;65;1.1;1.1;1;1;1

@@ -1,0 +1,6 @@
+$#include <Repositories/WeaponHardpointTemplateDataLoader.h>
+
+class WeaponHardpointTemplateDataLoader : public DataLoader
+{
+	void load(const std::string& fileName );	
+};

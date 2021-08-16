@@ -1,0 +1,32 @@
+$#include <AI/CoverageMap.h>
+
+enum CoverageStatus
+{
+	CS_NOT_VISIBLE_UNKNOWN = 0,
+	CS_NOT_VISIBLE_EMPTY,
+	CS_VISIBLE_EMPTY,
+	CS_VISIBLE_ENEMY,
+	CS_VISIBLE_LAST_SIGHTING
+};
+
+struct CoverageSquare
+{
+	CoverageSquare(CoverageStatus cs, int interest) : Status(cs), Interest(interest){}
+	CoverageStatus Status;
+	int Interest;
+};
+
+class CoverageMap
+{
+	CoverageMap(unsigned int sideLength, unsigned int size, PlayerBattleState* state);
+	~CoverageMap();
+
+	void resetCoverageMap();
+	void clearSightings();
+	void setVisibility(FogSquareGrid* grid);
+	void computeCoverageMap();
+	void addEnemySighting(int x, int z);
+	void addEnemySighting(BattlefieldGridCell* location);
+	BattlefieldGridCell* getNearestHotSpot(BattlefieldGridCell* location);
+	BattlefieldGridCell* getNearestHotSpot(int x, int z);
+};

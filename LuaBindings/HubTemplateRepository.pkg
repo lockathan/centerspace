@@ -1,0 +1,9 @@
+$#include <Repositories/HubTemplateRepository.h>
+
+class HubTemplateRepository : public Repository<HubTemplate>
+{
+	static HubTemplateRepository* getSingletonPtr();
+	~HubTemplateRepository();
+
+	std::vector<HubTemplate*> getAvailableTemplates(int rank);
+};

@@ -1,0 +1,6 @@
+$#include <Repositories/WeaponTemplateRepositoryLoader.h>
+
+class WeaponTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, WeaponTemplateRepository* r);
+};

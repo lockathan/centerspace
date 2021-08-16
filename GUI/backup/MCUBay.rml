@@ -1,0 +1,11 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/template" href="window.rml" />
+	</head>
+	<body template="window" id="MCUBay">
+		<button id="loadmcupurchasescreen">Purchase New MCU</button><br />
+		<button id="loadmcuconfigurescreen">Configure MCUs</button><br />
+		<button id="backtomainbasescreen">Back</button>
+	</body>
+</rml>

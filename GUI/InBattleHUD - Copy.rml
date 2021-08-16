@@ -1,0 +1,51 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/template" href="hud.rml" />
+	</head>
+	<body template="hud" id="InBattleHUD">
+		<luascript>guitest.lua</luascript>
+		<div class="bottomhudL"><div class="btnGen" id="loadinbattlemenu">Menu <span class="txtWhite">[F10]</span></div></div>
+		<div class="bottomhudR"></div>
+		<div class="bottomhudBg"><div class="mechName">My General Mechs</div></div>
+		<div class="thumbs"><div class="thumbHolder"><img src="img/thumb_mech.png" width="51" height="52"><div class="thumbLayover">1</div></div></div>
+	</body>
+</rml>
+
+
+<div class="hudcontent">
+			<button id="loadinbattlemenu">Menu</button><br />
+		</div>
+		<div class="weaponselector">
+			<dataprovider datasource="mcus" id="mcudp">
+				<dataprovider datasource="weapons">
+					<databoundlist useselectbehaviour="false">
+						<weaponbutton>@WeaponName@</weaponbutton>
+						Chance to hit: <databoundtext>@ChanceToHitTarget@</databoundtext>
+					</databoundlist>
+				</dataprovider>
+			</dataprovider>
+		</div>
+		<div class="bottomhud" onclick="onclicktest">
+			<dataprovider datasource="mcus" id="mcustatus">
+				<div class="energybarcontainer">
+					<databoundcssproperty cssproperty="width" minvalue="0" maxvalue="100" valuefield="@RemainingReactorPower@" maxvaluefield="@MaxReactorPower@" unit="%">
+						<div class="energybar"></div>
+					</databoundcssproperty>
+				</div>
+				Remaining Reactor Power: <databoundtext>@RemainingReactorPower@</databoundtext>
+				Remaining Battery Power: <databoundtext>@RemainingBatteryPower@</databoundtext>
+			</dataprovider>
+			<dataprovider datasource="enemymcus" id="enemymcuinfo">
+				<div class="energybarcontainer">
+					<databoundcssproperty cssproperty="width" minvalue="0" maxvalue="100" valuefield="@RemainingReactorPower@" maxvaluefield="@MaxReactorPower@" unit="%">
+						<div class="energybar"></div>
+					</databoundcssproperty>
+				</div>
+				Remaining Reactor Power: <databoundtext>@RemainingReactorPower@</databoundtext>
+				Remaining Battery Power: <databoundtext>@RemainingBatteryPower@</databoundtext>
+			</dataprovider>
+			
+			<br/>
+			<button id="endturn">End Turn</button><br />
+		</div>

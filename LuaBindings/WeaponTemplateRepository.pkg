@@ -1,0 +1,10 @@
+$#include <Repositories/WeaponTemplateRepository.h>
+
+class WeaponTemplateRepository : public Repository<WeaponTemplate>
+{
+	static WeaponTemplateRepository* getSingletonPtr();
+	~WeaponTemplateRepository();
+	
+	std::vector<WeaponTemplate*> getAvailableTemplates(int factionId, int rank, int size = 0);
+	std::vector<WeaponTemplate*> getAvailableTemplates(int factionId, int rank, int size, HardpointType hardpointType );
+};

@@ -1,0 +1,7 @@
+$#include <Repositories/BatteryTemplateRepositoryLoader.h>
+
+class BatteryTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, BatteryTemplateRepository* r);
+	
+};

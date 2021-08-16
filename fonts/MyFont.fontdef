@@ -1,0 +1,7 @@
+MyFont
+{
+    type         truetype
+    source         Delicious-Roman.otf
+    size         16
+    resolution     72
+}

@@ -1,0 +1,46 @@
+struct VIn {
+    float4 p    : POSITION;
+    float3 n    : NORMAL;
+    float2 uv   : TEXCOORD0;
+};
+
+struct VOut {
+    float4 p    : POSITION;
+    float2 texCoord0   : TEXCOORD0;
+};
+
+struct PIn {
+    float2 texCoord0   : TEXCOORD0;
+};
+
+struct POut {
+    float4 c : COLOR;
+};
+
+VOut transparent_texture_vs(VIn IN,
+    uniform float4x4 wvpMat
+    ) {
+    VOut OUT;
+    OUT.p = mul(wvpMat, IN.p);
+
+    OUT.texCoord0 = IN.uv;
+	
+
+    return OUT;
+}
+
+// to put it simply, this does 100% per pixel diffuse lighting
+POut transparent_texture_fs(PIn IN,
+	uniform sampler2D dMap0 : TEXUNIT0
+    ) {
+    POut OUT;
+
+    // direction
+	
+	float4 tx0Colour = tex2D(dMap0, IN.texCoord0);
+	
+	
+    OUT.c = tx0Colour;
+    return OUT;
+}
+

@@ -1,0 +1,7 @@
+$#include <Templates/RequiredRankTemplate.h>
+
+class RequiredRankTemplate : public Template
+{
+	int getRequiredRank();
+	void setRequiredRank(int rank);
+};

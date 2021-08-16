@@ -1,0 +1,29 @@
+$#include <Entities/GridSquareTemplateVector.h>
+
+class GridSquareTemplateVector
+{
+	int getSideLength();
+	GridSquareTemplate* getGridSquare(int index);
+	GridSquareTemplate* getGridSquare(int x, int z);
+	
+	void setDefaultGridHeight(int y);
+	
+	void changeSquare(int x, int z, int yDiff, bool createCliff = false);
+	void changeSquare(int x, int z, SquareType newType);
+	void changeSquare(int x, int z, int yDiff, SquareType newType);
+
+	void createValleyOrRidge(int startX, int startZ, int endX, int endZ, int width, int targetY, bool createCliff = false);
+	void createPlateau(int startX, int startZ, int minRadius, int maxRadius, int targetY, bool createCliff = false);
+	std::deque<GridSquareTemplate*> getSquaresBetweenPoints(int x1, int z1, int x2, int z2);
+
+	bool checkEntireGrid();
+	
+	bool fixSquareType(GridSquareTemplate* square);
+	void checkSurroundings(GridSquareTemplate* square, bool forceOnce, bool createCliff = false, TerrainChange change, bool changeTransitions = true, bool isCircle = false);
+	void adjustHeight(GridSquareTemplate* square, bool forceOnce, bool createCliff = false, TerrainChange change, bool changeTransitions = true, bool isCircle = false);
+	void fixType(GridSquareTemplate* square, bool forceOnce, bool createCliff = false, TerrainChange change, bool changeTransitions = true, bool isCircle = false);
+	void startRecursiveSubdivision();
+	
+	void writeToFile(const std::string& fileName);
+	void loadFromFile(const std::string& fileName);
+};

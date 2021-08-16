@@ -1,0 +1,2 @@
+Quick Battle;quickbattle.lua;placePlayer;enemy.lua;generate;placeEnemy
+Seek and Destroy;seekanddestroy.lua;placePlayer;enemy.lua;generate;placeEnemy

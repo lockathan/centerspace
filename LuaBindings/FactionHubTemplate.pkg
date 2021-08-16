@@ -1,0 +1,21 @@
+$#include <Templates/FactionHubTemplate.h>
+
+class FactionHubTemplate : public Template
+{
+	FactionHubTemplate();
+	~FactionHubTemplate();
+
+	FactionTemplate* getPlayerFactionTemplate();
+	void setPlayerFactionTemplate(FactionTemplate* faction);
+
+	FactionTemplate* getEnemy1FactionTemplate();
+	void setEnemy1FactionTemplate(FactionTemplate* faction);
+
+	FactionTemplate* getEnemy2FactionTemplate();
+	void setEnemy2FactionTemplate(FactionTemplate* faction);
+
+	HubTemplate* getHubTemplate();
+	void setHubTemplate(HubTemplate* hub);
+
+	
+};

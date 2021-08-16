@@ -1,0 +1,6 @@
+$#include <Repositories/BeamProjectileTemplateRepositoryLoader.h>
+
+class BeamProjectileTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, BeamProjectileTemplateRepository* r);
+};

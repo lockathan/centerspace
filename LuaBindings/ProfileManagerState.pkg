@@ -1,0 +1,25 @@
+$#include <States/ProfileManagerState.h>
+
+class ProfileManagerState : public GameState
+{
+	~ProfileManagerState();
+
+	void enter();
+	void exit();
+
+	void pause(){}
+	void resume(){}
+	
+	void createScene(){}
+	void destroyScene(){}
+
+	PlayerProfile* getCurrentPlayer();
+	void setCurrentPlayer(PlayerProfile* player);
+
+	void onSelectedElementChanged(DataSourceType source, int id);
+
+	void newProfile();
+	void selectProfile(const std::string& profileId);
+
+	static ProfileManagerState* getSingletonPtr();
+};

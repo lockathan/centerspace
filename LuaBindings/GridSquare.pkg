@@ -1,0 +1,120 @@
+$#include <Entities/GridSquare.h>
+
+enum VertexXLocation
+{
+	VL_NEG_X = 0,
+	VL_POS_X = 1
+};
+
+enum VertexYLocation
+{
+	VL_NEG_Y = 0,
+	VL_POS_Y = 1,
+	VL_UPPER_Y = 2
+};
+
+enum VertexZLocation
+{
+	VL_NEG_Z = 0,
+	VL_POS_Z = 1
+};
+
+enum CliffFacing
+{
+	CF_NA = 0,
+	CF_NEG_Z = 1,
+	CF_POS_Z = 2,
+	CF_NEG_X = 3,
+	CF_POS_X = 4
+};
+
+class GridSquare
+{
+	GridSquare(GridSquareVector* vector, GridSquareTemplate* squareTemplate);
+	
+	~GridSquare();
+
+	void computeIndices();
+	void reset();
+
+
+	bool hasMoreIndices();
+	int getNextIndex();
+	void moveNextIndex();
+
+
+	int getCenterX();
+	int getCenterY();
+	int getCenterZ();
+	float getTextureStep();
+
+	std::deque<TexturedVertex*> getVertices();
+	void addVertex(TexturedVertex* vertex);
+
+	TexturedVertex* findVertex(VertexXLocation xloc, VertexYLocation yLoc, VertexZLocation zLoc, CliffFacing cf = CliffFacing::CF_NA);
+	TexturedVertex* findVertex(VertexXLocation xloc, VertexYLocation yLoc, VertexZLocation zLoc, bool hasTextureCoordinates,CliffFacing cf = CliffFacing::CF_NA );
+
+	int findIndex(VertexXLocation xloc, VertexYLocation yLoc, VertexZLocation zLoc, CliffFacing cf = CliffFacing::CF_NA);
+	
+	void setAlphaSplatCoords(TexturedVertex* vertex);
+};
+
+class TexturedVertex
+{
+	TexturedVertex(float _x, float _y, float _z, VertexXLocation xLoc, VertexYLocation yLoc, VertexZLocation zLoc, GridSquare* owner)
+		: 
+		x(_x), 
+		y(_y), 
+		z(_z), 
+		u(0), 
+		v(0),
+		EX(0),
+		EY(0),
+		EZ(0),
+		EW(0),
+		FX(0),
+		FY(0),
+		FZ(0),
+		FW(0),
+		XLocation(xLoc),
+		YLocation(yLoc), 
+		ZLocation(zLoc),
+		setUCoord(false),
+		setVCoord(false),
+		CliffFace(CF_NA),
+		Owner(owner)
+	{
+		Owner->setAlphaSplatCoords(this);
+	}
+
+	TexturedVertex(TexturedVertex* vertex) 
+		: 
+		x(vertex->x), 
+		y(vertex->y), 
+		z(vertex->z),
+		u(vertex->u),
+		v(vertex->v),
+		EX(vertex->EX),
+		EY(vertex->EY),
+		EZ(vertex->EZ),
+		EW(vertex->EW),
+		FX(vertex->FX),
+		FY(vertex->FY),
+		FZ(vertex->FZ),
+		FW(vertex->FW),
+		index(vertex->index),
+		XLocation(vertex->XLocation), 
+		YLocation(vertex->YLocation),
+		ZLocation(vertex->ZLocation),
+		setUCoord(vertex->setUCoord),
+		setVCoord(vertex->setVCoord),
+		CliffFace(vertex->CliffFace),
+		Owner(vertex->Owner)
+		{}
+
+	~TexturedVertex(){}
+
+	bool gotTextureCoords();
+	void gotTextureCoords(bool value);
+	Ogre::Vector3 getVertexXYZ() {return Ogre::Vector3(x,y,z);}
+};

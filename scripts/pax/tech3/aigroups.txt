@@ -1,0 +1,6 @@
+Kindjals v3;3;Pax Syndicate;0;Kindjal v3;2;0;0;0;0;0;0;0;0
+Rapiers v3;3;Pax Syndicate;0;Rapier v3;2;0;0;0;0;0;0;0;0
+Broadswords laser;3;Pax Syndicate;0;Broadsword v3a;2;0;0;0;0;0;0;0;0
+Broadswords plasma;3;Pax Syndicate;0;Broadsword v3b;2;0;0;0;0;0;0;0;0
+Mixed V Light Pax Group;3;Pax Syndicate;0;Kindjal v3;2;Rapier v3;2;0;0;0;0;0;0
+Mixed Light Pax Group;3;Pax Syndicate;0;Kindjal v3;1;Rapier v3;1;Broadsword v3a;1;0;0;0;0

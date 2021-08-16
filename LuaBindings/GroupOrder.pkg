@@ -1,0 +1,15 @@
+$#include <AI/GroupOrder.h>
+
+class GroupOrder
+{
+	AIGroup* getOwner();
+	void setOwner(AIGroup* group);
+
+	std::deque<MCUOrderStatus*> getOrderStatuses();
+	void setOrderStatuses(std::deque<MCUOrderStatus*> orderStatuses);
+	void setOrderStatus(MCUController* controller, OrderStatus status);
+	OrderStatus getOrderStatus(MCUController* controller);
+	bool allOrdersCompleted();
+	bool allOrdersFailed();
+	bool allOrdersCompletedOrFailed();
+};

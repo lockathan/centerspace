@@ -1,0 +1,32 @@
+material rock_1
+{
+    // first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+			vertex_program_ref PerPixel_Lim3_Vert
+			{ 
+			}   
+
+			fragment_program_ref PerPixel_Lim3_Frag
+			{
+			} 	
+            // Texture unit 0
+            texture_unit 
+            {
+                texture stone_03.bmp
+				tex_coord_set 0
+            }
+			
+			texture_unit 
+            {
+                texture RttTex
+				tex_coord_set 1
+            }
+        }
+		
+    }
+		
+}

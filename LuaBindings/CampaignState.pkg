@@ -1,0 +1,34 @@
+$#include <States/CampaignState.h>
+
+class CampaignState : public PlayerState, public PersistentEntity
+{
+	CampaignState( bool createInventoryState = true );
+
+	~CampaignState();
+
+	void enter();
+	void exit();
+
+	void load();
+	void save();
+	
+	void reset();
+
+	PlayerProfile* getPlayerProfile();
+	void setPlayerProfile(PlayerProfile* profile);
+
+	int getRank();
+	void setRank(int rank);
+
+	InventoryState* getInventoryState();
+	void setInventoryState(InventoryState* state);
+
+	FactionTemplate* getFactionTemplate();
+	void setFactionTemplate(FactionTemplate* faction);
+
+	int getDifficulty();
+	void setDifficulty(int difficulty);
+
+	FactionHubTemplate* getFactionHubTemplate();
+	void setFactionHubTemplate(FactionHubTemplate* hub);	
+};

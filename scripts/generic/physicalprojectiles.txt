@@ -1,0 +1,3 @@
+Plasma Shot;sphere.mesh;Laser_Red;55;1;false;false;animated_explosion;plasma;missile_impact
+Cannon Shell;shell.mesh;Shell1;50;1;false;false;animated_explosion;plasma;missile_impact
+Missile;missile.mesh;Missile1;25;1;true;false;animated_explosion;missile_launch;missile_impact

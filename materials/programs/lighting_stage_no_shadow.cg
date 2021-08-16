@@ -1,0 +1,97 @@
+struct VIn {
+    float4 p    : POSITION;
+    float3 n    : NORMAL;
+	float2 fogUV : TEXCOORD0;
+    float2 uv   : TEXCOORD1;
+};
+
+struct VOut {
+    float4 p    : POSITION;
+
+    float4 texCoord0   : TEXCOORD0;
+    float4 wp   : TEXCOORD1;
+    float3 n    : TEXCOORD2;
+    float3 sdir : TEXCOORD3;
+};
+
+struct PIn {
+    float4 texCoord0   : TEXCOORD0;
+    float4 wp   : TEXCOORD1;
+    float3 n    : TEXCOORD2;
+    float3 sdir : TEXCOORD3;
+};
+
+struct POut {
+    float4 c : COLOR;
+};
+
+VOut lighting_no_shadow_vs(VIn IN,
+    uniform float4x4 wMat,
+    uniform float4x4 wvpMat,
+    uniform float4 spotlightDir
+    ) {
+    VOut OUT;
+    OUT.wp = mul(wMat, IN.p);
+    OUT.p = mul(wvpMat, IN.p);
+
+    OUT.texCoord0 = float4(IN.fogUV, IN.uv);
+	
+    OUT.n = mul(wMat, float4(IN.n, 0)).xyz; // world-space normal
+    OUT.sdir = mul(wMat, spotlightDir).xyz; // spotlight dir in world space
+
+    return OUT;
+}
+
+// to put it simply, this does 100% per pixel diffuse lighting
+POut lighting_no_shadow_fs(PIn IN,
+    uniform float3 lightDif0,
+    uniform float4 lightPos0,
+    uniform float4 lightAtt0,
+    uniform float3 lightSpec0,
+    uniform float shininess,
+    uniform float3 camPos,
+    uniform float4 spotlightParams
+    ) {
+    POut OUT;
+
+    // direction
+    float3 ld0 = normalize(lightPos0.xyz - (lightPos0.w * IN.wp.xyz));
+
+    half lightDist = length(lightPos0.xyz - IN.wp.xyz) / lightAtt0.r;
+    // attenuation
+    half ila = lightDist * lightDist; // quadratic falloff
+    half la = 1.0 - ila;
+
+    float3 normal = normalize(IN.n);
+
+    float3 diffuse = max(dot(ld0, normal), 0);
+
+    // calculate the spotlight effect
+    float spot = (spotlightParams.x == 1 &&
+        spotlightParams.y == 0 &&
+        spotlightParams.z == 0 &&
+        spotlightParams.w == 1 ? 1 : // if so, then it's not a spot light
+        saturate(
+            (dot(ld0, normalize(-IN.sdir)) - spotlightParams.y) /
+            (spotlightParams.x - spotlightParams.y)));
+
+    float3 camDir = normalize(camPos - IN.wp.xyz);
+    float3 halfVec = normalize(ld0 + camDir);
+    float3 specular = pow(max(dot(normal, halfVec), 0), shininess);
+
+	float2 fogUV = IN.texCoord0.xy;
+	float2 texUV = IN.texCoord0.zw;
+
+		    
+    float3 diffuseContrib = (diffuse * lightDif0);
+	float3 specularContrib = (specular * lightSpec0);
+    float3 lightOC = (diffuseContrib + specularContrib + float3(0.5,0.5,0.5)) * la * spot;
+	
+	
+	float4 outColour = float4(lightOC, 1);
+
+	OUT.c = outColour;
+	
+	return OUT;
+}
+

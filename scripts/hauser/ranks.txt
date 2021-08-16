@@ -1,0 +1,5 @@
+Technician;1;Hauser Industrial;0
+Analyst;2;Hauser Industrial;1
+Coordinator;3;Hauser Industrial;15
+Project Manager;4;Hauser Industrial;9999
+Technical Lead;4;Hauser Industrial;99999

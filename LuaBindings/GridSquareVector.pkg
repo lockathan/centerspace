@@ -1,0 +1,30 @@
+$#include <Entities/GridSquareVector.h>
+
+class GridSquareVector
+{
+	GridSquareVector(BattlefieldGrid* grid);
+	~GridSquareVector();
+	
+	void initialize();
+	void resetGridSquares();
+
+	GridSquare* getGridSquare(int x, int z);
+
+	void computeIndices();
+
+	bool hasMoreVertices();
+	TexturedVertex* getNextVertex();
+
+	bool hasMoreIndices();
+	int getNextIndex();
+	
+	void insertVertex(TexturedVertex* vertex, GridSquare* owner);
+	void insertVertex(int i, TexturedVertex* vertex, GridSquare* owner);
+	TexturedVertex* getVertex(int i);
+	void updateTextureCoordinates(TexturedVertex* vertex);
+
+	Ogre::ManualObject* getBattlefield();
+	BattlefieldGrid* getBattlefieldGrid();
+	GridSquareTemplateVector* getGridSquareTemplateVector();
+
+};

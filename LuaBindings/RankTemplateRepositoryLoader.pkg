@@ -1,0 +1,8 @@
+$#include <Repositories/RankTemplateRepositoryLoader.h>
+
+class RankTemplateRepositoryLoader : public RepositoryLoader
+{
+	RankTemplateRepositoryLoader();
+	~RankTemplateRepositoryLoader();
+	void load(const std::string& fileName, RankTemplateRepository* r);	
+};

@@ -1,0 +1,3 @@
+Interceptor v1;1;Hauser Industrial;0;Interceptor v1;1;0;0;0;0;0;0;0;0
+Warthog v1;1;Hauser Industrial;0;Warthog v1;1;0;0;0;0;0;0;0;0
+V Light Mixed Group v1;1;Hauser Industrial;0;Interceptor v1;1;Warthog v1;1;0;0;0;0;0;0

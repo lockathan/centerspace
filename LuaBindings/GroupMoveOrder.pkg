@@ -1,0 +1,12 @@
+$#include <AI/GroupMoveOrder.h>
+
+class GroupMoveOrder : public GroupOrder
+{
+	GroupMoveOrder();
+	GroupMoveOrder(AIGroup* owner, BattlefieldGridCell* dest);
+	~GroupMoveOrder();
+	
+	BattlefieldGridCell* getDestination();
+	void setDestination(BattlefieldGridCell* dest);
+
+};

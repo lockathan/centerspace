@@ -1,0 +1,9 @@
+$#include <Repositories/RankTemplateRepository.h>
+
+class RankTemplateRepository : public Repository<RankTemplate>
+{
+	static RankTemplateRepository* getSingletonPtr();
+	~RankTemplateRepository();
+
+	std::deque<RankTemplate*> getAvailableTemplates();
+};

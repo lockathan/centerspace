@@ -1,0 +1,9 @@
+$#include <Repositories/MCUTemplateRepository.h>
+
+class MCUTemplateRepository : public Repository<MCUTemplate>
+{
+	static MCUTemplateRepository* getSingletonPtr();
+	~MCUTemplateRepository();
+
+	std::vector<MCUTemplate*> getAvailableMCUTemplates(int factionId, int rank);
+};

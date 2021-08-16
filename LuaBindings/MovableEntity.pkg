@@ -1,0 +1,16 @@
+$#include <Entities/MovableEntity.h>
+
+class MovableEntity
+{
+	MovableEntity() : mReadyToBeDeleted(false), mReadyToBeRemoved(false), mUsesVisibilityCalculations(false) {}
+	virtual ~MovableEntity(){}
+
+	virtual bool isCloserThan(const Ogre::Vector3& point, Ogre::Real squaredDistance) = 0;
+	virtual bool isVisible() = 0;
+	virtual void setVisible(bool value) = 0;
+	bool usesVisibilityCalculations(){return mUsesVisibilityCalculations;}
+	bool readyToBeDeleted(){ return mReadyToBeDeleted;}
+	bool readyToBeRemoved(){ return mReadyToBeRemoved;}
+	virtual void update(const Ogre::Real& timeSinceLastFrame) = 0;
+
+};

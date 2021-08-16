@@ -1,0 +1,6 @@
+$#include <Repositories/PhysicalProjectileTemplateRepositoryLoader.h>
+
+class PhysicalProjectileTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, PhysicalProjectileTemplateRepository* r);
+};

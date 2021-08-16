@@ -1,0 +1,613 @@
+<scene formatVersion="1.0" upAxis="y" unitsPerMeter="100" unitType="centimeters" minOgreVersion="1.7" ogreMaxVersion="2.4.3" author="OgreMax Scene Exporter (www.ogremax.com)" application="Maya">
+    <environment>
+        <colourAmbient r="0.33" g="0.33" b="0.33" />
+        <colourBackground r="0" g="0" b="0" />
+        <clipping near="0" far="100000" />
+    </environment>
+    <nodes>
+        <node name="pCube2">
+            <position x="0" y="0" z="0" />
+            <scale x="1" y="1" z="-1" />
+            <rotation qx="0" qy="1" qz="0" qw="6.12323e-017" />
+        </node>
+        <node name="master_manip">
+            <position x="0" y="0" z="0" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="master_manip" castShadows="true" receiveShadows="true" meshFile="master_manip.mesh">
+                <subentities>
+                    <subentity index="0" materialName="NoMaterial" />
+                </subentities>
+            </entity>
+            <node name="hip_manip">
+                <position x="-1.26881e-013" y="6.03429" z="0.456578" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="-0.0497171" qz="0" qw="0.998763" />
+                <entity name="hip_manip" castShadows="true" receiveShadows="true" meshFile="hip_manip.mesh">
+                    <subentities>
+                        <subentity index="0" materialName="NoMaterial" />
+                    </subentities>
+                </entity>
+                <node name="spine_manip">
+                    <position x="1.25941e-013" y="1.06588" z="-6.27276e-015" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0.0493484" qz="0" qw="0.998782" />
+                    <entity name="spine_manip" castShadows="true" receiveShadows="true" meshFile="spine_manip.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="NoMaterial" />
+                        </subentities>
+                    </entity>
+                    <node name="nurbsCircle13">
+                        <position x="1.63878" y="2.64382" z="0" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="-0.0441939" qw="0.999023" />
+                        <entity name="nurbsCircle13" castShadows="true" receiveShadows="true" meshFile="nurbsCircle13.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="NoMaterial" />
+                            </subentities>
+                        </entity>
+                        <node name="nurbsCircle12">
+                            <position x="0.665722" y="-0.318389" z="5.55112e-017" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0.0489894" qw="0.998799" />
+                            <entity name="nurbsCircle12" castShadows="true" receiveShadows="true" meshFile="nurbsCircle12.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="NoMaterial" />
+                                </subentities>
+                            </entity>
+                            <node name="nurbsCircle11">
+                                <position x="0" y="-1.23598" z="0.0218912" />
+                                <scale x="1" y="1" z="1" />
+                                <rotation qx="0.00140439" qy="0" qz="0" qw="0.999999" />
+                                <entity name="nurbsCircle11" castShadows="true" receiveShadows="true" meshFile="nurbsCircle11.mesh">
+                                    <subentities>
+                                        <subentity index="0" materialName="NoMaterial" />
+                                    </subentities>
+                                </entity>
+                                <node name="left_lower_turret_manip">
+                                    <position x="0.0117393" y="-0.781689" z="0.490545" />
+                                    <scale x="1" y="1" z="1" />
+                                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                                    <entity name="left_lower_turret_manip" castShadows="true" receiveShadows="true" meshFile="left_lower_turret_manip.mesh">
+                                        <subentities>
+                                            <subentity index="0" materialName="NoMaterial" />
+                                        </subentities>
+                                    </entity>
+                                </node>
+                            </node>
+                        </node>
+                    </node>
+                    <node name="nurbsCircle18">
+                        <position x="-1.63878" y="2.64382" z="5.55112e-017" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0.0095589" qw="0.999954" />
+                        <entity name="nurbsCircle18" castShadows="true" receiveShadows="true" meshFile="nurbsCircle18.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="NoMaterial" />
+                            </subentities>
+                        </entity>
+                        <node name="nurbsCircle17">
+                            <position x="-0.665722" y="-0.318389" z="0" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="-0.0184467" qw="0.99983" />
+                            <entity name="nurbsCircle17" castShadows="true" receiveShadows="true" meshFile="nurbsCircle17.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="NoMaterial" />
+                                </subentities>
+                            </entity>
+                            <node name="nurbsCircle16">
+                                <position x="-4.44089e-016" y="-1.23598" z="0.0218912" />
+                                <scale x="1" y="1" z="1" />
+                                <rotation qx="-0.0267211" qy="0" qz="0" qw="0.999643" />
+                                <entity name="nurbsCircle16" castShadows="true" receiveShadows="true" meshFile="nurbsCircle16.mesh">
+                                    <subentities>
+                                        <subentity index="0" materialName="NoMaterial" />
+                                    </subentities>
+                                </entity>
+                                <node name="nurbsCircle15">
+                                    <position x="-0.0117393" y="-0.781689" z="0.490545" />
+                                    <scale x="1" y="1" z="1" />
+                                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                                    <entity name="nurbsCircle15" castShadows="true" receiveShadows="true" meshFile="nurbsCircle15.mesh">
+                                        <subentities>
+                                            <subentity index="0" materialName="NoMaterial" />
+                                        </subentities>
+                                    </entity>
+                                </node>
+                            </node>
+                        </node>
+                    </node>
+                    <node name="nurbsCircle10">
+                        <position x="1.17276" y="3.97532" z="-1.56715" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="nurbsCircle10" castShadows="true" receiveShadows="true" meshFile="nurbsCircle10.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="NoMaterial" />
+                            </subentities>
+                        </entity>
+                        <node name="nurbsCircle9">
+                            <position x="4.44089e-016" y="1.31e-009" z="2.38423e-011" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0.0181975" qy="0" qz="0" qw="0.999834" />
+                            <entity name="nurbsCircle9" castShadows="true" receiveShadows="true" meshFile="nurbsCircle9.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="NoMaterial" />
+                                </subentities>
+                            </entity>
+                        </node>
+                    </node>
+                    <node name="nurbsCircle14">
+                        <position x="-1.17276" y="3.97532" z="-1.56715" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="nurbsCircle14" castShadows="true" receiveShadows="true" meshFile="nurbsCircle14.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="NoMaterial" />
+                            </subentities>
+                        </entity>
+                        <node name="nurbsCircle9_1">
+                            <position x="0" y="-8.91642e-011" z="1.10356e-013" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="-0.00123841" qy="0" qz="0" qw="0.999999" />
+                            <entity name="nurbsCircle9_1" castShadows="true" receiveShadows="true" meshFile="nurbsCircle9_1.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="NoMaterial" />
+                                </subentities>
+                            </entity>
+                        </node>
+                    </node>
+                </node>
+            </node>
+            <node name="locator2">
+                <position x="-0.691439" y="0" z="0" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+            </node>
+            <node name="locator1">
+                <position x="0.605432" y="0" z="1.45469" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+            </node>
+            <node name="nurbsCircle6">
+                <position x="-1.22103" y="0.832371" z="-0.140805" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="-0.155542" qz="0" qw="0.987829" />
+                <entity name="nurbsCircle6" castShadows="true" receiveShadows="true" meshFile="nurbsCircle6.mesh">
+                    <subentities>
+                        <subentity index="0" materialName="NoMaterial" />
+                    </subentities>
+                </entity>
+                <node name="nurbsCircle2">
+                    <position x="4.76837e-006" y="2.98023e-007" z="2.6077e-008" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="nurbsCircle2" castShadows="true" receiveShadows="true" meshFile="nurbsCircle2.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="NoMaterial" />
+                        </subentities>
+                    </entity>
+                    <node name="nurbsCircle4">
+                        <position x="0.551012" y="-0.326352" z="0.714647" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="nurbsCircle4" castShadows="true" receiveShadows="true" meshFile="nurbsCircle4.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="NoMaterial" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="nurbsCircle3">
+                        <position x="-0.551013" y="-0.326352" z="0.714647" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="nurbsCircle3" castShadows="true" receiveShadows="true" meshFile="nurbsCircle3.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="NoMaterial" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="nurbsCircle5">
+                        <position x="0.00437915" y="-0.326352" z="-0.636878" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="nurbsCircle5" castShadows="true" receiveShadows="true" meshFile="nurbsCircle5.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="NoMaterial" />
+                            </subentities>
+                        </entity>
+                    </node>
+                </node>
+            </node>
+            <node name="nurbsCircle1">
+                <position x="1.67484" y="0.832371" z="0.96469" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0.0708584" qz="0" qw="0.997486" />
+                <entity name="nurbsCircle1" castShadows="true" receiveShadows="true" meshFile="nurbsCircle1.mesh">
+                    <subentities>
+                        <subentity index="0" materialName="NoMaterial" />
+                    </subentities>
+                </entity>
+                <node name="nurbsCircle2_1">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="nurbsCircle2_1" castShadows="true" receiveShadows="true" meshFile="nurbsCircle2_1.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="NoMaterial" />
+                        </subentities>
+                    </entity>
+                    <node name="nurbsCircle4_1">
+                        <position x="-0.551012" y="-0.326352" z="0.714647" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="nurbsCircle4_1" castShadows="true" receiveShadows="true" meshFile="nurbsCircle4_1.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="NoMaterial" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="nurbsCircle3_1">
+                        <position x="0.551013" y="-0.326352" z="0.714647" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="nurbsCircle3_1" castShadows="true" receiveShadows="true" meshFile="nurbsCircle3_1.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="NoMaterial" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="nurbsCircle5_1">
+                        <position x="-0.00437915" y="-0.326352" z="-0.636878" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="nurbsCircle5_1" castShadows="true" receiveShadows="true" meshFile="nurbsCircle5_1.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="NoMaterial" />
+                            </subentities>
+                        </entity>
+                    </node>
+                </node>
+            </node>
+        </node>
+        <node name="camera1">
+            <position x="-15.5824" y="17.9472" z="18.7529" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="-0.214851" qy="-0.329788" qz="-0.0773511" qw="0.916022" />
+            <camera name="camera1" fov="0.660595">
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <clipping near="0.01" far="1000" />
+            </camera>
+        </node>
+        <node name="right_shin">
+            <position x="-1.15158" y="2.60927" z="-0.757414" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_shin" castShadows="true" receiveShadows="true" meshFile="right_shin.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_bicep">
+            <position x="-2.31011" y="9.22671" z="0" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_bicep" castShadows="true" receiveShadows="true" meshFile="right_bicep.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_foot_base">
+            <position x="-1.21707" y="0.769069" z="-0.598104" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_foot_base" castShadows="true" receiveShadows="true" meshFile="right_foot_base.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_rear_toe">
+            <position x="-1.20798" y="0.640926" z="-2.17086" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_rear_toe" castShadows="true" receiveShadows="true" meshFile="right_rear_toe.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_arm_barrel">
+            <position x="-2.31624" y="7.89992" z="1.44083" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_arm_barrel" castShadows="true" receiveShadows="true" meshFile="right_arm_barrel.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_elbow">
+            <position x="-2.31133" y="7.98504" z="-0.0153125" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_elbow" castShadows="true" receiveShadows="true" meshFile="right_elbow.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_arm_pivot">
+            <position x="-2.31461" y="8.68082" z="0.018575" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_arm_pivot" castShadows="true" receiveShadows="true" meshFile="right_arm_pivot.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_knee_pivot">
+            <position x="-1.21184" y="3.71907" z="-0.423221" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_knee_pivot" castShadows="true" receiveShadows="true" meshFile="right_knee_pivot.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_shoulder_shield">
+            <position x="-2.38301" y="10.1998" z="0.0105155" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_shoulder_shield" castShadows="true" receiveShadows="true" meshFile="right_shoulder_shield.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_thigh">
+            <position x="-1.23698" y="5.52973" z="-0.0518373" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_thigh" castShadows="true" receiveShadows="true" meshFile="right_thigh.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_toe_02">
+            <position x="-1.76375" y="0.466343" z="0.19231" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_toe_02" castShadows="true" receiveShadows="true" meshFile="right_toe_02.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_toe_01">
+            <position x="-0.668549" y="0.466343" z="0.19231" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_toe_01" castShadows="true" receiveShadows="true" meshFile="right_toe_01.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_shin">
+            <position x="1.15158" y="2.60927" z="-0.757414" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_shin" castShadows="true" receiveShadows="true" meshFile="left_shin.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_bicep">
+            <position x="2.31011" y="9.22671" z="0" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_bicep" castShadows="true" receiveShadows="true" meshFile="left_bicep.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_foot_base">
+            <position x="1.21707" y="0.769069" z="-0.598104" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_foot_base" castShadows="true" receiveShadows="true" meshFile="left_foot_base.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_rear_toe">
+            <position x="1.20798" y="0.640926" z="-2.17086" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_rear_toe" castShadows="true" receiveShadows="true" meshFile="left_rear_toe.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_arm_barrel">
+            <position x="2.31624" y="7.89992" z="1.44083" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_arm_barrel" castShadows="true" receiveShadows="true" meshFile="left_arm_barrel.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_elbow">
+            <position x="2.31133" y="7.98504" z="-0.0153125" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_elbow" castShadows="true" receiveShadows="true" meshFile="left_elbow.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_arm_pivot">
+            <position x="2.31461" y="8.68082" z="0.018575" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_arm_pivot" castShadows="true" receiveShadows="true" meshFile="left_arm_pivot.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_knee_pivot">
+            <position x="1.21184" y="3.71907" z="-0.423221" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_knee_pivot" castShadows="true" receiveShadows="true" meshFile="left_knee_pivot.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_shoulder_shield">
+            <position x="2.38301" y="10.1998" z="0.0105155" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_shoulder_shield" castShadows="true" receiveShadows="true" meshFile="left_shoulder_shield.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_thigh">
+            <position x="1.23698" y="5.52973" z="-0.0518373" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_thigh" castShadows="true" receiveShadows="true" meshFile="left_thigh.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_toe_01">
+            <position x="1.76375" y="0.466343" z="0.19231" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_toe_01" castShadows="true" receiveShadows="true" meshFile="left_toe_01.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_toe_02">
+            <position x="0.668549" y="0.466343" z="0.19231" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_toe_02" castShadows="true" receiveShadows="true" meshFile="left_toe_02.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="torso">
+            <position x="0" y="9.35794" z="-0.743117" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="torso" castShadows="true" receiveShadows="true" meshFile="torso.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="torso_base">
+            <position x="0" y="6.72836" z="-0.0409575" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="torso_base" castShadows="true" receiveShadows="true" meshFile="torso_base.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_SAM_barrel">
+            <position x="-1.15696" y="11.5675" z="0.027276" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_SAM_barrel" castShadows="true" receiveShadows="true" meshFile="right_SAM_barrel.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_SAM_base">
+            <position x="-1.15766" y="11.6417" z="-1.56944" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_SAM_base" castShadows="true" receiveShadows="true" meshFile="right_SAM_base.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_SAM_barrel">
+            <position x="1.15696" y="11.5675" z="0.027276" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_SAM_barrel" castShadows="true" receiveShadows="true" meshFile="left_SAM_barrel.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_SAM_base">
+            <position x="1.15766" y="11.6417" z="-1.56944" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_SAM_base" castShadows="true" receiveShadows="true" meshFile="left_SAM_base.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="thigh_pivots">
+            <position x="0" y="0" z="0" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="thigh_pivots" castShadows="true" receiveShadows="true" meshFile="thigh_pivots.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="left_shoulder_pivot">
+            <position x="0" y="0" z="0" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="left_shoulder_pivot" castShadows="true" receiveShadows="true" meshFile="left_shoulder_pivot.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="right_shoulder_pivot">
+            <position x="0" y="0" z="0" />
+            <scale x="1" y="1" z="1" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="right_shoulder_pivot" castShadows="true" receiveShadows="true" meshFile="right_shoulder_pivot.mesh">
+                <subentities>
+                    <subentity index="0" materialName="lambert2" />
+                </subentities>
+            </entity>
+        </node>
+    </nodes>
+</scene>

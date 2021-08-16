@@ -1,0 +1,4 @@
+Generic Faction;Test;True;none;none
+Hauser Industrial;Test;False;HauserStart.lua;start
+Pax Syndicate;Test;False;PaxStart.lua;start
+Integrant Foundation;Test;False;IntegrantStart.lua;start

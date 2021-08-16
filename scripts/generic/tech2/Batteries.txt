@@ -1,0 +1,5 @@
+Cad-Poly 25;500;400;2;Generic Faction;Cad-Poly 25;1;15;20
+Cad-Poly 35;600;500;2;Generic Faction;Cad-Poly 35;1;15;35
+Cad-Poly 50;900;1000;2;Generic Faction;Cad-Poly 50;1;15;50
+Cad-Poly 75;1200;1300;2;Generic Faction;Cad-Poly 75;2;18;75
+Cad-Poly 100;1500;1600;2;Generic Faction;Cad-Poly 100;2;21;100

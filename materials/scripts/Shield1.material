@@ -1,0 +1,19 @@
+material Shield1
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			cull_hardware clockwise
+
+			depth_write off
+			scene_blend alpha_blend
+
+			ambient 0.128735 0.128735 0.728735 .32
+			diffuse 0.225976 0.225976 0.825976 .32
+			specular 0.500000 0.500000 0.500000 .8 12.500000
+		}
+	}	
+		
+}

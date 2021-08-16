@@ -1,0 +1,2 @@
+Interceptor animations;walk cycle;being hit;take off;land;hover/fly cycle;idle;death;Interceptor
+Worthog animations;walk cycle;being hit;take off;land;hover/fly cycle;idle;death;Warthog

@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D09C35C6-EF9A-4D53-9925-A03FAC8BAFD1}</ProjectGUID>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>CenterSpace</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CenterSpace.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CenterSpace</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CenterSpace.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CenterSpace</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CenterSpace.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CenterSpace</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CenterSpace.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CenterSpace</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>./.;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include;C:/Development/Ogre/OgreTrunk/include;C:/Development/Ogre/OgreTrunk/OgreMain/include;C:/Development/Ogre/OgreTrunk/Components/Terrain/include;C:/Development/Ogre/OgreTrunk/Components/Paging/include;C:/Development/Ogre/libRocket/Include;C:/Development/Ogre/OgreDependencies/ogredeps/include/OIS;C:\Development\Ogre\bullet-2.80-rev2531\src;C:\Development\Ogre\OgreDependencies\include\OIS;C:\Development\Ogre\Downloads\sqlite-autoconf-3071300</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;STATIC_LIB;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;UT_USE_ZLIB;AL_STATIC_LIB;ALC_STATIC_LIB;SIZEOF_SHORT=2;SIZEOF_INT=4;SIZEOF_LONG=4;SIZEOF_WCHAR_T=2;SIZEOF_VOID_P=4;SIZEOF_LONG_LONG=8;SIZEOF_SIZE_T=4;SIZEOF_UINT=4;wxSIZE_T_IS_UINT=1;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;STATIC_LIB;CMAKE_INTDIR="Debug";CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>./Debug/CenterSpace.pdb</ProgramDataBaseFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>./.;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include;C:/Development/Ogre/OgreTrunk/include;C:/Development/Ogre/OgreTrunk/OgreMain/include;C:/Development/Ogre/OgreTrunk/Components/Terrain/include;C:/Development/Ogre/OgreTrunk/Components/Paging/include;C:/Development/Ogre/libRocket/Include;C:/Development/Ogre/OgreDependencies/ogredeps/include/OIS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>./.;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include;C:/Development/Ogre/OgreTrunk/include;C:/Development/Ogre/OgreTrunk/OgreMain/include;C:/Development/Ogre/OgreTrunk/Components/Terrain/include;C:/Development/Ogre/OgreTrunk/Components/Paging/include;C:/Development/Ogre/libRocket/Include;C:/Development/Ogre/OgreDependencies/ogredeps/include/OIS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;opengl32.lib;glu32.lib;Comctl32.lib;Rpcrt4.lib;C:/Development/Ogre/OgreTrunk/lib/Debug/OgreMain_d.lib;C:/Development/Ogre/OgreTrunk/lib/Debug/OgreRTShaderSystem_d.lib;C:/Development/Ogre/OgreTrunk/lib/Debug/OgreTerrain_d.lib;C:/Development/Ogre/OgreTrunk/lib/Debug/OgrePaging_d.lib;C:/Development/Ogre/OgreDependencies/ogredeps/lib/Debug/OIS_d.lib;C:\Development\Ogre\bullet-2.80-rev2531\lib\LinearMath_debug.lib;C:\Development\Ogre\bullet-2.80-rev2531\lib\BulletDynamics_debug.lib;C:\Development\Ogre\bullet-2.80-rev2531\lib\BulletCollision_debug.lib;C:\Development\Ogre\gamekit_windows\Dependencies\Source\FreeType\Debug\freetype.lib;C:\Development\Ogre\OgreDependencies\ogredeps\lib\Release\cg.lib;C:/Development/Ogre/OgreDependencies/ogredeps/lib/Debug/FreeImage_d.lib;C:/Development/Ogre/OgreDependencies/ogredeps/lib/Debug/zziplib_d.lib;C:/Development/Ogre/OgreDependencies/ogredeps/lib/Debug/zlib_d.lib;C:\Development\Ogre\gamekit_windows\Dependencies\Source\libRocket\Build\Debug\RocketCore.lib;C:\Development\Ogre\gamekit_windows\Dependencies\Source\libRocket\Build\Debug\RocketControls.lib;C:\Development\Ogre\gamekit_windows\Dependencies\Source\libRocket\Build\Debug\RocketDebugger.lib;C:\Development\Ogre\sqlite\Debug\sqlite.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>./Debug/CenterSpace.lib</ImportLibrary>
+      <ProgramDataBaseFileName>./Debug/CenterSpace.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+      <Version>0.0</Version>
+      <IgnoreSpecificDefaultLibraries>msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>./.;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include;C:/Development/Ogre/OgreTrunk/include;C:/Development/Ogre/OgreTrunk/OgreMain/include;C:/Development/Ogre/OgreTrunk/Components/Terrain/include;C:/Development/Ogre/OgreTrunk/Components/Paging/include;C:/Development/Ogre/libRocket/Include;C:/Development/Ogre/OgreDependencies/ogredeps/include/OIS;C:\Development\Ogre\bullet-2.80-rev2531\src;C:\Development\Ogre\sqlite\sqlite;C:\Development\Ogre\Downloads\sqlite-autoconf-3071300;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STATIC_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;UT_USE_ZLIB;AL_STATIC_LIB;ALC_STATIC_LIB;SIZEOF_SHORT=2;SIZEOF_INT=4;SIZEOF_LONG=4;SIZEOF_WCHAR_T=2;SIZEOF_VOID_P=4;SIZEOF_LONG_LONG=8;SIZEOF_SIZE_T=4;SIZEOF_UINT=4;wxSIZE_T_IS_UINT=1;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>./Release/CenterSpace.pdb</ProgramDataBaseFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>./.;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include;C:/Development/Ogre/OgreTrunk/include;C:/Development/Ogre/OgreTrunk/OgreMain/include;C:/Development/Ogre/OgreTrunk/Components/Terrain/include;C:/Development/Ogre/OgreTrunk/Components/Paging/include;C:/Development/Ogre/libRocket/Include;C:/Development/Ogre/OgreDependencies/ogredeps/include/OIS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>./.;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include;C:/Development/Ogre/OgreTrunk/include;C:/Development/Ogre/OgreTrunk/OgreMain/include;C:/Development/Ogre/OgreTrunk/Components/Terrain/include;C:/Development/Ogre/OgreTrunk/Components/Paging/include;C:/Development/Ogre/libRocket/Include;C:/Development/Ogre/OgreDependencies/ogredeps/include/OIS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;opengl32.lib;glu32.lib;Comctl32.lib;Rpcrt4.lib;C:/Development/Ogre/OgreTrunk/lib/Release/OgreMain.lib;C:/Development/Ogre/OgreTrunk/lib/Release/OgreRTShaderSystem.lib;C:/Development/Ogre/OgreTrunk/lib/Release/OgreTerrain.lib;C:/Development/Ogre/OgreTrunk/lib/Release/OgrePaging.lib;C:/Development/Ogre/OgreDependencies/ogredeps/lib/Release/OIS.lib;C:\Development\Ogre\bullet-2.80-rev2531\lib\LinearMath.lib;C:\Development\Ogre\bullet-2.80-rev2531\lib\BulletDynamics.lib;C:\Development\Ogre\bullet-2.80-rev2531\lib\BulletCollision.lib;C:\Development\Ogre\gamekit_windows\Dependencies\Source\FreeType\Release\freetype.lib;C:\Development\Ogre\OgreDependencies\ogredeps\lib\Release\cg.lib;C:/Development/Ogre/OgreDependencies/ogredeps/lib/Release/FreeImage.lib;C:/Development/Ogre/OgreDependencies/ogredeps/lib/Release/zziplib.lib;C:/Development/Ogre/OgreDependencies/ogredeps/lib/Release/zlib.lib;C:\Development\Ogre\gamekit_windows\Dependencies\Source\libRocket\Build\Release\RocketCore.lib;C:\Development\Ogre\gamekit_windows\Dependencies\Source\libRocket\Build\Release\RocketControls.lib;C:\Development\Ogre\gamekit_windows\Dependencies\Source\libRocket\Build\Release\RocketDebugger.lib;C:\Development\Ogre\sqlite\Debug\sqlite.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>./Release/CenterSpace.lib</ImportLibrary>
+      <ProgramDataBaseFileName>./Release/CenterSpace.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+      <Version>0.0</Version>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>./.;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include;C:/Development/Ogre/OgreTrunk/include;C:/Development/Ogre/OgreTrunk/OgreMain/include;C:/Development/Ogre/OgreTrunk/Components/Terrain/include;C:/Development/Ogre/OgreTrunk/Components/Paging/include;C:/Development/Ogre/libRocket/Include;C:/Development/Ogre/OgreDependencies/ogredeps/include/OIS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;STATIC_LIB;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;UT_USE_ZLIB;AL_STATIC_LIB;ALC_STATIC_LIB;SIZEOF_SHORT=2;SIZEOF_INT=4;SIZEOF_LONG=4;SIZEOF_WCHAR_T=2;SIZEOF_VOID_P=4;SIZEOF_LONG_LONG=8;SIZEOF_SIZE_T=4;SIZEOF_UINT=4;wxSIZE_T_IS_UINT=1;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;STATIC_LIB;CMAKE_INTDIR="Debug";CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>./MinSizeRel/CenterSpace.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>./.;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include;C:/Development/Ogre/OgreTrunk/include;C:/Development/Ogre/OgreTrunk/OgreMain/include;C:/Development/Ogre/OgreTrunk/Components/Terrain/include;C:/Development/Ogre/OgreTrunk/Components/Paging/include;C:/Development/Ogre/libRocket/Include;C:/Development/Ogre/OgreDependencies/ogredeps/include/OIS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>./.;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include;C:/Development/Ogre/OgreTrunk/include;C:/Development/Ogre/OgreTrunk/OgreMain/include;C:/Development/Ogre/OgreTrunk/Components/Terrain/include;C:/Development/Ogre/OgreTrunk/Components/Paging/include;C:/Development/Ogre/libRocket/Include;C:/Development/Ogre/OgreDependencies/ogredeps/include/OIS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;opengl32.lib;glu32.lib;Comctl32.lib;Rpcrt4.lib;C:/Development/Ogre/Ogre\OgreTrunk\lib\Debug\OgreMain_d.lib;C:/Development/Ogre/Ogre\OgreTrunk\lib\Debug\OgreRTShaderSystem_d.lib;C:/Development/Ogre/Ogre\OgreDependencies_MSVC_20101231\Dependencies\lib\debug\OIS_d.lib;C:/Development/Ogre/Ogre\OgreTrunk\lib\Debug\OgreTerrain_d.lib;C:/Development/Ogre/Ogre\OgreTrunk\lib\Debug\OgrePaging_d.lib;C:/Development/Ogre/Ogre\OgreDependencies_MSVC_20101231\Dependencies\lib\debug\freetype2311_d.lib;C:/Development/Ogre/Ogre\OgreDependencies_MSVC_20101231\Dependencies\lib\debug\FreeImaged.lib;C:/Development/Ogre/Ogre\OgreDependencies_MSVC_20101231\Dependencies\lib\debug\zziplibd.lib;C:/Development/Ogre/Ogre\OgreDependencies_MSVC_20101231\Dependencies\lib\debug\zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>./MinSizeRel/CenterSpace.lib</ImportLibrary>
+      <ProgramDataBaseFileName>./MinSizeRel/CenterSpace.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>./.;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include;C:/Development/Ogre/OgreTrunk/include;C:/Development/Ogre/OgreTrunk/OgreMain/include;C:/Development/Ogre/OgreTrunk/Components/Terrain/include;C:/Development/Ogre/OgreTrunk/Components/Paging/include;C:/Development/Ogre/libRocket/Include;C:/Development/Ogre/OgreDependencies/ogredeps/include/OIS;C:\Development\Ogre\bullet-2.80-rev2531\src;C:\Development\Ogre\sqlite\sqlite;C:\Development\Ogre\Downloads\sqlite-autoconf-3071300;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;STATIC_LIB;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;NOMINMAX;UT_USE_ZLIB;AL_STATIC_LIB;ALC_STATIC_LIB;SIZEOF_SHORT=2;SIZEOF_INT=4;SIZEOF_LONG=4;SIZEOF_WCHAR_T=2;SIZEOF_VOID_P=4;SIZEOF_LONG_LONG=8;SIZEOF_SIZE_T=4;SIZEOF_UINT=4;wxSIZE_T_IS_UINT=1;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;STATIC_LIB;CMAKE_INTDIR="Debug";CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>./RelWithDebInfo/CenterSpace.pdb</ProgramDataBaseFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>./.;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include;C:/Development/Ogre/OgreTrunk/include;C:/Development/Ogre/OgreTrunk/OgreMain/include;C:/Development/Ogre/OgreTrunk/Components/Terrain/include;C:/Development/Ogre/OgreTrunk/Components/Paging/include;C:/Development/Ogre/libRocket/Include;C:/Development/Ogre/OgreDependencies/ogredeps/include/OIS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>./.;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include;C:/Development/Ogre/OgreTrunk/include;C:/Development/Ogre/OgreTrunk/OgreMain/include;C:/Development/Ogre/OgreTrunk/Components/Terrain/include;C:/Development/Ogre/OgreTrunk/Components/Paging/include;C:/Development/Ogre/libRocket/Include;C:/Development/Ogre/OgreDependencies/ogredeps/include/OIS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;opengl32.lib;glu32.lib;Comctl32.lib;Rpcrt4.lib;C:/Development/Ogre/OgreTrunk/lib/Debug/OgreMain_d.lib;C:/Development/Ogre/OgreTrunk/lib/Debug/OgreRTShaderSystem_d.lib;C:/Development/Ogre/OgreTrunk/lib/Debug/OgreTerrain_d.lib;C:/Development/Ogre/OgreTrunk/lib/Debug/OgrePaging_d.lib;C:/Development/Ogre/OgreDependencies/ogredeps/lib/Debug/OIS_d.lib;C:\Development\Ogre\bullet-2.80-rev2531\lib\LinearMath_debug.lib;C:\Development\Ogre\bullet-2.80-rev2531\lib\BulletDynamics_debug.lib;C:\Development\Ogre\bullet-2.80-rev2531\lib\BulletCollision_debug.lib;C:\Development\Ogre\gamekit_windows\Dependencies\Source\FreeType\Debug\freetype.lib;C:\Development\Ogre\OgreDependencies\ogredeps\lib\Release\cg.lib;C:/Development/Ogre/OgreDependencies/ogredeps/lib/Debug/FreeImage_d.lib;C:/Development/Ogre/OgreDependencies/ogredeps/lib/Debug/zziplib_d.lib;C:/Development/Ogre/OgreDependencies/ogredeps/lib/Debug/zlib_d.lib;C:\Development\Ogre\gamekit_windows\Dependencies\Source\libRocket\Build\Debug\RocketCore.lib;C:\Development\Ogre\gamekit_windows\Dependencies\Source\libRocket\Build\Debug\RocketControls.lib;C:\Development\Ogre\gamekit_windows\Dependencies\Source\libRocket\Build\Debug\RocketDebugger.lib;C:\Development\Ogre\sqlite\Debug\sqlite.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>./RelWithDebInfo/CenterSpace.lib</ImportLibrary>
+      <ProgramDataBaseFileName>./RelWithDebInfo/CenterSpace.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+      <Version>0.0</Version>
+      <IgnoreSpecificDefaultLibraries>msvcrtd.lib;msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include=".\BtOgre\BtOgre.cpp" />
+    <ClCompile Include=".\Controllers\KinematicCharacterController.cpp" />
+    <ClCompile Include=".\Controllers\MCUAnimationController.cpp" />
+    <ClCompile Include=".\Controllers\MCUController.cpp" />
+    <ClCompile Include=".\Entities\BattlefieldGrid.cpp" />
+    <ClCompile Include=".\Entities\BattlefieldGridCell.cpp" />
+    <ClCompile Include=".\Entities\BeamProjectile.cpp" />
+    <ClCompile Include=".\Entities\DataProvider.cpp" />
+    <ClCompile Include=".\Entities\DataSet.cpp" />
+    <ClCompile Include=".\Entities\DataSource.cpp" />
+    <ClCompile Include=".\Entities\GridSquare.cpp" />
+    <ClCompile Include=".\Entities\GridSquareLayer.cpp" />
+    <ClCompile Include=".\Entities\PathFindingNode.cpp" />
+    <ClCompile Include=".\Entities\PersistentEntity.cpp" />
+    <ClCompile Include=".\Entities\MechanizedCombatUnit.cpp" />
+    <ClCompile Include=".\Entities\PhysicalProjectile.cpp" />
+    <ClCompile Include=".\Entities\PlayerProfile.cpp" />
+    <ClCompile Include=".\Entities\Projectile.cpp" />
+    <ClCompile Include=".\Entities\RandomMission.cpp" />
+    <ClCompile Include=".\Entities\Shield.cpp" />
+    <ClCompile Include=".\Entities\WeaponHardpoint.cpp" />
+    <ClCompile Include=".\Game\Main.cpp" />
+    <ClCompile Include=".\GUI\CampaignElement.cpp" />
+    <ClCompile Include=".\GUI\DataBoundElement.cpp" />
+    <ClCompile Include=".\GUI\DataBoundListElement.cpp" />
+    <ClCompile Include=".\GUI\DataBoundListItemElement.cpp" />
+    <ClCompile Include=".\GUI\DataBoundTextElement.cpp" />
+    <ClCompile Include=".\GUI\DataProviderElement.cpp" />
+    <ClCompile Include=".\GUI\MCUComponentSelectElement.cpp" />
+    <ClCompile Include=".\GUI\MCUEditInfoElement.cpp" />
+    <ClCompile Include=".\GUI\MCUEditSelectElement.cpp" />
+    <ClCompile Include=".\GUI\MCUPurchaseInfoElement.cpp" />
+    <ClCompile Include=".\GUI\MCUPurchaseSelectElement.cpp" />
+    <ClCompile Include=".\GUI\RenderInterfaceOgre3D.cpp" />
+    <ClCompile Include=".\GUI\RocketDocumentDefinition.cpp" />
+    <ClCompile Include=".\GUI\RocketDocuments.cpp" />
+    <ClCompile Include=".\GUI\RocketRenderer.cpp" />
+    <ClCompile Include=".\GUI\SinglePlayerProfilesElement.cpp" />
+    <ClCompile Include=".\GUI\SystemInterfaceOgre3D.cpp" />
+    <ClCompile Include=".\GUI\FileInterfaceOgre3D.cpp" />
+    <ClCompile Include=".\GUI\TextRenderer.cpp" />
+    <ClCompile Include=".\GUI\WeaponButtonElement.cpp" />
+    <ClCompile Include=".\Input\InputListener.cpp" />
+    <ClCompile Include=".\Managers\CampaignMissionManager.cpp" />
+    <ClCompile Include=".\Managers\DbNames.cpp" />
+    <ClCompile Include=".\Managers\GameManager.cpp" />
+    <ClCompile Include=".\Managers\PathFindingManager.cpp" />
+    <ClCompile Include=".\Managers\PhysicsManager.cpp" />
+    <ClCompile Include=".\Managers\RandomMissionGenerator.cpp" />
+    <ClCompile Include=".\Managers\SQLiteDBManager.cpp" />
+    <ClCompile Include=".\Repositories\AIGroupTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\AIGroupTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\AIMCUTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\AIMCUTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\AnimationDefinitionTemplateDataLoader.cpp" />
+    <ClCompile Include=".\Repositories\BatteryTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\BatteryTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\BattlefieldTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\BattlefieldTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\BeamProjectileTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\BeamProjectileTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\FactionHubTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\FactionHubTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\FactionTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\FactionTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\HubTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\HubTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\InternalComponentTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\InternalComponentTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\CSVFileParser.cpp" />
+    <ClCompile Include=".\Repositories\DriveTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\DriveTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\MCUTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\MCUTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\MissionTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\MissionTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\PhysicalProjectileTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\PhysicalProjectileTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\ReactorTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\ReactorTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\RepositoryManager.cpp" />
+    <ClCompile Include=".\Repositories\ShieldTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\ShieldTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\TargetingSystemTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\TargetingSystemTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\TerrainTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\TerrainTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\TextureDefinitionTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\TextureDefinitionTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\Repositories\WeaponAnimationTemplateDataLoader.cpp" />
+    <ClCompile Include=".\Repositories\WeaponHardpointTemplateDataLoader.cpp" />
+    <ClCompile Include=".\Repositories\WeaponTemplateRepository.cpp" />
+    <ClCompile Include=".\Repositories\WeaponTemplateRepositoryLoader.cpp" />
+    <ClCompile Include=".\States\CampaignState.cpp" />
+    <ClCompile Include=".\States\GameState.cpp" />
+    <ClCompile Include=".\States\InBaseState.cpp" />
+    <ClCompile Include=".\States\InBattleState.cpp" />
+    <ClCompile Include=".\States\InventoryState.cpp" />
+    <ClCompile Include=".\States\MainMenuState.cpp" />
+    <ClCompile Include=".\States\MCUBayState.cpp" />
+    <ClCompile Include=".\States\MissionBriefingState.cpp" />
+    <ClCompile Include=".\States\PlayerBattleState.cpp" />
+    <ClCompile Include=".\States\PlayerState.cpp" />
+    <ClCompile Include=".\Templates\AIGroupTemplate.cpp" />
+    <ClCompile Include=".\Templates\AIMCUTemplate.cpp" />
+    <ClCompile Include=".\Templates\AnimationDefinitionTemplate.cpp" />
+    <ClCompile Include=".\Templates\BatteryTemplate.cpp" />
+    <ClCompile Include=".\Templates\BattlefieldTemplate.cpp" />
+    <ClCompile Include=".\Templates\BeamProjectileTemplate.cpp" />
+    <ClCompile Include=".\Templates\FactionHubTemplate.cpp" />
+    <ClCompile Include=".\Templates\FactionTemplate.cpp" />
+    <ClCompile Include=".\Templates\HubTemplate.cpp" />
+    <ClCompile Include=".\Templates\InternalComponentTemplate.cpp" />
+    <ClCompile Include=".\Templates\DriveTemplate.cpp" />
+    <ClCompile Include=".\Templates\MCUComponentTemplate.cpp" />
+    <ClCompile Include=".\Templates\MCUTemplate.cpp" />
+    <ClCompile Include=".\Templates\MissionTemplate.cpp" />
+    <ClCompile Include=".\Templates\PhysicalProjectileTemplate.cpp" />
+    <ClCompile Include=".\Templates\ReactorTemplate.cpp" />
+    <ClCompile Include=".\Templates\RequiredRankTemplate.cpp" />
+    <ClCompile Include=".\Templates\ShieldTemplate.cpp" />
+    <ClCompile Include=".\Templates\TargetingSystemTemplate.cpp" />
+    <ClCompile Include=".\Templates\Template.cpp" />
+    <ClCompile Include=".\Templates\TerrainTemplate.cpp" />
+    <ClCompile Include=".\Templates\TextureDefinitionTemplate.cpp" />
+    <ClCompile Include=".\Templates\WeaponAnimationTemplate.cpp" />
+    <ClCompile Include=".\Templates\WeaponHardpointTemplate.cpp" />
+    <ClCompile Include=".\Templates\WeaponTemplate.cpp" />
+    <ClCompile Include=".\Terrain\Divider.cpp" />
+    <ClCompile Include=".\Terrain\TerrainImgGenerator.cpp" />
+    <ClCompile Include=".\Terrain\TerrainManager.cpp" />
+    <ClInclude Include=".\BtOgre\BtOgreExtras.h" />
+    <ClInclude Include=".\BtOgre\BtOgreGP.h" />
+    <ClInclude Include=".\BtOgre\BtOgrePG.h" />
+    <ClInclude Include=".\Controllers\KinematicCharacterController.h" />
+    <ClInclude Include=".\Controllers\MCUAnimationController.h" />
+    <ClInclude Include=".\Controllers\MCUController.h" />
+    <ClInclude Include=".\Entities\BattlefieldGrid.h" />
+    <ClInclude Include=".\Entities\BattlefieldGridCell.h" />
+    <ClInclude Include=".\Entities\BeamProjectile.h" />
+    <ClInclude Include=".\Entities\DataProvider.h" />
+    <ClInclude Include=".\Entities\DataSet.h" />
+    <ClInclude Include=".\Entities\DataSource.h" />
+    <ClInclude Include=".\Entities\Enums.h" />
+    <ClInclude Include=".\Entities\GridSquare.h" />
+    <ClInclude Include=".\Entities\GridSquareLayer.h" />
+    <ClInclude Include=".\Entities\PathFindingNode.h" />
+    <ClInclude Include=".\Entities\PersistentEntity.h" />
+    <ClInclude Include=".\Entities\PhysicalProjectile.h" />
+    <ClInclude Include=".\Entities\PlayerProfile.h" />
+    <ClInclude Include=".\Entities\Projectile.h" />
+    <ClInclude Include=".\Entities\RandomMission.h" />
+    <ClInclude Include=".\Entities\Shield.h" />
+    <ClInclude Include=".\GUI\CampaignElement.h" />
+    <ClInclude Include=".\GUI\DataBoundElement.h" />
+    <ClInclude Include=".\GUI\DataBoundListElement.h" />
+    <ClInclude Include=".\GUI\DataBoundListItemElement.h" />
+    <ClInclude Include=".\GUI\DataBoundTextElement.h" />
+    <ClInclude Include=".\GUI\DataProviderElement.h" />
+    <ClInclude Include=".\GUI\MCUComponentSelectElement.h" />
+    <ClInclude Include=".\GUI\MCUEditInfoElement.h" />
+    <ClInclude Include=".\GUI\MCUEditSelectElement.h" />
+    <ClInclude Include=".\GUI\MCUPurchaseInfoElement.h" />
+    <ClInclude Include=".\GUI\MCUPurchaseSelectElement.h" />
+    <ClInclude Include=".\GUI\RocketDocumentDefinition.h" />
+    <ClInclude Include=".\GUI\RocketDocuments.h" />
+    <ClInclude Include=".\GUI\SinglePlayerProfilesElement.h" />
+    <ClInclude Include=".\GUI\TextRenderer.h" />
+    <ClInclude Include=".\GUI\WeaponButtonElement.h" />
+    <ClInclude Include=".\Managers\CampaignMissionManager.h" />
+    <ClInclude Include=".\Managers\DbNames.h" />
+    <ClInclude Include=".\Managers\PathFindingManager.h" />
+    <ClInclude Include=".\Managers\PhysicsManager.h" />
+    <ClInclude Include=".\Managers\RandomMissionGenerator.h" />
+    <ClInclude Include=".\Managers\SQLiteDBManager.h" />
+    <ClInclude Include=".\Repositories\AIGroupTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\AIGroupTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\AIMCUTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\AIMCUTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\AnimationDefinitionTemplateDataLoader.h" />
+    <ClInclude Include=".\Repositories\BatteryTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\BatteryTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\BattlefieldTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\BattlefieldTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\BeamProjectileTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\BeamProjectileTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\FactionHubTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\FactionHubTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\FactionTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\FactionTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\HubTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\HubTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\InternalComponentTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\InternalComponentTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\CSVFileParser.h" />
+    <ClInclude Include=".\Repositories\DataLoader.h" />
+    <ClInclude Include=".\Repositories\DriveTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\DriveTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\MCUTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\MCUTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\MissionTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\MissionTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\PhysicalProjectileTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\PhysicalProjectileTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\ReactorTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\ReactorTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\Repository.h" />
+    <ClInclude Include=".\Repositories\RepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\RepositoryManager.h" />
+    <ClInclude Include=".\Repositories\ShieldTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\ShieldTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\TargetingSystemTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\TargetingSystemTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\TerrainTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\TerrainTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\TextureDefinitionTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\TextureDefinitionTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\Repositories\WeaponAnimationTemplateDataLoader.h" />
+    <ClInclude Include=".\Repositories\WeaponHardpointTemplateDataLoader.h" />
+    <ClInclude Include=".\Repositories\WeaponTemplateRepository.h" />
+    <ClInclude Include=".\Repositories\WeaponTemplateRepositoryLoader.h" />
+    <ClInclude Include=".\States\CampaignState.h" />
+    <ClInclude Include=".\States\InBaseState.h" />
+    <ClInclude Include=".\States\InBattleState.h" />
+    <ClInclude Include=".\States\InventoryState.h" />
+    <ClInclude Include=".\States\MCUBayState.h" />
+    <ClInclude Include=".\States\MissionBriefingState.h" />
+    <ClInclude Include=".\States\MyMotionState.h" />
+    <ClInclude Include=".\States\PlayerBattleState.h" />
+    <ClInclude Include=".\States\PlayerState.h" />
+    <ClInclude Include=".\Templates\AIGroupTemplate.h" />
+    <ClInclude Include=".\Templates\AIMCUTemplate.h" />
+    <ClInclude Include=".\Templates\AnimationDefinitionTemplate.h" />
+    <ClInclude Include=".\Templates\BatteryTemplate.h" />
+    <ClInclude Include=".\Templates\BattlefieldTemplate.h" />
+    <ClInclude Include=".\Templates\BeamProjectileTemplate.h" />
+    <ClInclude Include=".\Templates\Enums.h" />
+    <ClInclude Include=".\Templates\FactionHubTemplate.h" />
+    <ClInclude Include=".\Templates\FactionTemplate.h" />
+    <ClInclude Include=".\Templates\HubTemplate.h" />
+    <ClInclude Include=".\Templates\InternalComponentTemplate.h" />
+    <ClInclude Include=".\Templates\DriveTemplate.h" />
+    <ClInclude Include=".\Templates\MCUComponentTemplate.h" />
+    <ClInclude Include=".\Templates\MCUTemplate.h" />
+    <ClInclude Include=".\Templates\MissionTemplate.h" />
+    <ClInclude Include=".\Templates\PhysicalProjectileTemplate.h" />
+    <ClInclude Include=".\Templates\ProjectileTemplate.h" />
+    <ClInclude Include=".\Templates\ReactorTemplate.h" />
+    <ClInclude Include=".\Templates\RequiredRankTemplate.h" />
+    <ClInclude Include=".\Templates\ShieldTemplate.h" />
+    <ClInclude Include=".\Templates\TargetingSystemTemplate.h" />
+    <ClInclude Include=".\Templates\Template.h" />
+    <ClInclude Include=".\Templates\TerrainTemplate.h" />
+    <ClInclude Include=".\Templates\TextureDefinitionTemplate.h" />
+    <ClInclude Include=".\Templates\WeaponAnimationTemplate.h" />
+    <ClInclude Include=".\Templates\WeaponHardpointTemplate.h" />
+    <ClInclude Include=".\Templates\WeaponTemplate.h" />
+    <ClInclude Include=".\Terrain\Divider.h" />
+    <ClInclude Include=".\Terrain\TerrainImgGenerator.h" />
+    <ClInclude Include=".\Terrain\TerrainManager.h" />
+    <None Include=".\Assets\Stylesheets\centerspace.css" />
+    <None Include=".\Assets\RML\MainMenu.rml" />
+    <ClInclude Include=".\Entities\MechanizedCombatUnit.h" />
+    <ClInclude Include=".\Entities\WeaponHardpoint.h" />
+    <ClInclude Include=".\GUI\RenderInterfaceOgre3D.h" />
+    <ClInclude Include=".\GUI\RocketRenderer.h" />
+    <ClInclude Include=".\GUI\SystemInterfaceOgre3D.h" />
+    <ClInclude Include=".\GUI\FileInterfaceOgre3D.h" />
+    <ClInclude Include=".\Input\InputListener.h" />
+    <ClInclude Include=".\Managers\GameManager.h" />
+    <ClInclude Include=".\States\GameState.h" />
+    <ClInclude Include=".\States\MainMenuState.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

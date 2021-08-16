@@ -1,0 +1,26 @@
+$#include <Entities/Projectile.h>
+
+class Projectile : MovableEntity
+{
+	Projectile();
+	virtual ~Projectile();
+	
+	Ogre::Vector3 getStartpoint();
+	void setStartpoint(const Ogre::Vector3& start);
+
+	Ogre::Vector3 getEndpoint();
+	void setEndpoint(const Ogre::Vector3& end);
+
+	int getProjectileID();
+	void setProjectileID(int id);
+	
+	WeaponTemplate* getWeaponTemplate();
+
+	MCUController* getSource();
+	void setSource(MCUController* source);
+
+	void applyWarhead(MCUController* target);
+
+	virtual void projectileAdded() = 0;
+
+};

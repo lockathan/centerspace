@@ -1,0 +1,2 @@
+Li-Ion 25;400;500;1;Generic Faction;Li-Ion 25;1;18;25
+Li-Ion 35;500;575;1;Generic Faction;Li-Ion 35;1;18;35

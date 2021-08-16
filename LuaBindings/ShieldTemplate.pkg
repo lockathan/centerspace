@@ -1,0 +1,21 @@
+$#include <Templates/ShieldTemplate.h>
+
+class ShieldTemplate : public MCUComponentTemplate
+{
+	ShieldTemplate();
+	~ShieldTemplate();
+	
+	float getMaxShieldHealth();
+	void setMaxShieldHealth(const float& health);
+	
+	float getEnergyDrainPerTurn();
+	void setEnergyDrainPerTurn(const float& drain);
+	
+	float getRegenRate();
+	void setRegenRate(const float& rate);
+	
+	std::string getMaterialName();
+	void setMaterialName(const std::string& name);
+
+	
+};

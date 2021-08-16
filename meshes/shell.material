@@ -1,0 +1,17 @@
+material CannonShell
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+
+			texture_unit
+			{
+				texture CannonShell.png
+			}
+		}
+
+	}
+
+}

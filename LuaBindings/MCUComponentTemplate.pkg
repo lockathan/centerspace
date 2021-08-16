@@ -1,0 +1,30 @@
+$#include <Templates/MCUComponentTemplate.h>
+
+class MCUComponentTemplate : public Template
+{
+	MCUComponentTemplate();
+	virtual ~MCUComponentTemplate();
+
+	std::string getDescription();
+	void setDescription(std::string desc);
+
+	float getCost();
+	void setCost(float cost);
+
+	float getWeight();
+	void setWeight(float weight);
+
+	float getMaxHealth();
+	void setMaxHealth(float health);
+
+	int getRequiredRank();
+	void setRequiredRank(int rank);
+
+	FactionTemplate* getFactionTemplate();
+	void setFactionTemplate(FactionTemplate* faction);
+
+	int getSize();
+	void setSize(int size);
+	
+	virtual std::hash_map<std::string, std::string> getGuiValues();
+};

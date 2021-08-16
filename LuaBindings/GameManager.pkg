@@ -1,0 +1,26 @@
+$#include <Managers/GameManager.h>
+
+class GameManager
+{
+	~GameManager();
+
+	void changeState( GameState *gameState );
+	void pushState( GameState *gameState );
+	void popState();
+	void requestShutdown();
+
+	void updateCoords(float x, float y, float z, std::string type);
+	void updateDebugText(std::string text);
+
+	Ogre::Camera* getCamera(std::string name);
+	void changeCamera(Ogre::Camera* camera);
+	Ogre::SceneManager* getSceneManager();
+	GameState* getActiveState();
+	
+	Ogre::Camera* getFogCamera();
+	Ogre::SceneManager* getFogSceneManager();
+
+	void luaDebugReport(const std::string& message, float number);
+
+	static GameManager* getSingletonPtr();
+};

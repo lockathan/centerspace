@@ -1,0 +1,7 @@
+$#include <Repositories/BeamProjectileTemplateRepository.h>
+
+class BeamProjectileTemplateRepository : public Repository<BeamProjectileTemplate>
+{
+	static BeamProjectileTemplateRepository* getSingletonPtr();
+	~BeamProjectileTemplateRepository();
+};

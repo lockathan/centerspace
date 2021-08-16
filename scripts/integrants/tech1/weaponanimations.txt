@@ -1,0 +1,8 @@
+Aphid laser anim 1;Aphid;0;torso cannon stance IN;1.0;torso cannon fire left;1.0;torso cannon stance OUT;1.0
+Aphid laser anim 2;Aphid;1;torso cannon stance IN;1.0;torso cannon fire right;1.0;torso cannon stance OUT;1.0
+Aphid missile anim 1;Aphid;2;rear cannon stance IN;1.0;rear cannon fire;1.0;rear cannon stance OUT;1.0
+Aphid missile anim 2;Aphid;3;rear cannon stance IN;1.0;rear cannon fire;1.0;rear cannon stance OUT;1.0
+Wraith laser anim 1;Wraith;0;front cannon stance IN;1.0;front cannon fire left;1.0;front cannon stance Out;1.0
+Wraith laser anim 2;Wraith;1;front cannon stance IN;1.0;front cannon fire right;1.0;front cannon stance Out;1.0
+Wraith cannon anim 1;Wraith;2;none;1.0;rear cannons fire;1.0;none;1.0
+Wraith cannon anim 2;Wraith;3;none;1.0;rear cannons fire;1.0;none;1.0

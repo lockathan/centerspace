@@ -1,0 +1,10 @@
+$#include <Repositories/DriveTemplateRepository.h>
+
+class DriveTemplateRepository : public Repository<DriveTemplate>
+{
+	static DriveTemplateRepository* getSingletonPtr();
+	~DriveTemplateRepository();
+
+	
+	std::vector<DriveTemplate*> getAvailableTemplates(int factionId, int rank, int size = 0);
+};

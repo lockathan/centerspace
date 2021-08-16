@@ -1,0 +1,2 @@
+Fibro-Muscular D1;900;750;2;Pax Syndicate;Fibro-Muscular D1;1;60;1.05;1.05
+Fibro-Muscular D2;900;750;2;Pax Syndicate;Fibro-Muscular D2;2;60;1.05;1.05

@@ -1,0 +1,20 @@
+$#include <Managers/CampaignMissionManager.h>
+
+class CampaignMissionManager
+{
+	~CampaignMissionManager();
+
+	CampaignState* getCampaignState();
+	void setCampaignState(CampaignState* campaign);
+
+	FactionTemplate* setFactionTemplate();
+	void setFactionTemplate(FactionTemplate* faction);
+
+	void loadRandomMission(int id, PlayerProfile* player);
+	void generateRandomMissions();
+
+	DataSet* getRandomMissionDataSet();
+
+	static CampaignMissionManager* getSingletonPtr();
+
+};

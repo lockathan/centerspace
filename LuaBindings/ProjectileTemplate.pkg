@@ -1,0 +1,20 @@
+$#include <Templates/ProjectileTemplate.h>
+
+enum ProjectileType
+{
+	LASER_INSTANT = 0,
+	LASER_STRAIGHT = 1,
+	BALLISTIC_STRAIGHT = 2,
+	BALLISTIC_INDIRECT = 3,
+	MISSILE_STRAIGHT = 4,
+	MISSILE_INDIRECT = 5
+};
+
+class ProjectileTemplate : public Template
+{
+	virtual ~ProjectileTemplate() {}
+
+	std::string getExplosionName();
+	void setExplosionName(const std::string& name);
+
+};

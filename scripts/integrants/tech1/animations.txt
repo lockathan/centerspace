@@ -1,0 +1,2 @@
+Aphid animations;walk cycle;being hit;take off;land;hover/fly cycle;idle;death;Aphid
+Wraith animations;walk cycle;being hit;take off;land;hover/fly cycle;idle;death;Wraith

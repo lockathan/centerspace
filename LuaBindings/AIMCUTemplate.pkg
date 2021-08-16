@@ -1,0 +1,38 @@
+$#include <Templates/AIMCUTemplate.h>
+
+class AIMCUTemplate : public RequiredRankTemplate
+{
+	AIMCUTemplate();
+	~AIMCUTemplate();
+
+	ArmorTemplate* getDefaultArmor();
+	void setDefaultArmor(ArmorTemplate* armor);
+
+	BatteryTemplate* getDefaultBattery();
+	void setDefaultBattery(BatteryTemplate* battery);
+	
+	DriveTemplate* getDefaultDrive();
+	void setDefaultDrive(DriveTemplate* drive);
+	
+	ReactorTemplate* getDefaultReactor();
+	void setDefaultReactor(ReactorTemplate* reactor);
+	
+	SensorSystemTemplate* getDefaultSensorSystem();
+	void setDefaultSensorSystem(SensorSystemTemplate* sensor);
+
+	ShieldTemplate* getDefaultShield();
+	void setDefaultShield(ShieldTemplate* shield);
+
+	TargetingSystemTemplate* getDefaultTargetingSystem();
+	void setDefaultTargetingSystem(TargetingSystemTemplate* target);
+	
+	FactionTemplate* getFactionTemplate();
+	void setFactionTemplate(FactionTemplate* faction);
+
+	MCUTemplate* getMCUTemplate();
+	void setMCUTemplate(MCUTemplate* mcu);
+
+	void setWeapon(int slot, WeaponTemplate* weapon);
+
+	MechanizedCombatUnit* instantiate(bool useDefaults);
+};

@@ -1,0 +1,13 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/template" href="hud.rml" />
+	</head>
+	<body template="hud" id="BetweenTurnsHUD">
+		<div class="hudcontent">
+			<button id="loadinbattlemenu">Menu</button><br />
+		</div>
+		<div class="bottomhud">
+		</div>
+	</body>
+</rml>

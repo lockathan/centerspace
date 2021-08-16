@@ -1,0 +1,6 @@
+$#include <Repositories/MCUTemplateRepositoryLoader.h>
+
+class MCUTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, MCUTemplateRepository* r);	
+};

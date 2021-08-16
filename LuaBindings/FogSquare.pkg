@@ -1,0 +1,49 @@
+$#include <Entities/FogSquare.h>
+
+enum VisibilityState
+{
+	VS_COMPLETE = 0,
+	VS_NEG_X_NEG_Z = 1,
+	VS_NEG_X_POS_Z = 2,
+	VS_POS_X_NEG_Z = 3,
+	VS_POS_X_POS_Z = 4,
+	VS_OBSTRUCTED = 5
+};
+
+struct FogSquare
+{
+	FogSquare() : X(0), Z(0), State(VS_OBSTRUCTED) {}
+	int X;
+	int Z;
+	VisibilityState State;
+};
+
+class FogSquareRow
+{
+	FogSquareRow(FogSquare* square);
+	~FogSquareRow();
+	void addFogSquare(FogSquare* square);
+	int getX();
+	void fillGaps();
+	FogSquare* getNext();
+	bool hasMoreFogSquares();
+	bool gapsFilled();
+	FogSquare* front();
+	FogSquare* back();
+	bool isInside(int z);
+	void reset();
+};
+
+
+class FogSquareGrid
+{
+	FogSquareGrid();
+	~FogSquareGrid();
+	void addFogSquare(FogSquare* square);
+	void insert(std::deque<FogSquare*> squares);
+	void fillGaps();
+	FogSquare* getNext();
+	bool hasMoreFogSquares();
+	bool isInside(int x, int z);
+	void reset();
+};

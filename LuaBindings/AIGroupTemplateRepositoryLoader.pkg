@@ -1,0 +1,7 @@
+$#include <Repositories/AIGroupTemplateRepositoryLoader.h>
+
+class AIGroupTemplateRepositoryLoader : public RepositoryLoader
+{
+	void load(const std::string& fileName, AIGroupTemplateRepository* r);
+
+};

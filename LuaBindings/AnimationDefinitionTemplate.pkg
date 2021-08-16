@@ -1,0 +1,36 @@
+$#include <Templates/AnimationDefinitionTemplate.h>
+
+class AnimationDefinitionTemplate : public Template
+{
+	AnimationDefinitionTemplate();
+	~AnimationDefinitionTemplate();
+	
+	std::string getWalkAnimationName();
+	void setWalkAnimationName(std::string name);
+
+	std::string getGetHitAnimationName();
+	void setGetHitAnimationName(std::string name);
+
+	std::string getTakeOffAnimationName();
+	void setTakeOffAnimationName(std::string name);
+
+	std::string getLandAnimationName();
+	void setLandAnimationName(std::string name);
+
+	std::string getFlyAnimationName();
+	void setFlyAnimationName(std::string name);
+
+	std::string getIdleAnimationName();
+	void setIdleAnimationName(std::string name);
+
+	std::string getDeathAnimationName();
+	void setDeathAnimationName(std::string name);
+
+	MCUTemplate* getMCUTemplate();
+	void setMCUTemplate(MCUTemplate* mcu);
+
+	int getNumWeaponAnimations();
+	void setNumWeaponAnimations(int num);
+	WeaponAnimationTemplate* getWeaponAnimation(int n);
+	void addWeaponAnimationTemplate(int hardpoint, WeaponAnimationTemplate* anim);
+};

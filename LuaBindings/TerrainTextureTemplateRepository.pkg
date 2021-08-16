@@ -1,0 +1,9 @@
+$#include <Repositories/TerrainTextureTemplateRepository.h>
+
+class TerrainTextureTemplateRepository : public Repository<TerrainTextureTemplate>
+{
+
+
+	static TerrainTextureTemplateRepository* getSingletonPtr();
+	~TerrainTextureTemplateRepository();
+};

@@ -1,0 +1,2 @@
+Interceptor v1;1;Hauser Industrial;4cm Standard;Li-Ion 25;Electro Magnetic Drive D1;Fission 250;Reeves-McIntosh Basic;Shield 25;Reef-McIntosh Targeter Pro;Interceptor;Laser LE-100;Laser LE-100;20mm Cannon;20mm Cannon;0;0;0;0
+Warthog v1;1;Hauser Industrial;5cm Standard;Li-Ion 25;Electro Magnetic Drive D1;Fission 250;Reeves-McIntosh Basic;Shield 50;Reef-McIntosh Targeter Pro;Warthog;Laser LE-100;Laser LE-100;20mm Cannon;20mm Cannon;Tomahawk Missile;0;0;0;0

@@ -1,0 +1,33 @@
+<rml>
+	<head>
+		<title>Main Menu</title>
+		<link type="text/template" href="window.rml" />
+	</head>
+	<body template="window" id="MissionSelect" class="ProfileMain">
+	<luascript>postbattle.lua</luascript>
+		<dataprovider datasource="battleresult" id="battleresultdp">
+			Income
+				<databoundtext class="selectBtn">@MoneyEarned@</databoundtext>
+			Repair Costs
+				<databoundtext class="selectBtn">@TotalRepairCosts@</databoundtext>
+			Net Profit
+				<databoundtext class="selectBtn">@NetProfit@</databoundtext>
+			Experience Earned
+				<databoundtext class="selectBtn">@ExperienceEarned@</databoundtext>
+			
+		</dataprovider>
+		<dataprovider datasource="mcustatus" id="mcustatusdp">
+			<databoundlist>
+				MCU
+					<databoundtext class="selectBtn">@MCUName@</databoundtext>
+				Status
+					<databoundtext class="selectBtn">@Status@</databoundtext>
+				Repair Cost
+					<databoundtext class="selectBtn">@RepairCost@</databoundtext>
+			</databoundlist>
+			
+		</dataprovider>
+		<button id="backToBase" class="mainBtn" onclick="okay">Okay</button>
+		
+	</body>
+</rml>

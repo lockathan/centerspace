@@ -1,0 +1,8 @@
+Aphid Laser 1;Aphid;Laser HP-150;1;1;0.42;3.558;3.334;none
+Aphid Laser 2;Aphid;Laser HP-150;1;1;-0.42;3.558;3.334;0;none
+Aphid Missile 1;Aphid;Missile T2;3;1;0.462;7.174;3.718;none
+Aphid Missile 2;Aphid;Missile T2;3;1;-0.462;7.174;3.718;none
+Wraith Laser 1;Wraith;Light Plasma Cannon;1;1;0.854;4.464;4.387;none
+Wraith Laser 2;Wraith;Light Plasma Cannon;1;1;-0.854;4.464;4.387;none
+Wraith Cannon 1;Wraith;20mm AC;0;1;1.634;8.57;4.332;none
+Wraith Cannon 2;Wraith;20mm AC;0;1;-1.634;8.57;4.332;none

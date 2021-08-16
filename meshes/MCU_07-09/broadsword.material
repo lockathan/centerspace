@@ -1,0 +1,19 @@
+material lambert2
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+			emissive 1 1 1 1
+			scene_blend alpha_blend
+
+			texture_unit
+			{
+				texture MCU_08_Tex.png
+			}
+		}
+
+	}
+
+}
